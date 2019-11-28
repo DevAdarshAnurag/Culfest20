@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_culfest20"
+    tools:context=".fragments.AboutUsFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="28dp"
+                android:layout_marginBottom="2dp"
+                android:paddingRight="28dp"
+                android:text="Culfest"
+                android:textColor="@color/white"
+                android:textSize="28sp" />
+
+            <LinearLayout
+                android:id="@+id/under1"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_below="@id/title"
+                android:layout_alignStart="@id/title"
+                android:layout_alignEnd="@id/title"
+                android:background="@color/white"
+                android:orientation="horizontal" />
+
+            <TextView
+                android:id="@+id/about_cul"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/under1"
+                android:layout_marginStart="36dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="36dp"
+                android:layout_marginBottom="32dp"
+                android:text="@string/about_culfest"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/theme"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/about_cul"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="32dp"
+                android:layout_marginBottom="2dp"
+                android:paddingLeft="28dp"
+                android:text="Carousel de' Culture"
+                android:textColor="@color/white"
+                android:textSize="28sp" />
+
+            <LinearLayout
+                android:id="@+id/under2"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_below="@id/theme"
+                android:layout_alignStart="@id/theme"
+                android:layout_alignEnd="@id/theme"
+                android:background="@color/white"
+                android:orientation="horizontal" />
+
+            <TextView
+                android:id="@+id/about_theme"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/under2"
+                android:layout_marginStart="36dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="36dp"
+                android:layout_marginBottom="32dp"
+                android:text="@string/about_culfest_theme"
+                android:textAlignment="viewEnd"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/social_cause"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/about_theme"
+                android:layout_marginStart="32dp"
+                android:layout_marginBottom="2dp"
+                android:paddingRight="28dp"
+                android:text="Social Cause"
+                android:textColor="@color/white"
+                android:textSize="28sp" />
+
+            <LinearLayout
+                android:id="@+id/under3"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_below="@id/social_cause"
+                android:layout_alignStart="@id/social_cause"
+                android:layout_alignEnd="@id/social_cause"
+                android:background="@color/white"
+                android:orientation="horizontal" />
+
+            <TextView
+                android:id="@+id/about_social_cause"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/under3"
+                android:layout_marginStart="36dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="36dp"
+                android:layout_marginBottom="32dp"
+                android:text="@string/about_social_cause"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/last_year"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/about_social_cause"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="32dp"
+                android:layout_marginBottom="2dp"
+                android:paddingLeft="28dp"
+                android:text="Last Year Blast"
+                android:textColor="@color/white"
+                android:textSize="28sp" />
+
+            <LinearLayout
+                android:id="@+id/under4"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_below="@id/last_year"
+                android:layout_alignStart="@id/last_year"
+                android:layout_alignEnd="@id/last_year"
+                android:background="@color/white"
+                android:orientation="horizontal" />
+
+            <ImageView
+                android:layout_width="256dp"
+                android:layout_height="256dp"
+                android:layout_below="@id/last_year"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="8dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/culfest19" />
+        </RelativeLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.github.clans.fab.FloatingActionMenu
+            android:id="@+id/fam_about"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="8dp"
+            android:layout_marginBottom="8dp"
+            app:menu_animationDelayPerItem="60"
+            app:menu_backgroundColor="@android:color/transparent"
+            app:menu_buttonSpacing="0dp"
+            app:menu_colorNormal="@color/colorAccent"
+            app:menu_colorPressed="@color/colorPrimaryDark"
+            app:menu_colorRipple="@color/red"
+            app:menu_fab_size="normal"
+            app:menu_icon="@drawable/ic_social_fab"
+            app:menu_openDirection="up">
+
+            <com.github.clans.fab.FloatingActionButton
+                android:id="@+id/fab_facebook"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:src="@drawable/ic_facebook"
+                app:fab_colorNormal="@color/fb"
+                app:fab_colorPressed="@color/colorAccent"
+                app:fab_size="mini" />
+
+            <com.github.clans.fab.FloatingActionButton
+                android:id="@+id/fab_instagram"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_insta"
+                app:fab_colorNormal="#bc2a8d"
+                app:fab_colorPressed="@color/colorAccent"
+                app:fab_size="mini" />
+
+            <com.github.clans.fab.FloatingActionButton
+                android:id="@+id/fab_youtube"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_youtube"
+                app:fab_colorNormal="@color/red"
+                app:fab_colorPressed="@color/colorAccent"
+                app:fab_size="mini" />
+
+        </com.github.clans.fab.FloatingActionMenu>
+    </RelativeLayout>
+
+</RelativeLayout>

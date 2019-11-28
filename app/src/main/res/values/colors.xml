@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#03A9F4</color>
+    <color name="colorPrimaryDark">#0288D1</color>
+    <!--<color name="colorAccent">#7C4DFF</color>-->
+    <color name="colorAccent">#536DFE</color>
+    <color name="colorPrimaryLight">#B2E5FC</color>
+    <color name="primaryText">#212121</color>
+    <color name="secondaryText">#757575</color>
+
+    <color name="black">#000</color>
+    <color name="transparent">#00000000</color>
+    <color name="white">#fff</color>
+    <color name="red">#e60000</color>
+    <color name="fb">#3b5998</color>
+    <color name="insta">#bc2a8d</color>
+    <color name="gold">#d4af37</color>
+
+    <!--whatsapp-->
+    <color name="inactiveAddButtonColor">#B3B3B3</color>
+    <color name="infoPageBackgroundColor">#EBEBEB</color>
+    <color name="actionBarArrowColor">@color/colorAccent</color>
+</resources>

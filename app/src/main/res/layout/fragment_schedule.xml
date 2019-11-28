@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_schedule"
+    tools:context=".fragments.ScheduleFragment">
+
+    <TextView
+        android:id="@+id/schedule_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="Schedule"
+        android:textColor="@color/white"
+        android:textSize="36sp" />
+
+    <RelativeLayout
+        android:id="@+id/schedule_date_rl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/schedule_title"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="8dp">
+
+        <ImageView
+            android:id="@+id/calendar_image"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_calendar" />
+
+        <TextView
+            android:id="@+id/schedule_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="16dp"
+            android:layout_toEndOf="@id/calendar_image"
+            android:text="14th - 16th Feb."
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="2dp"
+            android:layout_below="@id/schedule_date"
+            android:layout_alignStart="@id/schedule_date"
+            android:layout_alignEnd="@id/schedule_date"
+            android:background="@color/white"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/schedule_date_rl">
+
+        <LinearLayout
+            android:id="@+id/schedule_ll"
+            android:layout_width="1dp"
+            android:layout_height="60dp"
+            android:layout_centerInParent="true"
+            android:background="@color/transparent"
+            android:orientation="vertical" />
+
+        <ImageView
+            android:id="@+id/day1"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:padding="4dp"
+            android:layout_above="@id/schedule_ll"
+            android:layout_centerInParent="true"
+            android:src="@drawable/ic_one" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/schedule_ll"
+            android:layout_centerHorizontal="true">
+
+            <ImageView
+                android:id="@+id/day2"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:padding="4dp"
+                android:layout_marginEnd="60dp"
+                android:src="@drawable/ic_two" />
+
+            <ImageView
+                android:id="@+id/day3"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:padding="4dp"
+                android:src="@drawable/ic_three" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

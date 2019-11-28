@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.nitjsr.culfest20">
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:name=".utilities.StickerApplication"
+        android:allowBackup="false"
+        android:fullBackupContent="false"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning">
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".activities.FAQActivity"
+            android:label="FAQs"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.NotificationsActivity"
+            android:label="Notifications"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.DeveloperActivity"
+            android:label="Developers"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.ProfileActivity"
+            android:label="Profile"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.MapsActivity"
+            android:label="@string/title_activity_maps"
+            android:screenOrientation="portrait" />
+        <activity android:name=".activities.DBCheckActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".activities.RegisterActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.SplashActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".whatsapp.EntryActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".whatsapp.StickerPackListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".whatsapp.StickerPackDetailsActivity"
+            android:parentActivityName=".whatsapp.StickerPackListActivity"
+            android:screenOrientation="portrait"
+            tools:ignore="UnusedAttribute">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.nitjsr.culfest20.whatsapp.StickerPackListActivity" />
+        </activity>
+        <activity
+            android:name=".whatsapp.StickerPackInfoActivity"
+            android:label="@string/title_activity_sticker_pack_info"
+            android:parentActivityName=".whatsapp.StickerPackDetailsActivity"
+            android:screenOrientation="portrait"
+            tools:ignore="UnusedAttribute">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.nitjsr.culfest20.whatsapp.StickerPackDetailsActivity" />
+        </activity>
+
+        <provider
+            android:name=".whatsapp.StickerContentProvider"
+            android:authorities="${contentProviderAuthority}"
+            android:enabled="true"
+            android:exported="true"
+            android:readPermission="com.whatsapp.sticker.READ" />
+    </application>
+
+</manifest>
