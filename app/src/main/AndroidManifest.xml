@@ -43,8 +43,9 @@
             android:name=".activities.MapsActivity"
             android:label="@string/title_activity_maps"
             android:screenOrientation="portrait" />
-        <activity android:name=".activities.DBCheckActivity"
-            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".activities.DBCheckActivity"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".activities.RegisterActivity"
             android:screenOrientation="portrait" />

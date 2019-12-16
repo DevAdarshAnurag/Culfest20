@@ -31,8 +31,9 @@
                 android:id="@+id/et_name"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textColor="@color/primaryText"
-                android:hint="Name" />
+                android:hint="Name"
+                android:lines="1"
+                android:textColor="@color/primaryText" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
@@ -45,8 +46,9 @@
                 android:id="@+id/et_in"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textColor="@color/primaryText"
-                android:hint="Institute Name" />
+                android:hint="Institute Name"
+                android:lines="1"
+                android:textColor="@color/primaryText" />
         </com.google.android.material.textfield.TextInputLayout>
 
 
@@ -60,8 +62,9 @@
                 android:id="@+id/et_iid"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textColor="@color/primaryText"
-                android:hint="Institute ID" />
+                android:hint="Institute ID"
+                android:lines="1"
+                android:textColor="@color/primaryText" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
@@ -75,8 +78,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Contact"
-                android:textColor="@color/primaryText"
-                android:inputType="phone" />
+                android:inputType="phone"
+                android:lines="1"
+                android:textColor="@color/primaryText" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <RadioGroup
@@ -89,23 +93,23 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textColor="@color/primaryText"
-                android:text="Do you need accommodation?" />
+                android:text="Do you need accommodation?"
+                android:textColor="@color/primaryText" />
 
             <RadioButton
                 android:id="@+id/acc_yes"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:checked="true"
-                android:textColor="@color/secondaryText"
-                android:text="Yes" />
+                android:text="Yes"
+                android:textColor="@color/secondaryText" />
 
             <RadioButton
                 android:id="@+id/acc_no"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textColor="@color/secondaryText"
-                android:text="No" />
+                android:text="No"
+                android:textColor="@color/secondaryText" />
         </RadioGroup>
 
         <RadioGroup
@@ -118,44 +122,44 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textColor="@color/primaryText"
-                android:text="T-shirt: " />
+                android:text="T-shirt: "
+                android:textColor="@color/primaryText" />
 
             <RadioButton
                 android:id="@+id/ts"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textColor="@color/secondaryText"
-                android:text="S" />
+                android:text="S"
+                android:textColor="@color/secondaryText" />
 
             <RadioButton
                 android:id="@+id/tm"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:checked="true"
-                android:textColor="@color/secondaryText"
-                android:text="M" />
+                android:text="M"
+                android:textColor="@color/secondaryText" />
 
             <RadioButton
                 android:id="@+id/tl"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textColor="@color/secondaryText"
-                android:text="L" />
+                android:text="L"
+                android:textColor="@color/secondaryText" />
 
             <RadioButton
                 android:id="@+id/txl"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textColor="@color/secondaryText"
-                android:text="XL" />
+                android:text="XL"
+                android:textColor="@color/secondaryText" />
 
             <RadioButton
                 android:id="@+id/txxl"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textColor="@color/secondaryText"
-                android:text="XXL" />
+                android:text="XXL"
+                android:textColor="@color/secondaryText" />
         </RadioGroup>
 
         <Button

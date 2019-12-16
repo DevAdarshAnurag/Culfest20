@@ -35,7 +35,7 @@
             android:layout_below="@id/noti_settings_msg"
             android:layout_margin="16dp"
             android:padding="16dp"
-            android:background="@drawable/recatngular_border"
+            android:background="@drawable/rectangular_border"
             android:orientation="vertical">
 
             <RelativeLayout

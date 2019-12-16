@@ -17,6 +17,7 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 import com.nitjsr.culfest20.R;
+import com.nitjsr.culfest20.activities.MainActivity;
 import com.nitjsr.culfest20.adapters.PostAdapter;
 import com.nitjsr.culfest20.models.Post;
 
@@ -36,7 +37,6 @@ public class PostFragment extends Fragment {
 
     private YouTubePlayerSupportFragment youTubePlayerFragment;
     private YouTubePlayer youTubePlayer;
-    private RecyclerView recyclerViewPost;
     private LinearLayout youtubeBox;
     private ArrayList<Post> posts = new ArrayList<>();
 
@@ -74,7 +74,7 @@ public class PostFragment extends Fragment {
             }
         });
 
-        recyclerViewPost = view.findViewById(R.id.rv_post);
+        RecyclerView recyclerViewPost = view.findViewById(R.id.rv_post);
         PostAdapter postAdapter=new PostAdapter(getActivity(),posts);
         recyclerViewPost.setAdapter(postAdapter);
         recyclerViewPost.setLayoutManager(new LinearLayoutManager(getActivity()));

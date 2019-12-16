@@ -1,125 +1,91 @@
 <?xml version="1.0" encoding="utf-8"?>
 <com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_marginLeft="7dp"
-    android:layout_marginTop="10dp"
-    android:layout_marginRight="7dp"
-    android:layout_marginBottom="10dp"
-    app:cardBackgroundColor="#f5f5f5"
-    app:cardCornerRadius="8dp"
-    app:cardElevation="15dp">
+    android:layout_margin="8dp"
+    app:cardBackgroundColor="@color/white"
+    app:cardCornerRadius="4dp"
+    app:cardElevation="4dp">
 
-    <androidx.constraintlayout.widget.ConstraintLayout
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:padding="5dp">
+        android:paddingBottom="8dp">
 
         <ImageView
             android:id="@+id/image"
             android:layout_width="match_parent"
-            android:layout_height="250dp"
+            android:layout_height="200dp"
             android:adjustViewBounds="true"
             android:scaleType="fitXY"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
             app:srcCompat="@drawable/bg_culfest_post" />
 
         <TextView
             android:id="@+id/title"
-            style="@style/TextAppearance.MaterialComponents.Headline6"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_below="@id/image"
             android:layout_marginStart="16dp"
-            android:layout_marginLeft="16dp"
-            android:layout_marginTop="16dp"
-            android:text="ADMIN CULFEST 20"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/image" />
+            android:layout_marginTop="12dp"
+            android:text="POST TITLE"
+            android:textColor="@color/primaryText"
+            android:textSize="16sp" />
 
         <TextView
             android:id="@+id/time_stamp"
-            style="@style/TextAppearance.MaterialComponents.Headline6"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="240dp"
-            android:layout_marginLeft="240dp"
-            android:layout_marginTop="20dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="16dp"
             android:text="20 Jan 03:03 AM"
-            android:textSize="15dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/image" />
+            android:textColor="@color/secondaryText"
+            android:textSize="16sp" />
 
         <TextView
             android:id="@+id/description"
-            style="@style/TextAppearance.MaterialComponents.Caption"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_below="@id/title"
+            android:layout_marginStart="16dp"
             android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
             android:text="hey jus a demo for the description section of culfest post 2020 lets have a look"
-            app:layout_constraintStart_toStartOf="@+id/title"
-            app:layout_constraintTop_toBottomOf="@+id/title" />
+            android:textColor="@color/secondaryText"
+            android:textSize="12sp" />
 
-        <ImageButton
+        <ImageView
             android:id="@+id/like"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:layout_marginStart="32dp"
-            android:layout_marginLeft="32dp"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_below="@id/description"
+            android:layout_marginStart="16dp"
             android:layout_marginTop="16dp"
-            android:background="@android:drawable/screen_background_light_transparent"
-            android:scaleType="fitXY"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="@+id/description"
-            app:layout_constraintTop_toBottomOf="@+id/description" />
+            android:src="@drawable/ic_hearts_grey"
+            android:scaleType="fitXY" />
 
 
         <TextView
             android:id="@+id/nlikes"
-            android:layout_width="77dp"
-            android:layout_height="35dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/description"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="24dp"
+            android:layout_toEndOf="@id/like"
             android:text="21"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/download"
-            app:layout_constraintHorizontal_bias="0.238"
-            app:layout_constraintStart_toEndOf="@+id/like"
-            app:layout_constraintTop_toBottomOf="@+id/description"
-            app:layout_constraintVertical_bias="0.852" />
+            android:textSize="14sp" />
 
-        <ImageButton
+        <ImageView
             android:id="@+id/download"
-            android:layout_width="45dp"
-            android:layout_height="42dp"
-            android:background="@android:drawable/screen_background_light_transparent"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.867"
-            app:layout_constraintStart_toEndOf="@+id/nlikes"
-            app:layout_constraintTop_toBottomOf="@+id/description"
-            app:layout_constraintVertical_bias="0.545"
-            app:srcCompat="@drawable/download" />
-
-        <FrameLayout
-            android:id="@+id/like_frame"
-            android:layout_width="369dp"
-            android:layout_height="321dp"
-            android:visibility="visible"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent">
-
-            <com.airbnb.lottie.LottieAnimationView
-                android:id="@+id/likeimage"
-                android:layout_width="match_parent"
-                android:layout_height="339dp" />
-
-        </FrameLayout>
-
-    </androidx.constraintlayout.widget.ConstraintLayout>
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_below="@id/description"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/ic_download" />
+    </RelativeLayout>
 </com.google.android.material.card.MaterialCardView>

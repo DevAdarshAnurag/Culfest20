@@ -7,6 +7,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.gms.auth.api.signin.GoogleSignIn;
@@ -36,6 +37,7 @@ public class SplashActivity extends AppCompatActivity {
     public GoogleSignInClient googleSignInClient;
     public int RC_SIGN_IN = 1000;
     public SignInButton signInButton;
+    public TextView guestLogin;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -50,8 +52,19 @@ public class SplashActivity extends AppCompatActivity {
                 .requestEmail()
                 .build();
         googleSignInClient = GoogleSignIn.getClient(this,gso);
+        guestLogin = findViewById(R.id.guest_login);
         signInButton = findViewById(R.id.sign_in_button);
         signInButton.setSize(SignInButton.SIZE_STANDARD);
+
+        guestLogin.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getApplicationContext(),DBCheckActivity.class));
+                finish();
+                overridePendingTransition(0,0);
+            }
+        });
+
         signInButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -64,6 +77,7 @@ public class SplashActivity extends AppCompatActivity {
         super.onStart();
         if(FirebaseAuth.getInstance().getCurrentUser() == null){
             signInButton.setVisibility(View.VISIBLE);
+            guestLogin.setVisibility(View.VISIBLE);
         }
         else {
             findViewById(R.id.loader).setVisibility(View.VISIBLE);
@@ -89,6 +103,7 @@ public class SplashActivity extends AppCompatActivity {
     }
 
     private void signIn() {
+        guestLogin.setVisibility(GONE);
         signInButton.setVisibility(GONE);
         findViewById(R.id.loader).setVisibility(View.VISIBLE);
         Intent signInIntent = googleSignInClient.getSignInIntent();
@@ -108,6 +123,7 @@ public class SplashActivity extends AppCompatActivity {
                     } else {
                         Toast.makeText(SplashActivity.this,task.getException().getMessage()+". Log in failed.",Toast.LENGTH_SHORT).show();
                         signOut();
+                        guestLogin.setVisibility(View.VISIBLE);
                         signInButton.setVisibility(View.VISIBLE);
                         findViewById(R.id.loader).setVisibility(View.INVISIBLE);
                     }
@@ -116,6 +132,8 @@ public class SplashActivity extends AppCompatActivity {
 
         } catch (ApiException e) {
             //Toast.makeText(this,e.getMessage(),Toast.LENGTH_SHORT).show();
+            guestLogin.setVisibility(View.VISIBLE);
+            signInButton.setVisibility(View.VISIBLE);
             findViewById(R.id.loader).setVisibility(View.INVISIBLE);
         }
     }
@@ -132,7 +150,6 @@ public class SplashActivity extends AppCompatActivity {
                             | View.SYSTEM_UI_FLAG_HIDE_NAVIGATION
                             | View.SYSTEM_UI_FLAG_FULLSCREEN
                             | View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY);
-
         }
     }
 

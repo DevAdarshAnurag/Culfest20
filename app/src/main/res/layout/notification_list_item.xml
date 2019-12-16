@@ -14,7 +14,7 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/recatngular_border"
+        android:background="@drawable/rectangular_border"
         android:orientation="horizontal"
         android:padding="8dp">
 

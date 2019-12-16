@@ -93,9 +93,8 @@ public class MainActivity extends AppCompatActivity {
     private void logOut() {
         MaterialAlertDialogBuilder builder = new MaterialAlertDialogBuilder(MainActivity.this);
         builder.setTitle("Log Out");
-        StringBuilder sb = new StringBuilder();
-        sb.append("Do you want to Log Out?");
-        builder.setMessage(sb.toString());
+        String sb = "Do you want to Log Out?";
+        builder.setMessage(sb);
         builder.setPositiveButton("Log Out", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
@@ -124,7 +123,10 @@ public class MainActivity extends AppCompatActivity {
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         MenuInflater inflater = getMenuInflater();
-        inflater.inflate(R.menu.dots_menu, menu);
+        if(FirebaseAuth.getInstance().getCurrentUser()!=null)
+            inflater.inflate(R.menu.dots_menu, menu);
+        else
+            inflater.inflate(R.menu.dots_menu_guest,menu);
         return true;
     }
 

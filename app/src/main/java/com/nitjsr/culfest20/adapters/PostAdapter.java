@@ -1,6 +1,5 @@
 package com.nitjsr.culfest20.adapters;
 
-import android.animation.Animator;
 import android.app.DownloadManager;
 import android.content.Context;
 import android.net.Uri;
@@ -9,16 +8,10 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.FrameLayout;
-import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import androidx.annotation.NonNull;
-import androidx.recyclerview.widget.RecyclerView;
-
-import com.airbnb.lottie.LottieAnimationView;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.FirebaseDatabase;
 import com.nitjsr.culfest20.R;
@@ -30,22 +23,24 @@ import com.squareup.picasso.Picasso;
 import java.io.File;
 import java.util.ArrayList;
 
-public class PostAdapter extends RecyclerView.Adapter <PostAdapter.MyViewHolder>{
+import androidx.annotation.NonNull;
+import androidx.recyclerview.widget.RecyclerView;
+
+public class PostAdapter extends RecyclerView.Adapter<PostAdapter.MyViewHolder> {
 
     Context context;
     ArrayList<Post> posts;
 
-    public PostAdapter(Context context,ArrayList<Post> posts)
-    {
-     this.context=context;
-     this.posts=posts;
+    public PostAdapter(Context context, ArrayList<Post> posts) {
+        this.context = context;
+        this.posts = posts;
     }
 
 
     @NonNull
     @Override
     public MyViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View view= LayoutInflater.from(parent.getContext()).inflate(R.layout.post_list_item,parent,false);
+        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.post_list_item, parent, false);
 
         return new MyViewHolder(view);
     }
@@ -54,7 +49,7 @@ public class PostAdapter extends RecyclerView.Adapter <PostAdapter.MyViewHolder>
     public void onBindViewHolder(@NonNull final MyViewHolder holder, final int position) {
 
         holder.title.setText(posts.get(position).getTitle());
-        Picasso.get().load(posts.get(position).getImage()).placeholder(R.drawable.download).networkPolicy(NetworkPolicy.OFFLINE).into(holder.image, new Callback() {
+        Picasso.get().load(posts.get(position).getImage()).placeholder(R.drawable.bg_culfest_post).networkPolicy(NetworkPolicy.OFFLINE).into(holder.image, new Callback() {
             @Override
             public void onSuccess() {
 
@@ -70,106 +65,64 @@ public class PostAdapter extends RecyclerView.Adapter <PostAdapter.MyViewHolder>
 
                     @Override
                     public void onError(Exception e) {
-                              //Toast.makeText(context,"Unable to load Image",Toast.LENGTH_LONG).show();
+                        //Toast.makeText(context,"Unable to load Image",Toast.LENGTH_LONG).show();
                     }
                 });
 
             }
         });
-        holder.like.setImageResource(R.drawable.googleg_standard_color_18);
-        holder.nlikes.setText((posts.get(position).getLikes().size()-1)+"");
+        //lots of work to do......
+        holder.nlikes.setText((posts.get(position).getLikes().size() - 1)+"");
         holder.description.setText(posts.get(position).getDescription());
-        if(posts.get(position).getLikes().containsKey(FirebaseAuth.getInstance().getUid())==true) {
-            holder.like.setImageResource(R.drawable.like1);
-        }
-        else
-           holder.like.setImageResource(R.drawable.unliked);
+        if (FirebaseAuth.getInstance().getCurrentUser() != null) {
+            if (posts.get(position).getLikes().containsKey(FirebaseAuth.getInstance().getUid())) {
+                holder.like.setImageResource(R.drawable.ic_hearts_red);
+            } else
+                holder.like.setImageResource(R.drawable.ic_hearts_grey);
             holder.like.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                if(posts.get(position).getLikes().containsKey(FirebaseAuth.getInstance().getUid())==true)
-                {
-                    FirebaseDatabase.getInstance().getReference("posts").child(posts.get(position).getId()).child("likes").child(FirebaseAuth.getInstance().getUid()).setValue(null);
-                    holder.like.setImageResource(R.drawable.unliked);
-                    if(holder.likeimage.isAnimating())
-                    {
-                        holder.likeimage.cancelAnimation();
-                        holder.like_frame.setVisibility(View.GONE);
-
+                @Override
+                public void onClick(View view) {
+                    if (posts.get(position).getLikes().containsKey(FirebaseAuth.getInstance().getUid())) {
+                        FirebaseDatabase.getInstance().getReference("posts").child(posts.get(position).getId()).child("likes").child(FirebaseAuth.getInstance().getUid()).setValue(null);
+                        holder.like.setImageResource(R.drawable.ic_hearts_red);
+                    } else {
+                        FirebaseDatabase.getInstance().getReference("posts").child(posts.get(position).getId()).child("likes").child(FirebaseAuth.getInstance().getUid()).setValue(1);
+                        Log.i("1", posts.get(position).getId());
+                        holder.like.setImageResource(R.drawable.ic_hearts_grey);
                     }
-
                 }
-                else
-                {
-                    FirebaseDatabase.getInstance().getReference("posts").child(posts.get(position).getId()).child("likes").child(FirebaseAuth.getInstance().getUid()).setValue(1);
-                    holder.like.setImageResource(R.drawable.like1);
-                    holder.like_frame.setVisibility(View.VISIBLE);
-                    holder.likeimage.setAnimation("heart.json");
-//                    holder.likeimage.setSpeed(3f);
-                    Log.i("1",posts.get(position).getId());
-                    holder.likeimage.playAnimation();
-                    holder.likeimage.addAnimatorListener(new Animator.AnimatorListener() {
-                        @Override
-                        public void onAnimationStart(Animator animator) {
+            });
+        }
 
-                        }
-
-                        @Override
-                        public void onAnimationEnd(Animator animator) {
-                                holder.like_frame.setVisibility(View.GONE);
-
-                        }
-
-                        @Override
-                        public void onAnimationCancel(Animator animator) {
-
-                        }
-
-                        @Override
-                        public void onAnimationRepeat(Animator animator) {
-
-                        }
-
-
-                    });
-                }
-            }
-        });
         holder.down.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                DownloadImage(posts.get(position).getImage(),posts.get(position).getTimestamp());
+                downloadImage(posts.get(position).getImage(), posts.get(position).getTimestamp());
             }
         });
 
     }
 
-    void DownloadImage(String url,String timestamp)
-    {
+    private void downloadImage(String url, String timestamp) {
 
-        String filename="New"+timestamp+".jpg";
+        String filename = "culfest20" + timestamp + ".jpg";
 
-        File direct=new File(Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DCIM).getAbsolutePath()+"/"+"Culfest20"+"/");
-        if(!direct.exists())
-        {
+        File direct = new File(Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DCIM).getAbsolutePath() + "/" + "Culfest20" + "/");
+        if (!direct.exists()) {
             direct.mkdir();
             Log.i("DIR", "directory created");
-        }
-        else
-        {
+        } else {
             Log.i("DIR", "directory present");
         }
-        DownloadManager downloadManager=(DownloadManager) context.getSystemService(Context.DOWNLOAD_SERVICE);
-        DownloadManager.Request request=new DownloadManager.Request(Uri.parse(url));
+        DownloadManager downloadManager = (DownloadManager) context.getSystemService(Context.DOWNLOAD_SERVICE);
+        DownloadManager.Request request = new DownloadManager.Request(Uri.parse(url));
         request.setTitle("Culfest Post");
         request.setDescription("Downloading");
         request.setMimeType("image/jpeg");
         request.setNotificationVisibility(DownloadManager.Request.VISIBILITY_VISIBLE_NOTIFY_COMPLETED);
-        request.setDestinationInExternalPublicDir(Environment.DIRECTORY_DCIM,File.separator+"Culfest20"+File.separator+filename);
+        request.setDestinationInExternalPublicDir(Environment.DIRECTORY_DCIM, File.separator + "Culfest20" + File.separator + filename);
         downloadManager.enqueue(request);
-        Toast.makeText(context,"Downloading Image",Toast.LENGTH_LONG).show();
-
-
+        Toast.makeText(context, "Downloading Image", Toast.LENGTH_LONG).show();
     }
 
     @Override
@@ -179,24 +132,20 @@ public class PostAdapter extends RecyclerView.Adapter <PostAdapter.MyViewHolder>
 
     class MyViewHolder extends RecyclerView.ViewHolder {
 
-        ImageView image;
-        TextView title,nlikes;
-         TextView description;
-        LottieAnimationView likeimage;
-        FrameLayout like_frame;
-        ImageButton like,down;
+        ImageView image, down;
+        TextView title, nlikes;
+        TextView description;
+        ImageView like;
 
 
         public MyViewHolder(@NonNull View itemView) {
             super(itemView);
-            description=itemView.findViewById(R.id.description);
-            image=itemView.findViewById(R.id.image);
-            title=itemView.findViewById(R.id.title);
-            nlikes=itemView.findViewById(R.id.nlikes);
-            likeimage=itemView.findViewById(R.id.likeimage);
-            down=itemView.findViewById(R.id.download);
-            like_frame=itemView.findViewById(R.id.like_frame);
-            like=itemView.findViewById(R.id.like);
+            description = itemView.findViewById(R.id.description);
+            image = itemView.findViewById(R.id.image);
+            title = itemView.findViewById(R.id.title);
+            nlikes = itemView.findViewById(R.id.nlikes);
+            down = itemView.findViewById(R.id.download);
+            like = itemView.findViewById(R.id.like);
         }
     }
 
