@@ -1,6 +1,7 @@
 package com.nitjsr.culfest20.adapters;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -9,6 +10,7 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.nitjsr.culfest20.R;
+import com.nitjsr.culfest20.activities.EventActivity;
 import com.nitjsr.culfest20.models.Events;
 
 import java.util.ArrayList;
@@ -47,6 +49,15 @@ public class EventsAdapter extends RecyclerView.Adapter<EventsAdapter.myViewHold
         holder.prize.setText(event.getEventPrize());
         holder.imageView.setImageResource(event.getEventImage());
         holder.eventLL.setBackground(ContextCompat.getDrawable(context, event.getEventColor()));
+        holder.eventLL.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(context, EventActivity.class);
+                intent.putExtra("event_id",position);
+                intent.setFlags(Intent.FLAG_ACTIVITY_SINGLE_TOP);
+                context.startActivity(intent);
+            }
+        });
     }
 
     @Override

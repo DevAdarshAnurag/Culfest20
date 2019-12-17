@@ -31,7 +31,6 @@ import java.util.Objects;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
-import androidx.core.content.ContextCompat;
 import androidx.viewpager.widget.ViewPager;
 
 public class MainActivity extends AppCompatActivity {
@@ -123,10 +122,10 @@ public class MainActivity extends AppCompatActivity {
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         MenuInflater inflater = getMenuInflater();
-        if(FirebaseAuth.getInstance().getCurrentUser()!=null)
+        if (FirebaseAuth.getInstance().getCurrentUser() != null)
             inflater.inflate(R.menu.dots_menu, menu);
         else
-            inflater.inflate(R.menu.dots_menu_guest,menu);
+            inflater.inflate(R.menu.dots_menu_guest, menu);
         return true;
     }
 

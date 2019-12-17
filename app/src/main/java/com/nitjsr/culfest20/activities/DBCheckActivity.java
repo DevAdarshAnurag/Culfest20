@@ -114,8 +114,8 @@ public class DBCheckActivity extends AppCompatActivity {
                         alertDialog.show();
                     } else {
                         startActivity(new Intent(DBCheckActivity.this, MainActivity.class));
-                        overridePendingTransition(0, 0);
                         finish();
+                        overridePendingTransition(0, 0);
                     }
                 } catch (Exception e) {
                     //

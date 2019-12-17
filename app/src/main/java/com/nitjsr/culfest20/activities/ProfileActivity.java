@@ -9,6 +9,7 @@ import android.text.TextUtils;
 import android.view.Gravity;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.GridLayout;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.PopupWindow;
@@ -33,11 +34,17 @@ import com.google.zxing.MultiFormatWriter;
 import com.google.zxing.common.BitMatrix;
 import com.journeyapps.barcodescanner.BarcodeEncoder;
 import com.nitjsr.culfest20.R;
+import com.nitjsr.culfest20.adapters.EventChipAdapter;
+import com.nitjsr.culfest20.models.Events;
 import com.nitjsr.culfest20.models.User;
 import com.squareup.picasso.Picasso;
 
+import java.util.ArrayList;
+
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.GridLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 import de.hdodenhof.circleimageview.CircleImageView;
 
 public class ProfileActivity extends AppCompatActivity {
@@ -48,6 +55,7 @@ public class ProfileActivity extends AppCompatActivity {
     CircleImageView profileImage;
     ImageView profilePayment, qr;
     RelativeLayout progress;
+    RecyclerView eventRecycler;
 
     public static Rect locateView(View v) {
         int[] loc_int = new int[2];
@@ -90,6 +98,7 @@ public class ProfileActivity extends AppCompatActivity {
         Picasso.get().load(firebaseUser.getPhotoUrl()).placeholder(R.drawable.ic_stat_onesignal_default).into(profileImage);
         profilePayment = findViewById(R.id.profile_payment);
         progress = findViewById(R.id.profile_progress_bar);
+        eventRecycler = findViewById(R.id.event_chip_rv);
 
         fetchDetails(uid);
         makeQRCode(uid);
@@ -108,6 +117,21 @@ public class ProfileActivity extends AppCompatActivity {
             }
         });
 
+        ArrayList<Events> list=new ArrayList<Events>();
+        list.add(new Events(R.drawable.ic_mega_events,R.color.colorPrimaryDark,"Mega Events","\u20B9 2,38,000"));
+        list.add(new Events(R.drawable.ic_dance,R.color.fb,"Dance","\u20B9 60,600"));
+        list.add(new Events(R.drawable.ic_vocals,R.color.insta,"Vocals","\u20B9 58,600"));
+        list.add(new Events(R.drawable.ic_qunite,R.color.red,"QuNITe","\u20B9 42,000"));
+        list.add(new Events(R.drawable.ic_fine_arts,R.color.gold,"Fine Arts","\u20B9 50,800"));
+        list.add(new Events(R.drawable.ic_fashion,R.color.colorAccent,"Fashion","\u20B9 70,000"));
+        list.add(new Events(R.drawable.ic_dramatics,R.color.colorPrimaryDark,"Dramatics","\u20B9 90,000"));
+        list.add(new Events(R.drawable.ic_photography,R.color.fb,"Photography","\u20B9 10,000"));
+        list.add(new Events(R.drawable.ic_literary,R.color.insta,"Literary","\u20B9 53,500"));
+        list.add(new Events(R.drawable.ic_informals,R.color.red,"Informals"," "));
+        GridLayoutManager gridLayoutManager = new GridLayoutManager(this,3,GridLayoutManager.HORIZONTAL,false);
+        eventRecycler.setLayoutManager(gridLayoutManager);
+        EventChipAdapter adapter = new EventChipAdapter(ProfileActivity.this,list);
+        eventRecycler.setAdapter(adapter);
     }
 
     private void fetchDetails(String uid) {

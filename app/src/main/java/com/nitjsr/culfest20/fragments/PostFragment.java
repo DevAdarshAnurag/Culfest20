@@ -13,11 +13,9 @@ import com.google.android.youtube.player.YouTubePlayer;
 import com.google.android.youtube.player.YouTubePlayerSupportFragment;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
-import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 import com.nitjsr.culfest20.R;
-import com.nitjsr.culfest20.activities.MainActivity;
 import com.nitjsr.culfest20.adapters.PostAdapter;
 import com.nitjsr.culfest20.models.Post;
 
@@ -54,49 +52,26 @@ public class PostFragment extends Fragment {
 
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
-        //there is no error in line below
-        youTubePlayerFragment = (YouTubePlayerSupportFragment) getChildFragmentManager().findFragmentById(R.id.youtube_fragment);
-        youtubeBox = view.findViewById(R.id.youtube_box);
-        initializeYouTube();
-
-        view.findViewById(R.id.youtube_fab).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                if(youtubeBox.getVisibility() == View.GONE) {
-                    youtubeBox.setVisibility(View.VISIBLE);
-                    initializeYouTube();
-                }
-                else {
-                    youtubeBox.setVisibility(View.GONE);
-                    youTubePlayerFragment.onPause();
-                    youTubePlayer.release();
-                }
-            }
-        });
 
         RecyclerView recyclerViewPost = view.findViewById(R.id.rv_post);
-        PostAdapter postAdapter=new PostAdapter(getActivity(),posts);
+        PostAdapter postAdapter = new PostAdapter(getActivity(), posts);
         recyclerViewPost.setAdapter(postAdapter);
         recyclerViewPost.setLayoutManager(new LinearLayoutManager(getActivity()));
         FirebaseDatabase.getInstance().getReference("posts").addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                 posts.clear();
-                for(DataSnapshot ds: dataSnapshot.getChildren())
-                {
-                    Post temp=new Post();
+                for (DataSnapshot ds : dataSnapshot.getChildren()) {
+                    Post temp = new Post();
                     temp.setId(ds.child("id").getValue(String.class));
                     temp.setTimestamp(ds.child("timestamp").getValue(String.class));
                     temp.setTitle(ds.child("title").getValue(String.class));
                     temp.setDescription(ds.child("description").getValue(String.class));
                     temp.setImage(ds.child("image").getValue(String.class));
-                    for(DataSnapshot dss: ds.child("likes").getChildren())
-                    {
-                        temp.getLikes().put(dss.getKey(),dss.getValue(Integer.class));
+                    for (DataSnapshot dss : ds.child("likes").getChildren()) {
+                        temp.getLikes().put(dss.getKey(), dss.getValue(Integer.class));
                     }
-
                     posts.add(temp);
-
                 }
 
                 postAdapter.notifyDataSetChanged();
@@ -108,10 +83,28 @@ public class PostFragment extends Fragment {
             }
         });
 
+        //there is no error in line below
+        youTubePlayerFragment = (YouTubePlayerSupportFragment) getChildFragmentManager().findFragmentById(R.id.youtube_fragment);
+        youtubeBox = view.findViewById(R.id.youtube_box);
+        initializeYouTube();
+
+        view.findViewById(R.id.youtube_fab).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (youtubeBox.getVisibility() == View.GONE) {
+                    youtubeBox.setVisibility(View.VISIBLE);
+                    initializeYouTube();
+                } else {
+                    youtubeBox.setVisibility(View.GONE);
+                    youTubePlayerFragment.onPause();
+                    youTubePlayer.release();
+                }
+            }
+        });
+
     }
 
-    private void initializeYouTube()
-    {
+    private void initializeYouTube() {
         if (youTubePlayerFragment != null) {
             youTubePlayerFragment.initialize("AIzaSyB5QCNjhNqOoK7nT8aKhMLKcQewkY3jacM", new YouTubePlayer.OnInitializedListener() {
 
@@ -124,6 +117,7 @@ public class PostFragment extends Fragment {
                         youTubePlayer.cuePlaylist("BqgEDu3HRX1bFC6_WDbNVC2BZxMVvbXG");
                     }
                 }
+
                 @Override
                 public void onInitializationFailure(YouTubePlayer.Provider arg0, YouTubeInitializationResult arg1) {
                     Log.e("youtube", "Youtube Player View initialization failed");

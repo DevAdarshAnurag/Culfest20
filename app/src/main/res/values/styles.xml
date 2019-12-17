@@ -60,4 +60,8 @@
         <item name="android:foreground">?android:attr/selectableItemBackground</item>
     </style>
 
+    <style name="chips" parent="TextAppearance.MaterialComponents.Chip">
+        <item name="android:fontFamily">@font/acme</item>
+    </style>
+
 </resources>
