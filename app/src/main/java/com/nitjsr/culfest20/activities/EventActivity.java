@@ -38,11 +38,15 @@ public class EventActivity extends AppCompatActivity {
         behavior.addBottomSheetCallback(new BottomSheetBehavior.BottomSheetCallback() {
             @Override
             public void onStateChanged(@NonNull View bottomSheet, int newState) {
+                if(newState == BottomSheetBehavior.STATE_EXPANDED)
+                    scrollRL.setVisibility(View.GONE);
             }
             @Override
             public void onSlide(@NonNull View bottomSheet, float slideOffset) {
-                scrollRL.setScaleX(1-slideOffset);
-                scrollRL.setScaleX(1-slideOffset);
+                scrollRL.setScaleX(1 - slideOffset);
+                scrollRL.setScaleY(1 - slideOffset);
+                if(slideOffset < 0.2)
+                    scrollRL.setVisibility(View.VISIBLE);
             }
         });
 

@@ -1,12 +1,15 @@
 package com.nitjsr.culfest20.adapters;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.nitjsr.culfest20.R;
+import com.nitjsr.culfest20.activities.SubEventActivity;
 import com.nitjsr.culfest20.models.SubEvents;
 
 import java.util.ArrayList;
@@ -35,6 +38,18 @@ public class SubEventAdapter extends RecyclerView.Adapter<SubEventAdapter.myView
     public void onBindViewHolder(@NonNull SubEventAdapter.myViewHolder holder, int position) {
         SubEvents subEvent = subEvents.get(position);
         holder.subEventName.setText(subEvent.getName());
+        holder.subEventPrize.setText(subEvent.getPrize());
+        holder.subEventRL.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(context,SubEventActivity.class);
+                intent.putExtra("sub_event",subEvent.getName());
+                intent.putExtra("description",subEvent.getDescription());
+                intent.putExtra("rules",subEvent.getRules());
+                intent.putExtra("coordinators",subEvent.getCoordinators());
+                context.startActivity(intent);
+            }
+        });
     }
 
     @Override
@@ -43,11 +58,14 @@ public class SubEventAdapter extends RecyclerView.Adapter<SubEventAdapter.myView
     }
 
     public static class myViewHolder extends RecyclerView.ViewHolder {
-        TextView subEventName;
+        TextView subEventName, subEventPrize;
+        RelativeLayout subEventRL;
 
         public myViewHolder(@NonNull View itemView) {
             super(itemView);
+            subEventRL = itemView.findViewById(R.id.sub_event_rl);
             subEventName = itemView.findViewById(R.id.sub_event_name);
+            subEventPrize = itemView.findViewById(R.id.sub_event_prize);
         }
     }
 }

@@ -5,11 +5,11 @@ public class EventDetails {
     public static final String eventName[]=new String[]{
             "Mega Events",
             "Dance",
-            "Dramatics",
+            "Vocals",
             "QuNITe",
             "Fine Arts",
             "Fashion",
-            "Vocals",
+            "Dramatics",
             "Photography",
             "Literary",
             "Informals"
@@ -18,26 +18,26 @@ public class EventDetails {
     public static final String subEventList[][]=new String[][]{
             {"Choreo Night","Journalism","Halla Bol","Theme Quiz","Battle of Bands","Panache","Poshak"},
             {"Foot Loose","Dancing Duo","Shake On Beat","Choreo Night"},
-            {"Rangmanch","Panch Parmeshwar","Halla Bol","Mime"},
+            {"Culfest Idol","The Voice","Duets","Unplugged","Battle of Bands"},
             {"Theme Quiz","SpEnt Quiz","BizTech Quiz","India Quiz"},
             {"Face Painting","Rangoli","Triathlon","Claydoh","Poshak","Finger Painting"},
             {"Panache","Best Designer"},
-            {"Culfest Idol","The Voice","Duets","Unplugged","Battle of Bands"},
+            {"Rangmanch","Panch Parmeshwar","Halla Bol","Mime"},
             {"Instant-o-Graphy","48 hours"},
             {"Potpourri","JAM","Journalism","Policy Debate","SSMQ"},
             {"Antakshari","Paper Dance","Blind Date","PUBG","My Way or Highway"}
     };
 
     public static final String subEventPrizes[][]=new String[][]{
-            {"42,000","18,000","42,000","15,000","36,000","70,000","15,000"},
-            {"4,800","9,000","4,800","42,000"},
-            {"26,000","9,000","42,000","15,000"},
-            {"15,000","9,000","9,000","9,000"},
-            {"7,200","7,200","9,200","7,200","15,000","5,000"},
-            {"65,000","5,000"},
-            {"4,800","4,800","9,000","4,000","36,000"},
-            {"5,000","5,000"},
-            {"13,000","4,500","18,000","9,000","9,000"},
+            {"\u20B9 42,000","\u20B9 18,000","\u20B9 42,000","\u20B9 15,000","\u20B9 36,000","\u20B9 70,000","\u20B9 15,000"},
+            {"\u20B9 4,800","\u20B9 9,000","\u20B9 4,800","\u20B9 42,000"},
+            {"\u20B9 4,800","\u20B9 4,800","\u20B9 9,000","\u20B9 4,000","\u20B9 36,000"},
+            {"\u20B9 15,000","\u20B9 9,000","\u20B9 9,000","\u20B9 9,000"},
+            {"\u20B9 7,200","\u20B9 7,200","\u20B9 9,200","\u20B9 7,200","\u20B9 15,000","\u20B9 5,000"},
+            {"\u20B9 65,000","\u20B9 5,000"},
+            {"\u20B9 26,000","\u20B9 9,000","\u20B9 42,000","\u20B9 15,000"},
+            {"\u20B9 5,000","\u20B9 5,000"},
+            {"\u20B9 13,000","\u20B9 4,500","\u20B9 18,000","\u20B9 9,000","\u20B9 9,000"},
             {"","","","",""}
     };
 
@@ -83,7 +83,7 @@ public class EventDetails {
                             "Givhan\n\n" +
                             "Nobody can stay unconsumed from the 'fashion ka jalwa' for a long time.",
                     //Poshak
-                    "‘We love your style when you face up to our challenge of inventing it. ’ Do you believe in creativity? Do you think some fragments of newspaper and an urn of glue is sufficient to fashion a dress? Then visit your mind palace for inventive designs and prepare to drape your friend with your scrap ensembles. POSHAK is your chance of shaping ordinary into extraordinary. Fashion beseeches you to set new trends!\n",
+                    "‘We love your style when you face up to our challenge of inventing it. ’ Do you believe in creativity? Do you think some fragments of newspaper and an urn of glue is sufficient to fashion a dress? Then visit your mind palace for inventive designs and prepare to drape your friend with your scrap ensembles. POSHAK is your chance of shaping ordinary into extraordinary. Fashion beseeches you to set new trends!\n"
             },
 
             {//Foot Loose
@@ -96,21 +96,33 @@ public class EventDetails {
                     "To dance is to be out of yourself. “Larger, more beautiful, more powerful\"  \n" +
                             "If you think you have that \"dance ka keeda\" in you, our stage awaits your ‘dhamakedaar’ entry. Be it classical, contemporary, hip hop or the likes; if you think you can dance anytime ,anywhere, in any dance form come show us what you got and set the stage ablaze with your dance moves in one of the most exciting and fun-filled events of Culfest-19! ",
                     //ChoreoNight
-                    "Synchronize your steps to the 'dhol', act your costumes to represent your character and who knows you might land on a bounty. Come this Culfest and let your team craft to win hearts. This gala event promises to give you life long memories.",
+                    "Synchronize your steps to the 'dhol', act your costumes to represent your character and who knows you might land on a bounty. Come this Culfest and let your team craft to win hearts. This gala event promises to give you life long memories."
+            },
+            {//Culfest Idol
+                    "Admirer of the rich folk culture and music? Don’t feel lost in this rock and jazz buzzing western environment because here is your chance to win the day. Participate in this event and tune the audience to your strings. Give everyone a glimpse of the Kishore Da or the  Lata Mangeshkar hidden inside you.",
+                    //The Voice
+                    "“Ah! Music, a magic beyond all we do here”, says Dumbledore in Harry Potter & the Philosopher’s Stone.\n" +
+                            "Music knows no boundary. It moves people of all culture, language and origin. Music is freedom. This Culfest’19, come and manumit yourself with the world ruled by the likes of Madonna, Eminem, Taylor Swift and others. Western Vocals is a solo singing competition. Participants will be judged on their vocal skills, performance and the choice of song among other criterions. A participant may or may not include karaoke in their songs.\n",
+                    //Duets
+                    "To sing a duet means to share with someone both the pleasure and responsibility of making music. One skillful singer on stage is great, but two soloists performing can be quirky, romantic and a treat to the senses. CULFEST’19 brings you the opportunity to perform a duet and create a melody like never before. Be it a sweet mesmerizing ghazal or a scintillating bright qawwali; be it folk or filmi; in a nutshell be it any genre of music; you can showcase your song on our platform. So, here's a chance to prove yourself, say the Bobbsey's twins, birds of a feather or peas in a pod of euphonic music, provide a treat to the ears of the audience and reach the zenith to win the event!",
+                    //Unpluged
+                    "And the night shall be filled with music, \n" +
+                            "And the cares that infest the day, \n" +
+                            "Shall fold their tents like the Arabs, \n" +
+                            "And as silently steal away.\n\n" +
+                            "Music is peace, thought, wisdom. Music is forever." +
+                            " If music soothes and softens your soul as well, if you are gifted with melodious voice and skilfully plays any musical instrument as well, then Unplugged is the perfect platform for you. " +
+                            "Unplugged is a solo competition in Culfest’19." +
+                            " Let your voice and instrument do the magic and mesmerise everyone.\n",
+                    //Battle of Bands
+                    "“The true beauty of music is that it connects people. It carries a message, and we, the musicians, are the messengers.” - Ron Ayers\n" +
+                            "If you have a message that can stir the mass into unison, " +
+                            "wait no more because Culfest’19 brings you, just the dais you need." +
+                            " Battle of Band provides you with the opportunity of presenting your own idea of band music and, displaying your talent like never before." +
+                            " Let the audience have a taste of your creation and leave them craving for more. Practice like you have never won. Perform like you have never lost. " +
+                            "Don’t keep calm, set the stage on fire and the crowd up roaring. Note: Register before 12th February for this event. A maximum of 10 teams are allowed."
             },
 
-            {//Rangmanch
-                    "They say, “we are the actors whereas World is the stage”. So it becomes mandatory to express yourself, to pour out your inner thoughts and to show the real talent of Drama. If you have dramatics as your passion then CULFEST gives you the vital chance of expressing your thoughts to the people and to do good for the society.  \n" +
-                            " \n" +
-                            "For all these we welcome you to participate in the so called rangmanch competition called as SKIT COMPETITION ",
-                    //Panch Parmeshwar
-                    "“Panch Parmeshwar” is basically like a panchayat where the people in the villages are asked to solve their disputes based on the discussion between two groups and the decision is taken by a team consisting of six members where 5 members are called panch and one is the sarpanch. This type of thing is being practiced in the most of the villages and is very popular among the villages. ",
-                    //Halla Bol
-                    " The street play event: An art that encompasses entertainment with community education. Carpe Diem provides you a creative platform to make aware the incognizant – a place to voice your concerns. A one of a kind competition will test enthusiasm and energy of teams in tight packed performances on given issues. Come and showcase the creativity in you against the odd of not having a stage set for you. Remember to bring back the feel of the 90’s though.",
-                    //Mime
-                    "As they say,  \"Actions speak louder than words\". Culfest gives you a great opportunity to prove this by taking part in MIME. Mime is the art of acting out a story through body motions, without the usage of speech. ",
-
-            },
             {//Theme Quiz
                     "Reminiscence  the wonders of past and traverse through the annals of time to the glorious era of antiquity. The theme quiz will take you on a hopping ride to the bygone centuries leaving you with a sense of awe and astonishment. Fasten your seatbelts and enjoy the ride.",
                     //SpEnt
@@ -131,7 +143,7 @@ public class EventDetails {
                     //Poshak
                     "‘We love your style when you face up to our challenge of inventing it. ’ Do you believe in creativity? Do you think some fragments of newspaper and an urn of glue is  sufficient to fashion a dress? Then visit your mind palace for inventive designs and prepare to drape your friend with your scrap ensembles. POSHAK is your chance of shaping ordinary into extraordinary. Fashion beseeches you to set new trends! \n",
                     //Finger Painting
-                    "No matter whether its brush or finger, a painter can exhibit his creativity with any tool. So this culfest get ready to dip your fingers in the paint !",
+                    "No matter whether its brush or finger, a painter can exhibit his creativity with any tool. So this culfest get ready to dip your fingers in the paint !"
             },
             {//Fashion
                     "When the lights, camera and heart-pounding music are on, the vision of models " +
@@ -159,34 +171,23 @@ public class EventDetails {
                             "detail and their quest for perfection."
 
             },
-            {//Culfest Idol
-                    "Admirer of the rich folk culture and music? Don’t feel lost in this rock and jazz buzzing western environment because here is your chance to win the day. Participate in this event and tune the audience to your strings. Give everyone a glimpse of the Kishore Da or the  Lata Mangeshkar hidden inside you.",
-                    //The Voice
-                    "“Ah! Music, a magic beyond all we do here”, says Dumbledore in Harry Potter & the Philosopher’s Stone.\n" +
-                            "Music knows no boundary. It moves people of all culture, language and origin. Music is freedom. This Culfest’19, come and manumit yourself with the world ruled by the likes of Madonna, Eminem, Taylor Swift and others. Western Vocals is a solo singing competition. Participants will be judged on their vocal skills, performance and the choice of song among other criterions. A participant may or may not include karaoke in their songs.\n",
-                    //Duets
-                    "To sing a duet means to share with someone both the pleasure and responsibility of making music. One skillful singer on stage is great, but two soloists performing can be quirky, romantic and a treat to the senses. CULFEST’19 brings you the opportunity to perform a duet and create a melody like never before. Be it a sweet mesmerizing ghazal or a scintillating bright qawwali; be it folk or filmi; in a nutshell be it any genre of music; you can showcase your song on our platform. So, here's a chance to prove yourself, say the Bobbsey's twins, birds of a feather or peas in a pod of euphonic music, provide a treat to the ears of the audience and reach the zenith to win the event!",
-                    //Unpluged
-                    "And the night shall be filled with music, \n" +
-                            "And the cares that infest the day, \n" +
-                            "Shall fold their tents like the Arabs, \n" +
-                            "And as silently steal away.\n\n" +
-                            "Music is peace, thought, wisdom. Music is forever." +
-                            " If music soothes and softens your soul as well, if you are gifted with melodious voice and skilfully plays any musical instrument as well, then Unplugged is the perfect platform for you. " +
-                            "Unplugged is a solo competition in Culfest’19." +
-                            " Let your voice and instrument do the magic and mesmerise everyone.\n",
-                    //Battle of Bands
-                    "“The true beauty of music is that it connects people. It carries a message, and we, the musicians, are the messengers.” - Ron Ayers\n" +
-                            "If you have a message that can stir the mass into unison, " +
-                            "wait no more because Culfest’19 brings you, just the dais you need." +
-                            " Battle of Band provides you with the opportunity of presenting your own idea of band music and, displaying your talent like never before." +
-                            " Let the audience have a taste of your creation and leave them craving for more. Practice like you have never won. Perform like you have never lost. " +
-                            "Don’t keep calm, set the stage on fire and the crowd up roaring. Note: Register before 12th February for this event. A maximum of 10 teams are allowed.",
+            {//Rangmanch
+                    "They say, “we are the actors whereas World is the stage”. So it becomes mandatory to express yourself, to pour out your inner thoughts and to show the real talent of Drama. If you have dramatics as your passion then CULFEST gives you the vital chance of expressing your thoughts to the people and to do good for the society.  \n" +
+                            " \n" +
+                            "For all these we welcome you to participate in the so called rangmanch competition called as SKIT COMPETITION ",
+                    //Panch Parmeshwar
+                    "“Panch Parmeshwar” is basically like a panchayat where the people in the villages are asked to solve their disputes based on the discussion between two groups and the decision is taken by a team consisting of six members where 5 members are called panch and one is the sarpanch. This type of thing is being practiced in the most of the villages and is very popular among the villages. ",
+                    //Halla Bol
+                    " The street play event: An art that encompasses entertainment with community education. Carpe Diem provides you a creative platform to make aware the incognizant – a place to voice your concerns. A one of a kind competition will test enthusiasm and energy of teams in tight packed performances on given issues. Come and showcase the creativity in you against the odd of not having a stage set for you. Remember to bring back the feel of the 90’s though.",
+                    //Mime
+                    "As they say,  \"Actions speak louder than words\". Culfest gives you a great opportunity to prove this by taking part in MIME. Mime is the art of acting out a story through body motions, without the usage of speech. "
+
             },
+
             {//Instant-o-Graphy
                     "Do you have an eye for something exceptional in the wildest of the places or to capture your vision in a frame and show it to the World? If you're willing to explore your passion for Photography and are ready for a challenge, this Event is for you. With 36-hours in your hands, the clock is ticking while you struggle to bring your imagination to life and compete for the best.",
                     //48 Hours
-                    "You are a Youtube Star with 10.9M followers. You just tweeted on what video should you make next. The fans poured in a few of the suggestions and you pick up the top re-tweeted suggestion. You post videos every Friday and it's already  Wednesday Hurry Up! You've just got 48 hours for the fan requests. As a  Youtuber, your fans are everything, every single penny you earn through AdSense is the sincerity you have put in your works. The better the content, the larger your fandom grows! So, get-on with your ideas! Tick-Tock! Tick-Tock!",
+                    "You are a Youtube Star with 10.9M followers. You just tweeted on what video should you make next. The fans poured in a few of the suggestions and you pick up the top re-tweeted suggestion. You post videos every Friday and it's already  Wednesday Hurry Up! You've just got 48 hours for the fan requests. As a  Youtuber, your fans are everything, every single penny you earn through AdSense is the sincerity you have put in your works. The better the content, the larger your fandom grows! So, get-on with your ideas! Tick-Tock! Tick-Tock!"
             },
             {//Potpourri
                     "“Potpourri” refers to “a miscellaneous or diverse set of things”. Add to it a spicy twist of literature and voila! You have successfully cooked your way through this extravaganza event. Welcome to the event that has everything for everyone: be it a casual reader solving trivial puzzles, or a lover of the arts taking delight in the romance between language and entertainment. Be prepared for a marathon of word and vocabulary games that test not only your wits but your presence of mind as well in a time pressed environment.",
@@ -203,7 +204,7 @@ public class EventDetails {
                     //SSMQ
                     "“ Trust yourself, you know more than you think you do”.\n" +
                             "Culfest’19 brings to you the mother of all quizzes-the SSMQ- with questions from every topic under the sun. Be sure to exercise your brain to its limit and surprise many, including yourself. This is where the best minds compete for glory. It’s not just about knowledge, but also about thinking differently, getting the timing right, and of course, having a little bit of luck on your side! \n" +
-                            "So if you think you’ve got what it takes to make a mark, then do come and be a part of this grand event.\n",
+                            "So if you think you’ve got what it takes to make a mark, then do come and be a part of this grand event.\n"
             },
             {//Antakshri
                     "It's not a quiz, it's kind of a movie which you always love watching. There will be singing... There will be dialogues to do... There might be some grooving to tunes if the Quiz Master finds you hot.",
@@ -376,63 +377,60 @@ public class EventDetails {
                             "• Vulgarity of any form will not be allowed in the competition and can lead to immediate disqualification.   \n" +
                             "• Dimensions of the stage/performance area will be uploaded on our website very soon . ",
             },
-            {//Rangmanch
-                    "1) This is a group event. Each team can consist of 6-15 members. Apart from that one person can be there to look after the music or props.  \n" +
+            {//Culfest Idol
+                    "Prelims –\n" +
+                            "\n" +
+                            "Participants can sing eastern songs of any genre (preferably Hindi).\n" +
+                            "Maximum time allotted is 3 minutes.\n" +
+                            "No Background music or karaoke is allowed in prelims round. No instruments are allowed.\n" +
+                            "Marks shall be deducted if time limit is exceeded.\n" +
+                            "\n" +
+                            "Finals -\n" +
+                            "\n" +
+                            "The participants, selected in the prelims round, will move on to the finals where they will have to come prepared with a different song of their choice.\n" +
+                            "They will need to carry proper karaoke tracks for their performances (compulsory).\n" +
+                            "The time limit should not exceed 5 minutes for each performance.\n" +
+                            "Marks will be deducted for exceeding the time limit.\n" +
+                            "The decision of the judges will be final and binding.\n",
+                    //The Voice
+                    "Prelims –\n" +
+                            "This competition is open to any western jam based individual performance.\n" +
+                            "No Background music or karaoke is allowed in prelims round. No instruments are allowed.\n" +
+                            "Time limit should not exceed 3 minutes for each performance.\n" +
+                            " Finals –\n" +
+                            "Participants selected in the Prelims round will move on to the finals where they have to come prepared with a different song of their choice.\n" +
+                            "They need to carry proper karaoke tracks for their performances (compulsory).\n" +
+                            "Participants are allowed to sing along while playing their own instrument(s) but only their singing will be taken into account for judgement.\n" +
+                            "Time limit should not exceed 5 minutes for each performance.\n" +
+                            "Marks will be deducted for exceeding the time limit. 6. The decision of the judges will be final and binding.",
+
+                    //DUETS
+                    "Prelims - \n" +
+                            "• The participating teams will be judged on their co-ordination, presentation, distribution of lyrics and their ‘surtaal’  \n" +
+                            "• Two Participants (girl-girl/boy-boy/girl-boy) are required to give a performance together.  \n" +
+                            "• You should bring the karaoke tracks for your songs.(optional for prelims) Maximum time limit is 5 minutes per performance.  \n" +
                             " \n" +
-                            "2) Teams can pre-register online or by person.  \n" +
-                            " \n" +
-                            "3) Each participant should be registered in Culfest'19 failing which, the whole team would be disqualified.  \n" +
-                            " \n" +
-                            "4) There will be only one round for the competition. The maximum time allotted for the play is 25 minutes. This given time is from the empty stage to empty stage.  \n" +
-                            " \n" +
-                            "5) If the play time exceeds the given maximum time i.e.25 minutes, 20% marks per 5 minutes will be deducted from the final marks of the responsible team.  \n" +
-                            " \n" +
-                            "6) Language of the play can be Hindi or English.  \n" +
-                            " \n" +
-                            "7) The performance can also be a musical drama/play. Participants must bring their own music and background tracks they wish to play.  \n" +
-                            " \n" +
-                            "8) Participants must bring their own laptops/PDs for the sound effects and must contact the organiser at least 30 minutes prior to their performance if they wish to play any background tracks during the play.  \n" +
-                            " \n" +
-                            "9) Naked flames/animals/colours and other objectionable objects or things are strictly not allowed in the competition.  \n" +
-                            " \n" +
-                            "10) All the costumes and probes are to be arranged by the respective participating team for their play. They must take care of their own instruments in green room.  \n" +
-                            " \n" +
-                            "11) Issues like crossing the limits, using abusive language or vulgarity will lead to negative marking and if required, disqualification.  \n" +
-                            " \n" +
-                            "12) The judge’s decision will be final and binding.  \n" +
-                            " \n" +
-                            "13) The organising team owns all the rights to make any necessary change in the rules if required.",
-                    //Panch Parmeshwar
-                    "Participating team will be in a group of (4-6) members. At the time of event each team will choose a case from a set of cases. Team will be provided a sheet where a set of rules and regulations and brief information about the case will be written. Two teams will get a single case; one will speak in favor and another against the case. After each team will finish its argument in front of Panchs, winner will be decided. During the event a short G.K. based question round will be held where the crowd can participate and the crowd would be asked to give some suggestion about the case being held. Finally a short message will be given at the end of the event.",
-                    //Halla Bol
-                    "1) One member can participate as a member of maximum two team.  \n" +
-                            "2) Each team can consist of minimum 12 to maximum of 22 members.  \n" +
-                            "3) Each participant should be registered in Culfest'19 failing which, the whole team would be disqualified.  \n" +
-                            "4) Time limit for each performance is minimum 10 mins and maximum 20 mins.  \n" +
-                            "5) Teams are free to use simple props(Dupatta , Lathi, Gulaal, Paint etc) in their act of performance.  \n" +
-                            "6) Organizing committee shall not provide any Costume/Props.  \n" +
-                            "7) No electronic instrument is to be played throughout the play.  \n" +
-                            "8) No offensive language/ words against any specific person, Indian Constitution,Religion or Caste is allowed during the performance, doing such can result in direct elimination.  \n",
-                    //Mime
-                    "1) The team should consist of 4-8 members.  \n" +
-                            " \n" +
-                            "2) Time limit for each performance is 5-15 minutes. The time given is from empty stage to empty stage.  \n" +
-                            " \n" +
-                            "3) If the play exceeds the maximum time i.e., 15 minutes, 10% marks per extra 2 minutes will be deducted from the final marks of the responsible team.  \n" +
-                            " \n" +
-                            "4) No props are allowed.  \n" +
-                            " \n" +
-                            "5) Teams must bring their own music and background tracks they wish to play.  \n" +
-                            " \n" +
-                            "6) Each participant should be registered in Culfest'19 failing which, the whole team would be disqualified.  \n" +
-                            " \n" +
-                            "7) Face paint is allowed.  \n" +
-                            " \n" +
-                            "8) Dress colour should be preferably black or blue.  \n" +
-                            " \n" +
-                            "9) The judge’s decision will be final and binding.  \n" +
-                            " \n" +
-                            "10) The organising team owns all the rights to make any necessary change in the rules if required. ",
+                            "Finals - \n" +
+                            "• Selected participants will move on to the final round where they have to sing a different song of their choice.  \n" +
+                            "• Maximum time limit is 7 minutes per performance.  \n" +
+                            "• Karaoke tracks are compulsory.  \n" +
+                            "• Musical Instruments are NOT ALLOWED.  \n" +
+                            "• The decision of the judges will be final and binding. ",
+                    //Unpluged
+                    "Participants can perform musical piece on an instrument.\n" +
+                            "Maximum time limit: 7 minutes.\n" +
+                            "Participants should bring the instrument required for their performance.( karaoke not allowed but for beats & rhytm supporting music of other instruments is allowed).\n" +
+                            "Participants are allowed to play along with their own instruments. Their instrumentation skills will be taken into account for judgement.Marks shall be deducted if time limit is exceeded or for violation of any rule. The decision of judges will be final and binding.\n" +
+                            "The judges will critique the contestant’s performance based on the presentation,and instrumentation skills.\n" +
+                            "Performer needs to perform using a single instrument.",
+                    //Battle of Bands
+                    "First round will be a online round(there will be no elimination in this round). Participating teams have to send a video not exceeding 10 mins on or before 12 th Feb,2019.This is qualifying round.\n" +
+                            "The band must have a minimum of 3 members and a maximum of 8 members.\n" +
+                            "The time limit for the performance, including the time allotted for sound check, is 25 minutes(stage in & stage out). Negative Marking will be there for exceeding time limit.\n" +
+                            "The teams must perform 3 songs: One  Original Composition(preferably) and Two Cover of any eastern/western song.\n" +
+                            "Note: Language is not a constraint for music. Songs in English, Hindi or any other regional language are most welcomed. Versatility will give you extra edge over your opponents.\n" +
+                            "The band must have at least one guitarist, one bassist and a drummer.\n" +
+                            "Decision of the judge & organising team will be final and any team violating the rules will be disqualified.",
             },
             {//Theme Quiz
                     "1. Team size – 2 members\n" +
@@ -555,60 +553,63 @@ public class EventDetails {
                             "1. Creativity\n 2. Perfection\n 3. Overall look" +
                             "\n\nDecision making only depends on judges and no one can interfere on the final decisions made by the judges."
             },
-            {//Culfest Idol
-                    "Prelims –\n" +
-                            "\n" +
-                            "Participants can sing eastern songs of any genre (preferably Hindi).\n" +
-                            "Maximum time allotted is 3 minutes.\n" +
-                            "No Background music or karaoke is allowed in prelims round. No instruments are allowed.\n" +
-                            "Marks shall be deducted if time limit is exceeded.\n" +
-                            "\n" +
-                            "Finals -\n" +
-                            "\n" +
-                            "The participants, selected in the prelims round, will move on to the finals where they will have to come prepared with a different song of their choice.\n" +
-                            "They will need to carry proper karaoke tracks for their performances (compulsory).\n" +
-                            "The time limit should not exceed 5 minutes for each performance.\n" +
-                            "Marks will be deducted for exceeding the time limit.\n" +
-                            "The decision of the judges will be final and binding.\n",
-                    //The Voice
-                    "Prelims –\n" +
-                            "This competition is open to any western jam based individual performance.\n" +
-                            "No Background music or karaoke is allowed in prelims round. No instruments are allowed.\n" +
-                            "Time limit should not exceed 3 minutes for each performance.\n" +
-                            " Finals –\n" +
-                            "Participants selected in the Prelims round will move on to the finals where they have to come prepared with a different song of their choice.\n" +
-                            "They need to carry proper karaoke tracks for their performances (compulsory).\n" +
-                            "Participants are allowed to sing along while playing their own instrument(s) but only their singing will be taken into account for judgement.\n" +
-                            "Time limit should not exceed 5 minutes for each performance.\n" +
-                            "Marks will be deducted for exceeding the time limit. 6. The decision of the judges will be final and binding.",
-
-                    //DUETS
-                    "Prelims - \n" +
-                            "• The participating teams will be judged on their co-ordination, presentation, distribution of lyrics and their ‘surtaal’  \n" +
-                            "• Two Participants (girl-girl/boy-boy/girl-boy) are required to give a performance together.  \n" +
-                            "• You should bring the karaoke tracks for your songs.(optional for prelims) Maximum time limit is 5 minutes per performance.  \n" +
+            {//Rangmanch
+                    "1) This is a group event. Each team can consist of 6-15 members. Apart from that one person can be there to look after the music or props.  \n" +
                             " \n" +
-                            "Finals - \n" +
-                            "• Selected participants will move on to the final round where they have to sing a different song of their choice.  \n" +
-                            "• Maximum time limit is 7 minutes per performance.  \n" +
-                            "• Karaoke tracks are compulsory.  \n" +
-                            "• Musical Instruments are NOT ALLOWED.  \n" +
-                            "• The decision of the judges will be final and binding. ",
-                    //Unpluged
-                    "Participants can perform musical piece on an instrument.\n" +
-                            "Maximum time limit: 7 minutes.\n" +
-                            "Participants should bring the instrument required for their performance.( karaoke not allowed but for beats & rhytm supporting music of other instruments is allowed).\n" +
-                            "Participants are allowed to play along with their own instruments. Their instrumentation skills will be taken into account for judgement.Marks shall be deducted if time limit is exceeded or for violation of any rule. The decision of judges will be final and binding.\n" +
-                            "The judges will critique the contestant’s performance based on the presentation,and instrumentation skills.\n" +
-                            "Performer needs to perform using a single instrument.",
-                    //Battle of Bands
-                    "First round will be a online round(there will be no elimination in this round). Participating teams have to send a video not exceeding 10 mins on or before 12 th Feb,2019.This is qualifying round.\n" +
-                            "The band must have a minimum of 3 members and a maximum of 8 members.\n" +
-                            "The time limit for the performance, including the time allotted for sound check, is 25 minutes(stage in & stage out). Negative Marking will be there for exceeding time limit.\n" +
-                            "The teams must perform 3 songs: One  Original Composition(preferably) and Two Cover of any eastern/western song.\n" +
-                            "Note: Language is not a constraint for music. Songs in English, Hindi or any other regional language are most welcomed. Versatility will give you extra edge over your opponents.\n" +
-                            "The band must have at least one guitarist, one bassist and a drummer.\n" +
-                            "Decision of the judge & organising team will be final and any team violating the rules will be disqualified.",
+                            "2) Teams can pre-register online or by person.  \n" +
+                            " \n" +
+                            "3) Each participant should be registered in Culfest'19 failing which, the whole team would be disqualified.  \n" +
+                            " \n" +
+                            "4) There will be only one round for the competition. The maximum time allotted for the play is 25 minutes. This given time is from the empty stage to empty stage.  \n" +
+                            " \n" +
+                            "5) If the play time exceeds the given maximum time i.e.25 minutes, 20% marks per 5 minutes will be deducted from the final marks of the responsible team.  \n" +
+                            " \n" +
+                            "6) Language of the play can be Hindi or English.  \n" +
+                            " \n" +
+                            "7) The performance can also be a musical drama/play. Participants must bring their own music and background tracks they wish to play.  \n" +
+                            " \n" +
+                            "8) Participants must bring their own laptops/PDs for the sound effects and must contact the organiser at least 30 minutes prior to their performance if they wish to play any background tracks during the play.  \n" +
+                            " \n" +
+                            "9) Naked flames/animals/colours and other objectionable objects or things are strictly not allowed in the competition.  \n" +
+                            " \n" +
+                            "10) All the costumes and probes are to be arranged by the respective participating team for their play. They must take care of their own instruments in green room.  \n" +
+                            " \n" +
+                            "11) Issues like crossing the limits, using abusive language or vulgarity will lead to negative marking and if required, disqualification.  \n" +
+                            " \n" +
+                            "12) The judge’s decision will be final and binding.  \n" +
+                            " \n" +
+                            "13) The organising team owns all the rights to make any necessary change in the rules if required.",
+                    //Panch Parmeshwar
+                    "Participating team will be in a group of (4-6) members. At the time of event each team will choose a case from a set of cases. Team will be provided a sheet where a set of rules and regulations and brief information about the case will be written. Two teams will get a single case; one will speak in favor and another against the case. After each team will finish its argument in front of Panchs, winner will be decided. During the event a short G.K. based question round will be held where the crowd can participate and the crowd would be asked to give some suggestion about the case being held. Finally a short message will be given at the end of the event.",
+                    //Halla Bol
+                    "1) One member can participate as a member of maximum two team.  \n" +
+                            "2) Each team can consist of minimum 12 to maximum of 22 members.  \n" +
+                            "3) Each participant should be registered in Culfest'19 failing which, the whole team would be disqualified.  \n" +
+                            "4) Time limit for each performance is minimum 10 mins and maximum 20 mins.  \n" +
+                            "5) Teams are free to use simple props(Dupatta , Lathi, Gulaal, Paint etc) in their act of performance.  \n" +
+                            "6) Organizing committee shall not provide any Costume/Props.  \n" +
+                            "7) No electronic instrument is to be played throughout the play.  \n" +
+                            "8) No offensive language/ words against any specific person, Indian Constitution,Religion or Caste is allowed during the performance, doing such can result in direct elimination.  \n",
+                    //Mime
+                    "1) The team should consist of 4-8 members.  \n" +
+                            " \n" +
+                            "2) Time limit for each performance is 5-15 minutes. The time given is from empty stage to empty stage.  \n" +
+                            " \n" +
+                            "3) If the play exceeds the maximum time i.e., 15 minutes, 10% marks per extra 2 minutes will be deducted from the final marks of the responsible team.  \n" +
+                            " \n" +
+                            "4) No props are allowed.  \n" +
+                            " \n" +
+                            "5) Teams must bring their own music and background tracks they wish to play.  \n" +
+                            " \n" +
+                            "6) Each participant should be registered in Culfest'19 failing which, the whole team would be disqualified.  \n" +
+                            " \n" +
+                            "7) Face paint is allowed.  \n" +
+                            " \n" +
+                            "8) Dress colour should be preferably black or blue.  \n" +
+                            " \n" +
+                            "9) The judge’s decision will be final and binding.  \n" +
+                            " \n" +
+                            "10) The organising team owns all the rights to make any necessary change in the rules if required. ",
             },
             {//Instant-o-Graphy
                     "1. There is no Prelims round for entry into the contest.  \n" +
@@ -861,43 +862,57 @@ public class EventDetails {
                             "MAYANK KUMAR \n" +
                             "8340501782 \n"
             },
+
+
             {
-                    //Rangmanch
-                    "Priya KUmari\n" +
-                            "7294958587\n" +
+                    //Culfest Idol
+                    "SOMNATH MIRDHA \n" +
+                            "8789363482 \n" +
                             " \n" +
-                            "Joint coordinator : \n" +
+                            "JOINT COORDINATOR  \n" +
                             "\n" +
-                            "Mayank Kashyap\n" +
-                            "9110192391 ",
-                    //Panch Parmeshwar
-                    "Pragati Gupta \n" +
-                            "8235817548  \n" +
+                            "PIYUSH RANJAN\n" +
+                            "8102790193 ",
+                    //The Voice
+                    "PRATEEKSHA RAJWAR\n" +
+                            "7779872918  \n" +
+                            "\n" +
+                            "JOINT COORDINATOR:   \n" +
+                            "\n" +
+                            "AMAN RAJ\n" +
+                            "9973988973",
+                    //Duets
+                    "RISHABH DOSHI\n" +
+                            "9327526244  \n" +
                             " \n" +
-                            "Joint coordinator : \n" +
+                            "JOINT COORDINATOR : \n" +
                             "\n" +
-                            "Vishal \n" +
-                            "8210280815 ",
-                    //Halla Bol
-                    "Dushyant Chaudhary\n" +
-                            "8077842641  \n" +
+                            "ASHWANI KUMAR \n" +
+                            " 7274801371 \n",
+                    //Unplugged
+                    "PRASHANT KRISHNA\n" +
+                            "7004163380  \n" +
                             " \n" +
-                            "Joint Coordinator : \n" +
+                            "JOINT COORDINATOR : \n" +
                             "\n" +
-                            "Yash Prasad\n" +
-                            "7301994883 \n" +
+                            "SANTANU DAS\n" +
+                            "7003798241   \n" +
                             "\n" +
-                            "Akanksha Sudhanshu \n" +
-                            "9939616812 ",
-                    //Mime
-                    "ANKITA KUMARI \n" +
-                            "7635062185  \n" +
+                            "LABANI SARKAR\n" +
+                            "8918185085 \n",
+                    //Battle of bands
+                    "ANUKUL GAURAV\n" +
+                            "8210587745  \n" +
                             " \n" +
-                            "Joint Coordinator : \n" +
+                            "JOINT COORDINATOR : \n" +
                             "\n" +
-                            "Kunal \n" +
-                            "9852225814 "
+                            "SIMANT\n" +
+                            "8051223209 \n" +
+                            "\n" +
+                            "HARSHAL DESAI\n" +
+                            "9767293762"
             },
+
             {
                     //Theme quiz
                     "Ujjwal Gupta\n" +
@@ -1002,52 +1017,41 @@ public class EventDetails {
                             "7990027827"
             },
             {
-                    //Culfest Idol
-                    "SOMNATH MIRDHA \n" +
-                            "8789363482 \n" +
+                    //Rangmanch
+                    "Priya KUmari\n" +
+                            "7294958587\n" +
                             " \n" +
-                            "JOINT COORDINATOR  \n" +
+                            "Joint coordinator : \n" +
                             "\n" +
-                            "PIYUSH RANJAN\n" +
-                            "8102790193 ",
-                    //The Voice
-                    "PRATEEKSHA RAJWAR\n" +
-                            "7779872918  \n" +
-                            "\n" +
-                            "JOINT COORDINATOR:   \n" +
-                            "\n" +
-                            "AMAN RAJ\n" +
-                            "9973988973",
-                    //Duets
-                    "RISHABH DOSHI\n" +
-                            "9327526244  \n" +
+                            "Mayank Kashyap\n" +
+                            "9110192391 ",
+                    //Panch Parmeshwar
+                    "Pragati Gupta \n" +
+                            "8235817548  \n" +
                             " \n" +
-                            "JOINT COORDINATOR : \n" +
+                            "Joint coordinator : \n" +
                             "\n" +
-                            "ASHWANI KUMAR \n" +
-                            " 7274801371 \n",
-                    //Unplugged
-                    "PRASHANT KRISHNA\n" +
-                            "7004163380  \n" +
+                            "Vishal \n" +
+                            "8210280815 ",
+                    //Halla Bol
+                    "Dushyant Chaudhary\n" +
+                            "8077842641  \n" +
                             " \n" +
-                            "JOINT COORDINATOR : \n" +
+                            "Joint Coordinator : \n" +
                             "\n" +
-                            "SANTANU DAS\n" +
-                            "7003798241   \n" +
+                            "Yash Prasad\n" +
+                            "7301994883 \n" +
                             "\n" +
-                            "LABANI SARKAR\n" +
-                            "8918185085 \n",
-                    //Battle of bands
-                    "ANUKUL GAURAV\n" +
-                            "8210587745  \n" +
+                            "Akanksha Sudhanshu \n" +
+                            "9939616812 ",
+                    //Mime
+                    "ANKITA KUMARI \n" +
+                            "7635062185  \n" +
                             " \n" +
-                            "JOINT COORDINATOR : \n" +
+                            "Joint Coordinator : \n" +
                             "\n" +
-                            "SIMANT\n" +
-                            "8051223209 \n" +
-                            "\n" +
-                            "HARSHAL DESAI\n" +
-                            "9767293762"
+                            "Kunal \n" +
+                            "9852225814 "
             },
             {
                     //Instant-o-Graphy

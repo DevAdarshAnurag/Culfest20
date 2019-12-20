@@ -1,14 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
+    android:id="@+id/sub_event_rl"
+    android:layout_width="match_parent"
     android:layout_height="100dp"
-    android:background="@drawable/rectangular_border"
-    android:layout_margin="4dp">
+    android:layout_margin="4dp"
+    android:background="@drawable/rectangular_border_2"
+    android:orientation="vertical">
 
     <TextView
+        android:id="@+id/sub_event_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="20sp"
-        android:id="@+id/sub_event_name"/>
+        android:layout_margin="12dp"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/sub_event_prize"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="8dp"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
 
 </RelativeLayout>

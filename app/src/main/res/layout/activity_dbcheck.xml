@@ -5,22 +5,25 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".activities.DBCheckActivity">
+
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true">
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Loading  app  contents "
-        android:textSize="20sp"
-        android:layout_gravity="center_vertical"
-        android:textColor="@color/colorPrimary"/>
-    <com.github.ybq.android.spinkit.SpinKitView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        style="@style/SpinKitView.ThreeBounce"
-        app:SpinKit_Color="@color/colorPrimary"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="Loading  app  contents "
+            android:textColor="@color/colorPrimary"
+            android:textSize="20sp" />
+
+        <com.github.ybq.android.spinkit.SpinKitView
+            style="@style/SpinKitView.ThreeBounce"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:SpinKit_Color="@color/colorPrimary" />
     </LinearLayout>
 
 </RelativeLayout>

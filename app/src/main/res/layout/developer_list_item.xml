@@ -32,14 +32,14 @@
             android:id="@+id/dev_name"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_above="@id/dev_details"
             android:layout_alignParentTop="true"
             android:layout_marginStart="16dp"
             android:layout_marginBottom="16dp"
             android:layout_toEndOf="@id/dev_image_border_wrap"
+            android:gravity="center"
             android:text="@string/developer_name"
             android:textAlignment="center"
-            android:gravity="center"
-            android:layout_above="@id/dev_details"
             android:textColor="@color/primaryText"
             android:textSize="20sp" />
 
@@ -65,7 +65,7 @@
                     android:layout_height="32dp"
                     android:scaleType="fitXY"
                     android:src="@drawable/ic_phone"
-                    android:tint="#006e00"/>
+                    android:tint="#006e00" />
             </LinearLayout>
 
 
@@ -81,7 +81,7 @@
                     android:layout_height="32dp"
                     android:scaleType="fitXY"
                     android:src="@drawable/ic_linkedin"
-                    android:tint="@color/colorPrimary"/>
+                    android:tint="@color/colorPrimary" />
             </LinearLayout>
 
             <LinearLayout
@@ -96,7 +96,7 @@
                     android:layout_height="32dp"
                     android:scaleType="fitXY"
                     android:src="@drawable/ic_insta"
-                    android:tint="@color/insta"/>
+                    android:tint="@color/insta" />
             </LinearLayout>
         </LinearLayout>
     </RelativeLayout>

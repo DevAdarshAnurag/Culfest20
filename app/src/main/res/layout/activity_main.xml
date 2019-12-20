@@ -29,6 +29,6 @@
         app:tabSelectedTextColor="@color/colorAccent"
         app:tabTextAppearance="@style/MineCustomTabText"
         app:tabTextColor="@color/white"
-        app:tabUnboundedRipple="true"/>
+        app:tabUnboundedRipple="true" />
 
 </RelativeLayout>

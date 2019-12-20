@@ -7,17 +7,17 @@
     tools:context=".fragments.NotificationSettingsFragment">
 
     <com.github.ybq.android.spinkit.SpinKitView
-        style="@style/SpinKitView.ThreeBounce"
         android:id="@+id/noti_progress_bar"
+        style="@style/SpinKitView.ThreeBounce"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
         app:SpinKit_Color="@color/colorPrimary" />
 
     <RelativeLayout
+        android:id="@+id/noti_view"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/noti_view"
         android:visibility="gone">
 
         <TextView
@@ -34,42 +34,44 @@
             android:layout_height="wrap_content"
             android:layout_below="@id/noti_settings_msg"
             android:layout_margin="16dp"
-            android:padding="16dp"
             android:background="@drawable/rectangular_border"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:padding="16dp">
 
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Mega Events"
                     android:layout_alignParentStart="true"
-                    android:textColor="@color/secondaryText"/>
+                    android:text="Mega Events"
+                    android:textColor="@color/secondaryText" />
 
                 <Switch
                     android:id="@+id/mega_events"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_alignParentEnd="true"/>
+                    android:layout_alignParentEnd="true" />
             </RelativeLayout>
 
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Informals"
                     android:layout_alignParentStart="true"
-                    android:textColor="@color/secondaryText"/>
+                    android:text="Informals"
+                    android:textColor="@color/secondaryText" />
 
                 <Switch
                     android:id="@+id/informals"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_alignParentEnd="true"/>
+                    android:layout_alignParentEnd="true" />
             </RelativeLayout>
 
         </LinearLayout>
