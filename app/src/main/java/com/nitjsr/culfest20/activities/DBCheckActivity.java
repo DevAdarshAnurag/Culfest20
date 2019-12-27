@@ -34,6 +34,14 @@ public class DBCheckActivity extends AppCompatActivity {
         if (!pref.getBoolean("First", false)) {
             SharedPreferences.Editor editor = pref.edit();
             OneSignal.sendTag("mega_events", "true");
+            OneSignal.sendTag("dance","true");
+            OneSignal.sendTag("vocals","true");
+            OneSignal.sendTag("quiz","true");
+            OneSignal.sendTag("fine_arts","true");
+            OneSignal.sendTag("fashion","true");
+            OneSignal.sendTag("dramatics","true");
+            OneSignal.sendTag("photography","true");
+            OneSignal.sendTag("literary","true");
             OneSignal.sendTag("informals", "true");
             editor.putBoolean("First", true);
             editor.apply();

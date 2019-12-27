@@ -33,6 +33,8 @@ public class EventActivity extends AppCompatActivity {
         }
 
         RelativeLayout scrollRL = findViewById(R.id.scroll_rl);
+        RelativeLayout relativeLayout = findViewById(R.id.rl_event_activity);
+        relativeLayout.setBackgroundResource(EventDetails.bgEvent[x]);
 
         BottomSheetBehavior behavior = BottomSheetBehavior.from(findViewById(R.id.bottom_sheet));
         behavior.addBottomSheetCallback(new BottomSheetBehavior.BottomSheetCallback() {

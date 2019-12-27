@@ -26,8 +26,8 @@ import androidx.fragment.app.Fragment;
  */
 public class NotificationSettingsFragment extends Fragment implements CompoundButton.OnCheckedChangeListener {
 
-    private Boolean isMegaEvents, isInformals;
-    private Switch megaEvents, informals;
+    private Boolean isMegaEvents, isDance, isVocals, isQunite, isFineArts, isFashion, isDrama, isPhotography, isLiterary,isInformals;
+    private Switch megaEvents,dance, vocals, qunite, fineArts, fashion, drama, photography, literary,informals;
     private SpinKitView progressBar;
     private RelativeLayout notiView;
 
@@ -47,6 +47,14 @@ public class NotificationSettingsFragment extends Fragment implements CompoundBu
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
 
         megaEvents = view.findViewById(R.id.mega_events);
+        dance = view.findViewById(R.id.dance);
+        vocals = view.findViewById(R.id.vocals);
+        qunite = view.findViewById(R.id.qunite);
+        fineArts = view.findViewById(R.id.fine_arts);
+        fashion = view.findViewById(R.id.fashion);
+        drama = view.findViewById(R.id.dramatics);
+        photography = view.findViewById(R.id.photography);
+        literary = view.findViewById(R.id.literary);
         informals = view.findViewById(R.id.informals);
         progressBar = view.findViewById(R.id.noti_progress_bar);
         notiView = view.findViewById(R.id.noti_view);
@@ -57,6 +65,14 @@ public class NotificationSettingsFragment extends Fragment implements CompoundBu
                 Log.d("Notification Debug","Current Tags on User:" + tags.toString());
                 try {
                     isMegaEvents = tags.getBoolean("mega_events");
+                    isDance = tags.getBoolean("dance");
+                    isVocals = tags.getBoolean("vocals");
+                    isQunite = tags.getBoolean("quiz");
+                    isFineArts = tags.getBoolean("fine_arts");
+                    isFashion = tags.getBoolean("fashion");
+                    isDrama = tags.getBoolean("dramatics");
+                    isPhotography = tags.getBoolean("photography");
+                    isLiterary = tags.getBoolean("literary");
                     isInformals = tags.getBoolean("informals");
                     displayTask();
                 } catch (JSONException e) {
@@ -66,6 +82,14 @@ public class NotificationSettingsFragment extends Fragment implements CompoundBu
         });
 
         megaEvents.setOnCheckedChangeListener(this);
+        dance.setOnCheckedChangeListener(this);
+        vocals.setOnCheckedChangeListener(this);
+        qunite.setOnCheckedChangeListener(this);
+        fineArts.setOnCheckedChangeListener(this);
+        fashion.setOnCheckedChangeListener(this);
+        drama.setOnCheckedChangeListener(this);
+        photography.setOnCheckedChangeListener(this);
+        literary.setOnCheckedChangeListener(this);
         informals.setOnCheckedChangeListener(this);
 
     }
@@ -77,6 +101,14 @@ public class NotificationSettingsFragment extends Fragment implements CompoundBu
                 progressBar.setVisibility(View.GONE);
                 notiView.setVisibility(View.VISIBLE);
                 megaEvents.setChecked(isMegaEvents);
+                dance.setChecked(isDance);
+                vocals.setChecked(isVocals);
+                qunite.setChecked(isQunite);
+                fineArts.setChecked(isFineArts);
+                fashion.setChecked(isFashion);
+                drama.setChecked(isDrama);
+                photography.setChecked(isPhotography);
+                literary.setChecked(isLiterary);
                 informals.setChecked(isInformals);
             }
         });

@@ -51,7 +51,6 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
 //        } catch (Resources.NotFoundException e) {
 //            Log.e(TAG, "Can't find style. Error: ", e);
 //        }
-        mMap.setMapType(GoogleMap.MAP_TYPE_SATELLITE);
         addLocations();
     }
 

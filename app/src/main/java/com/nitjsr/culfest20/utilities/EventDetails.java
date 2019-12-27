@@ -1,8 +1,10 @@
 package com.nitjsr.culfest20.utilities;
 
+import com.nitjsr.culfest20.R;
+
 public class EventDetails {
 
-    public static final String eventName[]=new String[]{
+    public static final String eventName[] = new String[]{
             "Mega Events",
             "Dance",
             "Vocals",
@@ -15,16 +17,22 @@ public class EventDetails {
             "Informals"
     };
 
+
+    public static final int bgEvent[] = new int[]{
+            R.drawable.bg_vocals,R.drawable.bg_dance,R.drawable.bg_vocals,R.drawable.bg_quiz,R.drawable.bg_fine_arts,R.drawable.bg_vocals,
+            R.drawable.bg_drama,R.drawable.bg_phocus,R.drawable.bg_literary,R.drawable.bg_vocals
+    };
+
     public static final String subEventList[][]=new String[][]{
             {"Choreo Night","Journalism","Halla Bol","Theme Quiz","Battle of Bands","Panache","Poshak"},
             {"Foot Loose","Dancing Duo","Shake On Beat","Choreo Night"},
-            {"Culfest Idol","The Voice","Duets","Unplugged","Battle of Bands"},
-            {"Theme Quiz","SpEnt Quiz","BizTech Quiz","India Quiz"},
-            {"Face Painting","Rangoli","Triathlon","Claydoh","Poshak","Finger Painting"},
+            {"Culfest Idol","Concordia","Dulcet Duo","Euphony","Battle of Bands"},
+            {"Theme Quiz","SpEnt Quiz","BizTech Quiz","EBSB Quiz"},
+            {"Face Painting","Rangoli","Triathlon","Claydoh","Poshak","Finger Painting","Soap Carving"},
             {"Panache","Best Designer"},
-            {"Rangmanch","Panch Parmeshwar","Halla Bol","Mime"},
+            {"Rangmanch","Panch Parmeshwar","Halla Bol","Mime","Instant Khichdi"},
             {"Instant-o-Graphy","48 hours"},
-            {"Potpourri","JAM","Journalism","Policy Debate","SSMQ"},
+            {"Potpourri","Journalism","Policy Debate","SSMQ","Just a Minute","Poetry Slam"},
             {"Antakshari","Paper Dance","Blind Date","PUBG","My Way or Highway"}
     };
 
@@ -33,11 +41,11 @@ public class EventDetails {
             {"\u20B9 4,800","\u20B9 9,000","\u20B9 4,800","\u20B9 42,000"},
             {"\u20B9 4,800","\u20B9 4,800","\u20B9 9,000","\u20B9 4,000","\u20B9 36,000"},
             {"\u20B9 15,000","\u20B9 9,000","\u20B9 9,000","\u20B9 9,000"},
-            {"\u20B9 7,200","\u20B9 7,200","\u20B9 9,200","\u20B9 7,200","\u20B9 15,000","\u20B9 5,000"},
+            {"\u20B9 7,200","\u20B9 7,200","\u20B9 9,200","\u20B9 7,200","\u20B9 15,000","\u20B9 5,000","\u20B9 kal lena"},
             {"\u20B9 65,000","\u20B9 5,000"},
-            {"\u20B9 26,000","\u20B9 9,000","\u20B9 42,000","\u20B9 15,000"},
+            {"\u20B9 26,000","\u20B9 9,000","\u20B9 42,000","\u20B9 15,000","\u20B9 kal lena"},
             {"\u20B9 5,000","\u20B9 5,000"},
-            {"\u20B9 13,000","\u20B9 4,500","\u20B9 18,000","\u20B9 9,000","\u20B9 9,000"},
+            {"\u20B9 13,000","\u20B9 4,500","\u20B9 18,000","\u20B9 9,000","\u20B9 9,000","\u20B9 kal lena"},
             {"","","","",""}
     };
 
@@ -100,24 +108,18 @@ public class EventDetails {
             },
             {//Culfest Idol
                     "Admirer of the rich folk culture and music? Don’t feel lost in this rock and jazz buzzing western environment because here is your chance to win the day. Participate in this event and tune the audience to your strings. Give everyone a glimpse of the Kishore Da or the  Lata Mangeshkar hidden inside you.",
-                    //The Voice
-                    "“Ah! Music, a magic beyond all we do here”, says Dumbledore in Harry Potter & the Philosopher’s Stone.\n" +
-                            "Music knows no boundary. It moves people of all culture, language and origin. Music is freedom. This Culfest’19, come and manumit yourself with the world ruled by the likes of Madonna, Eminem, Taylor Swift and others. Western Vocals is a solo singing competition. Participants will be judged on their vocal skills, performance and the choice of song among other criterions. A participant may or may not include karaoke in their songs.\n",
-                    //Duets
-                    "To sing a duet means to share with someone both the pleasure and responsibility of making music. One skillful singer on stage is great, but two soloists performing can be quirky, romantic and a treat to the senses. CULFEST’19 brings you the opportunity to perform a duet and create a melody like never before. Be it a sweet mesmerizing ghazal or a scintillating bright qawwali; be it folk or filmi; in a nutshell be it any genre of music; you can showcase your song on our platform. So, here's a chance to prove yourself, say the Bobbsey's twins, birds of a feather or peas in a pod of euphonic music, provide a treat to the ears of the audience and reach the zenith to win the event!",
-                    //Unpluged
-                    "And the night shall be filled with music, \n" +
-                            "And the cares that infest the day, \n" +
-                            "Shall fold their tents like the Arabs, \n" +
-                            "And as silently steal away.\n\n" +
-                            "Music is peace, thought, wisdom. Music is forever." +
-                            " If music soothes and softens your soul as well, if you are gifted with melodious voice and skilfully plays any musical instrument as well, then Unplugged is the perfect platform for you. " +
-                            "Unplugged is a solo competition in Culfest’19." +
-                            " Let your voice and instrument do the magic and mesmerise everyone.\n",
+                    //The Voice Concordia
+                    "Concordia, the Roman goddess of harmony had strived to achieve World peace through her gift of Music. Since the starting of times, Music has known no boundaries and has continously brought people closer together. Music is that freedom that moves people of all cultures, languages and origins; and so in this celebration of cultures that Culest'20 is, we look for voices that create harmony through Music. To all the Freddie Mercury, Lady Gaga, Eminem, or Frank Sinatra out there waiting for their moment: THIS IS IT!\n" +
+                            "\n" +
+                            "Culfest'20 brings to you the Western Vocals solo-singing competition. Participants will be judged based on their Vocal skills, performance and rhtyhm, among several other criterions. Do Check out the Rules of the event, beacause ......\"Rules are good! Rules help control the fun\"-Monica Geller.",
+                    //Duets Dulcet Duo
+                    "To sing a duet means to share with someone both the pleasure and responsibility of making music. One skillful singer on stage is great, but two soloists performing can be quirky, romantic and a treat to the senses. Culfest’20 brings you the opportunity to perform a duet and create a melody like never before. Be it a sweet mesmerizing ghazal or a scintillating bright qawwali; be it folk or filmi; in a nutshell be it any genre of music; you can showcase your song on our platform. So, here's a chance to prove yourself, say the Bobbsey's twins, birds of a feather or peas in a pod of euphonic music, provide a treat to the ears of the audience and reach the zenith to win the event!",
+                    //Unpluged Euphony
+                    "And the night shall be filled with music and the cares that infest the day shall fold their tents like the Arabs and as silently steal away.\n"+ "Music is peace, thought, wisdom. Music is forever. If music soothes and softens your soul as well , if you are willing give a go at the notes and skilfully play any musical  instrument, then Euphony is the perfect platform for you . Euphony is a solo instrumental competition in culfest'20. Let your instrument do the magic and mesmerise everyone.",
                     //Battle of Bands
                     "“The true beauty of music is that it connects people. It carries a message, and we, the musicians, are the messengers.” - Ron Ayers\n" +
                             "If you have a message that can stir the mass into unison, " +
-                            "wait no more because Culfest’19 brings you, just the dais you need." +
+                            "wait no more because Culfest’20 brings you, just the dais you need." +
                             " Battle of Band provides you with the opportunity of presenting your own idea of band music and, displaying your talent like never before." +
                             " Let the audience have a taste of your creation and leave them craving for more. Practice like you have never won. Perform like you have never lost. " +
                             "Don’t keep calm, set the stage on fire and the crowd up roaring. Note: Register before 12th February for this event. A maximum of 10 teams are allowed."
@@ -130,20 +132,22 @@ public class EventDetails {
                     //BizTech quiz
                     "Business and Technology are the two ever changing facets of the 21st century. From the world of brand logos to the making of Tech giants, the quiz will cover it all. So put on your thinking Hats and be ready to be enthralled.",
                     //India quiz
-                    "कोस-कोस पर बदले पानी, चार कोस पर वाणी. This line pretty much sums up how diverse and varied India is .If you think you know your country then think again because this quiz will challenge your knowledge about India. India quiz is a small attempt to capture the spirit of India which lies in its varied land and people",
+                    "India Quiz or the Ek Bharat Shreshtha Bharat Quiz is a small attempt to capture the spirit of India which lies in it’s varied land and people.\n कोस-कोस पर बदले पानी, चार कोस पर वाणी.",
             },
             {//Face Painting
-                    "Life is a great big canvas, and we should throw all the paint on it. Face painting is an event which true to its name, provides the participants the opportunity to smear the faces of their partners with myriad hues as per the themes provided. All those who dream of transforming people into butterflies, ghosts, witches or animals... FACES presents a perfect stage, this Culfest 2019 to transform your dreams into reality. Grab the opportunity to paint picturesque faces and sail away with exciting prizes. ",
+                    "Life is a great big canvas, and we should throw all the paint on it. Face painting is an event which true to its name, provides the participants the opportunity to smear the faces of their partners with myriad hues as per the themes provided. All those who dream of transforming people into butterflies, ghosts, witches or animals... FACES presents a perfect stage, this Culfest 2020 to transform your dreams into reality. Grab the opportunity to paint picturesque faces and sail away with exciting prizes. ",
                     //Rangoli
-                    "Rangoli’s are a visual treat due to their intricacy and varied colours present in it. They have been an integral part of Indian culture, finding their place both during festivities, rituals and hospitable occasions. FACES provides you an opportunity to show the beauty of your thoughts blended with the artistry you possess and add colours to the sunset sky; by floating colourful clouds and win exciting prizes.",
+                    "Rangolis are a visual treat due to their intricacy and varied colours present in it. They have been an integral part of Indian culture, finding their place both during festivities, rituals and hospitable occasions.  FACES provides  you an opportunity to show the beauty of your thoughts blended with the artistry you possess and add colours  to the sunset sky; by floating colourful clouds and win exciting prizes.",
                     //Triathlon
-                    "Sketching is the breath of art. It helps to put feelings into a drawing. Culfest’19 brings to you this event which explores the artist within you. So bring out the best in you and showcase your skills with the majestic strokes of a pencil. Put down your vivid imagination diffused with your aesthetic sense and show the world the power of the artist within you. So gear up for this upcoming event which presents you with a 3 in 1 opportunity to give dimensions to your feelings.",
+                    "Sketching is the breath of art. It helps to put feelings into a drawing. Culfest’20 brings to you this event which explores the artist within you. So bring out the best in you and showcase your skills with the majestic strokes of a pencil. Put down your vivid imagination diffused with your aesthetic sense and show the world the power of the artist within you. So gear up for this upcoming event which presents you with a 3 in 1 opportunity to give dimensions to your feelings.",
                     //Claydoh
-                    "Squeezing and squishing through the dough, moulding and giving wings to our imagination is what this event is all about. The tangible nature of clay makes it feasible to mould it to different shapes and sculptures which combined with the remedial effects it offers Makes it enjoyable for both kids and adults alike to play with it. Culfest’19 presents this fun filled event to create 3-d models and bag a prize!!",
+                    "Squeezing and squishing through the dough, moulding and giving wings to our imagination is what this event is all about. The tangible nature of clay, makes it feasible to mould it to different shapes and sculptures which combined with the remedial effects it offers Makes it enjoyable for both kids and adults alike to play with it. Culfest’20 presents this fun filled event to create 3-d models and bag a prize!!",
                     //Poshak
-                    "‘We love your style when you face up to our challenge of inventing it. ’ Do you believe in creativity? Do you think some fragments of newspaper and an urn of glue is  sufficient to fashion a dress? Then visit your mind palace for inventive designs and prepare to drape your friend with your scrap ensembles. POSHAK is your chance of shaping ordinary into extraordinary. Fashion beseeches you to set new trends! \n",
+                    "‘We love your style when you face up to our challenge of inventing it. ’\n\n Do you believe in creativity? Do you think some fragments of newspaper and an urn of glue is  sufficient to fashion a dress? Then visit your mind palace for inventive designs and prepare to drape your friend with your scrap ensembles. POSHAK is your chance of shaping ordinary into extraordinary. Fashion beseeches you to set new trends! \n",
                     //Finger Painting
-                    "No matter whether its brush or finger, a painter can exhibit his creativity with any tool. So this culfest get ready to dip your fingers in the paint !"
+                    "Do you remember how good it felt to touch the paint with your bare hands and use it to create wall art .So  its  time to relive the moments , Culfest'20  presents fine art event finger painting where you can show your creativity coupled with imagination, and let the colours speak up for the creativity and innovation in you.",
+                    //Soap Carving
+                    "Soap carving can be an interesting pastime, a hobby that can be enjoyed by both the young and the old. During the 1920s and 1930s soap carving was so popular that a national annual competition was sponsored by the Proctor and Gamble Company inviting up to 4,000 entries in 1935. So why not just grab a chisel and start shaping your imagination and make your own Disney world come true in this Culfest '20."
             },
             {//Fashion
                     "When the lights, camera and heart-pounding music are on, the vision of models " +
@@ -180,7 +184,9 @@ public class EventDetails {
                     //Halla Bol
                     " The street play event: An art that encompasses entertainment with community education. Carpe Diem provides you a creative platform to make aware the incognizant – a place to voice your concerns. A one of a kind competition will test enthusiasm and energy of teams in tight packed performances on given issues. Come and showcase the creativity in you against the odd of not having a stage set for you. Remember to bring back the feel of the 90’s though.",
                     //Mime
-                    "As they say,  \"Actions speak louder than words\". Culfest gives you a great opportunity to prove this by taking part in MIME. Mime is the art of acting out a story through body motions, without the usage of speech. "
+                    "As they say,  \"Actions speak louder than words\". Culfest gives you a great opportunity to prove this by taking part in MIME. Mime is the art of acting out a story through body motions, without the usage of speech. ",
+                    //Instant Khichdi
+                    ""
 
             },
 
@@ -191,8 +197,6 @@ public class EventDetails {
             },
             {//Potpourri
                     "“Potpourri” refers to “a miscellaneous or diverse set of things”. Add to it a spicy twist of literature and voila! You have successfully cooked your way through this extravaganza event. Welcome to the event that has everything for everyone: be it a casual reader solving trivial puzzles, or a lover of the arts taking delight in the romance between language and entertainment. Be prepared for a marathon of word and vocabulary games that test not only your wits but your presence of mind as well in a time pressed environment.",
-                    //JAM
-                    " Grammar Nazis! In a world with ever increasing usage of slang an incorrect grammar, we share your concern for the English language, and understand the importance of maintaining the language in it’s untouched form. So here’s an opportunity to show the world how it’s done. A-Minute (or JAM) is an all-round-fun event that is all about the control of the mind over the mouth. Can you make it through sixty seconds of non-stop talking without hesitation, repetition, or deviation? Or will the sheer pressure make you crumble and have your competitors pounce on you in an instant? It is a fun filled literary event where the participants have to speak on the given topic for a maximum of 1 minute. While speaking, they cannot make certain errors. If any one of the fellow participant spots an error while participant is speaking, he/she can clap and point out the error for which they will be rewarded points. Points are also awarded for the time span for which a participant speaks. So fill that unforgiving minute with sixty seconds worth of impeccable English and you would be the winner",
                     //Journalism
                     "Anybody can be a journalist. There are opportunities for all of us to contribute to stories If you're an intellectually curious person— let's assume that you are—you are likely to have embraced a number of notions about how the world works, how it should work and who should be running it. There should be no strings attached to your opinions, no one asking you to tone it down, and nobody that really wishes you to just shut the hell up and report just the fluffy pieces. You should also lack the warm and fuzzy attitude of your naysayers (and the trolls) who are always right when they spout off at the mouth in the comment section or on social media. \n In the age of the internet and social media, what does it mean to be a journalist? What is journalism?\n" +
                             "\n1 Getting accurate information fast  And treating it skeptically.\n" +
@@ -204,7 +208,11 @@ public class EventDetails {
                     //SSMQ
                     "“ Trust yourself, you know more than you think you do”.\n" +
                             "Culfest’19 brings to you the mother of all quizzes-the SSMQ- with questions from every topic under the sun. Be sure to exercise your brain to its limit and surprise many, including yourself. This is where the best minds compete for glory. It’s not just about knowledge, but also about thinking differently, getting the timing right, and of course, having a little bit of luck on your side! \n" +
-                            "So if you think you’ve got what it takes to make a mark, then do come and be a part of this grand event.\n"
+                            "So if you think you’ve got what it takes to make a mark, then do come and be a part of this grand event.\n",
+                    //JAM
+                    " Grammar Nazis! In a world with ever increasing usage of slang an incorrect grammar, we share your concern for the English language, and understand the importance of maintaining the language in it’s untouched form. So here’s an opportunity to show the world how it’s done. Just-A-Minute (or JAM) is an all-round-fun event that is all about the control of the mind over the mouth. Can you make it through sixty seconds of non-stop talking without hesitation, repetition, or deviation? Or will the sheer pressure make you crumble and have your competitors pounce on you in an instant? It is a fun filled literary event where the participants have to speak on the given topic for a maximum of 1 minute. While speaking, they cannot make certain errors. If any one of the fellow participant spots an error while participant is speaking, he/she can clap and point out the error for which they will be rewarded points. Points are also awarded for the time span for which a participant speaks. So fill that unforgiving minute with sixty seconds worth of impeccable English and you would be the winner",
+                    //Poetry Slam
+                    "Poetry is the unexplored ocean that many fear to set sail on, clinging on to the safety of the calm harbor. But that’s not who ships are built for. Aboard the stage with hundreds of poets as they embark on a poetic journey against the crashing waves, and continue until you’re the last one standing. All forms of storytelling, songwriting, stand-up comedy and cold hard poetry are welcome. "
             },
             {//Antakshri
                     "It's not a quiz, it's kind of a movie which you always love watching. There will be singing... There will be dialogues to do... There might be some grooving to tunes if the Quiz Master finds you hot.",
@@ -230,17 +238,37 @@ public class EventDetails {
                             "So come show up at the informal arena and win exciting prizes!"
             }
     };
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     public static String rules[][] = new String[][]{
             {//Choreo Night
-                    "• Performance may or may not be theme based.     \n" +
-                            "• A team can consist of Minimum 8 and Maximum 22 performing members.  \n" +
-                            "• The music must be submitted to the organizers at least 1 hour before the start of the event. The name of the submitted audio file should be same as the name of the team and must be in .mp3 format.   • Performance duration should lie between 7-10 minutes. Marks will be deducted for not complying with the time limit.   \n" +
-                            "• The music should be a mixture of minimum 3 songs. Any pre-recorded or live music can be used for the performance.  • Innovations such as props fetch extra points in this round.   \n" +
-                            "• Props will have to be arranged by the participants themselves. A prop is anything which is not worn on the body as a part of the costume, for example a hand-held hat, stick, ball or any piece of costume that is removed during the routine.   • Props which require electricity or are considered hazardous (such as fire, smoke, fog devices, knives etc.) are not allowed. Throwing confetti, glitter, chalk powder etc. on the performance area is also discouraged.   \n" +
-                            "• The teams have to be punctual. Any team that’s not ready by the specified time may be disqualified.   \n" +
-                            "• If the lighting facility is to be availed, only one person on behalf of the team can supervise the lighting during the performance. Otherwise it would be taken care of by the Lights and Sounds group of the organizing team. Creativity and innovation will fetch extra points.  \n" +
-                            "• Vulgarity of any form will not be allowed in the competition and can lead to immediate disqualification.   \n" +
-                            "• Dimensions of the stage/performance area will be uploaded on our website very soon . ",
+                            "•\tA team can consist of Minimum 8 and Maximum of 22 performing Members.\n" +
+                            "•\tThe music must be submitted in .mp3 format to the organiser 1 hour before the event begins.\n" +
+                            "•\tThe name of the audio file must be same as the performing team name.\n" +
+                            "•\tPerformance duration must lie in between 7-10 minutes. Marks will be deducted for not complying with the time limit.\n" +
+                            "•\tThe music must be mixture of at least 3 songs.\n" +
+                            "•\tAny Pre-recorded or Live music is allowed.\n" +
+                            "•\tInnovations such as props can fetch extra marks in this round.\n" +
+                            "•\tA prop can be anything which is not worn on the body as a part of coustme, for example, a hand held hat, stick or ball Which is removed during the routine.\n" +
+                            "•\tProps which require electricity or are considered hazardous (such as fire, smoke, fog devices, knives etc.) are not allowed. Throwing confetti, glitter, chalk powder etc.  on the performance area is also discouraged.\n" +
+                            "•\tThe teams have to be punctual. Any team that’s not ready by the specified time maybe disqualified.\n" +
+                            "•\tIf the lighting facility is to be availed, only one person on behalf of the team can supervise the lighting during the performance. Otherwise it would be taken care of by the Lights and sound group of the organizing team. Creativity and innovation will fetch extra points.\n" +
+                            "•\tPerformance may or may not be theme based.\n" +
+                            "•\tDimensions of the stage/performance arena will be uploaded on our website very soon.\n",
                     //Journalism
                     "There will be two rounds in Journalism: Prelims and Finals. A maximum of 8 teams will be shortlisted for the finals.   \n" +
                             "Prelims –   \n" +
@@ -274,60 +302,55 @@ public class EventDetails {
                             "3. Written prelims followed by finals   \n" +
                             "4. Quizmaster's decision would be final at all circumstances . ",
                     //Battle of Bands
-                    "First round will be a online round(there will be no elimination in this round). Participating teams have to send a video not exceeding 10 mins on or before 12 th Feb,2019.This is qualifying round.\n" +
-                            "The band must have a minimum of 3 members and a maximum of 8 members.\n" +
-                            "The time limit for the performance, including the time allotted for sound check, is 25 minutes(stage in & stage out). Negative Marking will be there for exceeding time limit.\n" +
-                            "The teams must perform 3 songs: One  Original Composition(preferably) and Two Cover of any eastern/western song.\n" +
-                            "Note: Language is not a constraint for music. Songs in English, Hindi or any other regional language are most welcomed. Versatility will give you extra edge over your opponents.\n" +
-                            "The band must have at least one guitarist, one bassist and a drummer.\n" +
-                            "Decision of the judge & organising team will be final and any team violating the rules will be disqualified.",
+                    "1) The time limit for the performance, including the time allotted for sound check is 25mins(stage in and stage out).\n" +
+                            "\n" +
+                            "2) Exceeding the time limit will result in negative marking.\n" +
+                            "\n" +
+                            "3) No pre-recorded audio or MIDI interfaces are allowed. However, bands can use looper pedals for live looping.\n" +
+                            "\n" +
+                            "4) All Original Compositions must have their lyrics printed/written.\n" +
+                            "\n" +
+                            "5) Each band must give a performance consisting of minimum 2 songs(or more) strictly within the indicated time limit.\n" +
+                            "\n" +
+                            "6) There upper limit for the number of members in a band 8, however, at \n" +
+                            "any point in time, at least 3 members need to be on the stage.\n" +
+                            "\n" +
+                            "7) There is no restriction on the language of the songs.\n" +
+                            "\n" +
+                            "Note: \n" +
+                            "Drum sets will be provided on the stage and participants are not allowed to remove the drum set/parts from the podium.\n" +
+                            "The arrangement of all other instruments must be made by the participants themselves.\n" +
+                            "\n" +
+                            "\n" +
+                            "Decision of the judges and the organizing team will be final and abiding.\n" +
+                            "\n" +
+                            "Any team violating any rule will be disqualified.",
                     //Panche
-                    "To avoid all conflicts, misunderstandings and to maintain the smooth operation of the event, all participating teams must undertake the following rules laid down by the Culfest’19 team for the fashion event PANACHE to be eligible for participation.\n\n" +
-                            "1. Theme selection is open. All the teams will have their own individual theme.\n" +
-                            "2. You are free to choose any theme and will be marked accordingly, but 10 marks are there for your\n" +
-                            "overall performance's relation to the theme of the fest. Any two teams with similar themes will be\n" +
-                            "subjected to deduction in points irrespective of who copied whom or in the sequence they performed.\n" +
-                            "3. It is a team event. A team must consist of minimum 12 models and maximum up to 18 models but\n" +
-                            "with not more than 11 models to be present on stage at a time, in addition to designers,\n" +
-                            "choreographer and supporting members.\n" +
-                            "4. Each team has to provide a background video otherwise a default video will be played.\n" +
-                            "5. Performance time would be minimum 10 minutes and maximum 14 minutes. Further 1.5 minutes are\n" +
-                            "provided to set-up the stage prior to the performance (if required) also the teams need to mention it\n" +
-                            "before- hand to the coordinators and 0.5 minutes to clear the stage after the performance. Points will\n" +
-                            "be deducted for exceeding the time limit.\n" +
-                            "6. One person per team should be there to manage the soundtrack and one for the lights. No\n" +
-                            "supporting staff will be provided by us. The teams are responsible for their own music and sequence.\n" +
-                            "7. If lighting facility is to be availed, one person of the group can supervise the lighting.Otherwise it will\n" +
-                            "be up to the lights group.\n" +
-                            "8. Emphasis will be given to clothing, walking style, originality, attitude and representation of the theme.\n" +
-                            "9. No props and costumes will be provided by us. Teams have to bring their own costumes and props.\n" +
-                            "10. Use of materials like candles, matches, cigarettes, alcohol and any other hazardous material on stage\n" +
-                            "is prohibited. Teams are required to contact Segment Head before using such materials like color smoke.\n" +
-                            "11. Two copies of soundtrack should be submitted in advance of standard audio format .wav or .mp3 of\n" +
-                            "sound quality 192kbps or above to coordinators (in pendrives only).\n" +
-                            "12. Vulgarity of any kind would lead to disqualification of team from the event. Hence if the organisers(culfest team) feel\n" +
-                            "that any stunt of costume design can be deemed as vulgar, it is strongly advised to consult the organisers\n" +
-                            "(Segment Head) then performing it directly on stage otherwise your team may get disqualified.\n" +
-                            "Organizers reserve the right to cancel any round and disqualify teams who do not adhere to the rules.\n" +
-                            "13. The decision of the judges and the Segment Head will be final and binding.\n" +
-                            "14. It is imperative that all team members must possess a valid college/school id which must be\n" +
-                            "presented at the time of registration. However, makeup artist could be a hired professional.\n" +
-                            "15. A green room would be provided for changing purpose.\n" +
-                            "16. No make-up artist will be provided. Teams will have to arrange one for themselves.\n" +
-                            "17. Exchange of team members from one team to another can only proceed with the authentication of\n" +
-                            "the involved team captain/s and the member who wishes to shift so.\n" +
-                            "18. There will be a deduction in points for a team in the case where similar formation, music, dresses or\n" +
-                            "props is found. The point deduction can only occur with a valid proof/testimony proving that it is a\n" +
-                            "genuine complaint.\n" +
-                            "19. If a member quits a team for whatsoever reason, may not join another team of the same\n" +
-                            "classification for the current academic year, to ensure that the knowledge gained from one team\n" +
-                            "cannot be misused by another. In a situation where this happens, the team found to be guilty will be\n" +
-                            "disqualified and can be banned from participating in the CulFest for the following year.\n" +
-                            "20. Rules might undergo slight changes depending on the situation.\n" +
-                            "21. Please refer to our website for the updated rules.\n" +
-                            "22. All decision taken with respect to the above points by the Segment Head will be final. All the teams\n" +
-                            "are advised to take on the fest with professionalism and enthusiasm. The main objective must be to\n" +
-                            "improve oneself and discover/enhance talents and focus on the growth of the Institution.",
+                    "To avoid all conflicts, misunderstandings and to maintain the smooth operation of the event, all participating teams must undertake the following rules laid down by the Culfest’20 team for the fashion event PANACHE to be eligible for participation.\n" +
+                            "\n" +
+                            "1.\tYou are free to choose any theme and will be marked accordingly, but 10 marks are there for your overall performance's relation to the theme of the fest. Any two teams with similar themes will be subjected to deduction in points irrespective of who copied whom or in the sequence they performed.\n" +
+                            "2.\t It is a team event. A team must consist of minimum 12 models and maximum up to 18 models.\n" +
+                            "3.\t Each team must provide a background video otherwise a default video will be played.\n" +
+                            "4.\t Performance time would be minimum 10 minutes and maximum of 12 minutes. Further 1.5 minutes are provided to set-up the stage prior to the performance (if required) also the teams need to mention it before- hand to the coordinators and 1 minutes to clear the stage after the performance. Points will be deducted for exceeding the time limit.\n" +
+                            "5.\t One person per team should be there to manage the soundtrack and for the lights. No supporting staff will be provided by us. The teams are responsible for their own music sequence.\n" +
+                            "6.\t If lighting facility is to be availed, one person of the group can supervise the lighting. Otherwise it will be up to the lights group.\n" +
+                            "7.\t Emphasis will be given to clothing, walking style, originality, attitude and representation of the theme.\n" +
+                            "8.\tTeams must bring their own costumes and props.\n" +
+                            "9.\tUse of materials like candles, matches, cigarettes, alcohol and any other hazardous material on stage is prohibited. Teams are required to contact coordinators/segment head before using materials like smoke or dry ice.\n" +
+                            "10.\t Two copies of soundtrack should be submitted in advance of standard audio format .wav or .mp3 of sound quality 192kbps or above to coordinators (in pendrives only).\n" +
+                            "11.\t Vulgarity of any kind would lead to disqualification of team from the event. Hence if the team feels that any stunt of costume design can be deemed as vulgar, it is strongly advised to consult the coordinators than performing it directly on stage otherwise the team may get disqualified. Organizers reserve the right to cancel any round and disqualify any team which do not adhere to the rules.\n" +
+                            "12.\tIt is imperative that all team members must possess a valid college id which must be presented at the time of registration. However, makeup artist could be a hired professional.\n" +
+                            "13.\t A green room would be provided to each team for changing purpose.\n" +
+                            "14.\tApart from the performance awards, a best designer award would be awarded to the team with an extraordinary collection and a Cosplay award for the best outfit.\n" +
+                            "\n" +
+                            "ADDITIONAL RULES (APPLICABLE ONLY FOR TEAMS FROM NIT JAMSHEDPUR)\n" +
+                            "\n" +
+                            "1.\tFor exchanging/transferring team members from one team to another, the segment head must be informed beforehand by both the involving team heads.\n" +
+                            "\n" +
+                            "2.\tPractice slots for the main stage would be only available one day before the event and it would be decided by a draw system by the organizing team.\n" +
+                            "\n" +
+                            "3.\tPlease refer to our website for any new updates.\n"+
+                            "\n\nNOTE: The decision of the judges and the organizing committee will be final and binding. All the teams are advised to take on the fest with professionalism and enthusiasm. The main objective must be to improve oneself and discover/enhance talents and focus on the growth of the Institution.",
                     //Poshak
                     "o There can be a maximum of 3 members and minimum 2 in each and every team. \n" +
                             "oParticipants are not allowed to use anything except materials provided by Cocoordinator.  \n" +
@@ -337,72 +360,100 @@ public class EventDetails {
                             "o It is a theme based event. ",
             },
             {//Foot Loose
-                    "• The competition takes place in two rounds, the Prelims and the Finals.   • Dance form can be either classical or free style.   \n" +
-                            "• Props can fetch extra points.   \n" +
-                            "• Live music is not allowed.   \n" +
-                            "• The music to be used must be submitted to the organizers in .mp3 format at least 1 hour before the event begins.   \n" +
-                            "Prelims: \n" +
-                            "• The participants must showcase a demo of their performance for the Final Round.   \n" +
-                            "• The duration of the performance should be 2 - 3 minutes.   \n" +
-                            "• Props are allowed, but will NOT fetch points during this round.  \n" +
-                            "Finals : \n" +
-                            "• The performance time for each participant is 4 - 5 minutes.  \n" +
-                            "• Song should be a mixture of minimum of two songs.   \n" +
-                            "• The creative use of props is allowed in this round, and they do fetch points in this round.   \n" +
-                            "• Vulgarity of any form will not be allowed in the competition and can lead to immediate disqualification.",
+                    "•\tThe competition takes place in two rounds, the Prelims and the Finals.\n" +
+                            "•\tDance form can be either classical or freestyle.\n" +
+                            "•\tProps can fetch extra points.\n" +
+                            "•\tLive music is not allowed.\n" +
+                            "•\tThe music to be used must be submitted to organiser in .mp3 format at least 1 hour before the event.\n" +
+                            "\n" +
+                            "\n" +
+                            "Prelims:\n" +
+                            "\n" +
+                            "•\tThe participants must showcase a demo of their performance for the final round.\n" +
+                            "•\tThe duration of performance should be 2-3 minutes.\n" +
+                            "•\tProps are allowed, but will NOT fetch points during this round.\n" +
+                            "\n" +
+                            "Finals:\n" +
+                            "\n" +
+                            "•\tThe performance time for each participant is 3-4 minutes.\n" +
+                            "•\tSong should be a mixture of minimum 2 songs.\n" +
+                            "•\tThe creative use of props is allowed in this  round and do fetch points in this round.\n" +
+                            "•\tVulgarity of any form will not be allowed in the competition and can lead to immediate disqualification.\n",
                     //Dancing Duo
-                    "• The competition takes place in a single round. *(However, if participation is large then a prelims round will be added in which the participants have to perform a part of their performance.)  \n" +
-                            "• The couple has to perform on a self-chosen song.   \n" +
-                            "• The time limit is 3 - 5 minutes.   \n" +
-                            "• Classical dance forms will not be allowed.   \n" +
-                            "• Props can fetch extra points.   \n" +
-                            "• Two individuals of the opposite gender or same gender can pair up to compete in this event.   \n" +
-                            "• Live music is not allowed.   \n" +
-                            "• The music to be used must be submitted to the organizers in .mp3 format at least 1 hour before the e vent begins.",
+                    "•\tThis competition takes place in one round. \n" +
+                            "         (If the number of participants are large, a Prelims round is conducted in which the participants           have to perform a part of their performance.)\n" +
+                            "•\tThe participants have to perform on music of their own choice.\n" +
+                            "•\tThe time limit of the performance should be 3-5 minutes.\n" +
+                            "•\tClassical forms of dance is not allowed.\n" +
+                            "•\tProps can fetch extra points.\n" +
+                            "•\tTwo individuals of same gender or opposite gender can pair up to compete in the event.\n" +
+                            "•\tLive music is not allowed.\n" +
+                            "•\tThe music to be used must be submitted to the organiser in .mp3 format at least 1 hour before the event begins.\n",
                     //Shake on Beat
-                    " Judging parameters:   \n" +
-                            "• Impact on the audience  \n" +
-                            "• Facial expressions and body language    \n" +
-                            "• Presentation   • Choreography (technicalities)   PRELIMS   • 4 participants are randomly called to perform on some random music played on the spot.   \n" +
-                            "• Best 2 of 4 participants will qualify for final round from each group.   FINALS   • 4 participants from among the finalists are randomly called to perform on random music played on the spot.   \n" +
-                            "• Instant choreographic skills and synchronization to music fetches more points",
+                    " Judging Parameters-\n" +
+                            "•\tImpact on the audience.\n" +
+                            "•\tFacial expressions and body language.\n" +
+                            "•\tPresentation.\n" +
+                            "•\tChoreography (technicalities)\n" +
+                            " Prelims:\n" +
+                            "•\t4 participants are randomly called to perform on some random music played on the spot.\n" +
+                            "•\tBest 2 of 4 participants will qualify for the final round from each round.\n" +
+                            "Finals:\n" +
+                            "•\t4 participants from among the finalists are randomly called to perform on random music played on the spot.\n" +
+                            "•\tInstant choreographic skills and synchronization to music fetches more points.\n",
                     //Choreo Night
-                    "• Performance may or may not be theme based.     \n" +
-                            "• A team can consist of Minimum 8 and Maximum 22 performing members.  \n" +
-                            "• The music must be submitted to the organizers at least 1 hour before the start of the event. The name of the submitted audio file should be same as the name of the team and must be in .mp3 format.   • Performance duration should lie between 7-10 minutes. Marks will be deducted for not complying with the time limit.   \n" +
-                            "• The music should be a mixture of minimum 3 songs. Any pre-recorded or live music can be used for the performance.  • Innovations such as props fetch extra points in this round.   \n" +
-                            "• Props will have to be arranged by the participants themselves. A prop is anything which is not worn on the body as a part of the costume, for example a hand-held hat, stick, ball or any piece of costume that is removed during the routine.   • Props which require electricity or are considered hazardous (such as fire, smoke, fog devices, knives etc.) are not allowed. Throwing confetti, glitter, chalk powder etc. on the performance area is also discouraged.   \n" +
-                            "• The teams have to be punctual. Any team that’s not ready by the specified time may be disqualified.   \n" +
-                            "• If the lighting facility is to be availed, only one person on behalf of the team can supervise the lighting during the performance. Otherwise it would be taken care of by the Lights and Sounds group of the organizing team. Creativity and innovation will fetch extra points.  \n" +
-                            "• Vulgarity of any form will not be allowed in the competition and can lead to immediate disqualification.   \n" +
-                            "• Dimensions of the stage/performance area will be uploaded on our website very soon . ",
+                            "•\tA team can consist of Minimum 8 and Maximum of 22 performing Members.\n" +
+                            "•\tThe music must be submitted in .mp3 format to the organiser 1 hour before the event begins.\n" +
+                            "•\tThe name of the audio file must be same as the performing team name.\n" +
+                            "•\tPerformance duration must lie in between 7-10 minutes. Marks will be deducted for not complying with the time limit.\n" +
+                            "•\tThe music must be mixture of at least 3 songs.\n" +
+                            "•\tAny Pre-recorded or Live music is allowed.\n" +
+                            "•\tInnovations such as props can fetch extra marks in this round.\n" +
+                            "•\tA prop can be anything which is not worn on the body as a part of coustme, for example, a hand held hat, stick or ball Which is removed during the routine.\n" +
+                            "•\tProps which require electricity or are considered hazardous (such as fire, smoke, fog devices, knives etc.) are not allowed. Throwing confetti, glitter, chalk powder etc.  on the performance area is also discouraged.\n" +
+                            "•\tThe teams have to be punctual. Any team that’s not ready by the specified time maybe disqualified.\n" +
+                            "•\tIf the lighting facility is to be availed, only one person on behalf of the team can supervise the lighting during the performance. Otherwise it would be taken care of by the Lights and sound group of the organizing team. Creativity and innovation will fetch extra points.\n" +
+                            "•\tPerformance may or may not be theme based.\n" +
+                            "•\tDimensions of the stage/performance arena will be uploaded on our website very soon.\n",
             },
             {//Culfest Idol
                     "Prelims –\n" +
                             "\n" +
-                            "Participants can sing eastern songs of any genre (preferably Hindi).\n" +
-                            "Maximum time allotted is 3 minutes.\n" +
-                            "No Background music or karaoke is allowed in prelims round. No instruments are allowed.\n" +
-                            "Marks shall be deducted if time limit is exceeded.\n" +
+                            "1. Participants can sing eastern songs of any genre (preferably Hindi).\n" +
+                            "2. Maximum time allotted is 3 minutes.\n" +
+                            "3. No Background music or karaoke is allowed in prelims round. No instruments are allowed.\n" +
+                            "4. Marks shall be deducted if time limit is exceeded.\n" +
                             "\n" +
                             "Finals -\n" +
                             "\n" +
-                            "The participants, selected in the prelims round, will move on to the finals where they will have to come prepared with a different song of their choice.\n" +
-                            "They will need to carry proper karaoke tracks for their performances (compulsory).\n" +
-                            "The time limit should not exceed 5 minutes for each performance.\n" +
-                            "Marks will be deducted for exceeding the time limit.\n" +
-                            "The decision of the judges will be final and binding.\n",
-                    //The Voice
-                    "Prelims –\n" +
-                            "This competition is open to any western jam based individual performance.\n" +
-                            "No Background music or karaoke is allowed in prelims round. No instruments are allowed.\n" +
-                            "Time limit should not exceed 3 minutes for each performance.\n" +
-                            " Finals –\n" +
-                            "Participants selected in the Prelims round will move on to the finals where they have to come prepared with a different song of their choice.\n" +
-                            "They need to carry proper karaoke tracks for their performances (compulsory).\n" +
-                            "Participants are allowed to sing along while playing their own instrument(s) but only their singing will be taken into account for judgement.\n" +
-                            "Time limit should not exceed 5 minutes for each performance.\n" +
-                            "Marks will be deducted for exceeding the time limit. 6. The decision of the judges will be final and binding.",
+                            "1. The participants, selected in the prelims round, will move on to the finals where they will have to come prepared with a different song of their choice.\n" +
+                            "2. They will need to carry proper karaoke tracks for their performances (compulsory).\n" +
+                            "3. The time limit should not exceed 5 minutes for each performance.\n" +
+                            "4. Marks will be deducted for exceeding the time limit.\n" +
+                            "5. The decision of the judges will be final and binding.\n",
+                    //The Voice Concordia
+                    "1. The Decision of Judges will be Final and Binding.\n" +
+                            "2. The event will take place in two Rounds:\n" +
+                            "\n" +
+                            "Prelims-\n" +
+                            "\n" +
+                            "1. The event is open to all Western Jam based indiviual performance.\n" +
+                            "\n" +
+                            "2. Background music or karaoke is not compulsory. Particiants can perform with an instrument, however they shall be judged solely on their vocal skills. \n" +
+                            "\n" +
+                            "3. Time allotted for each performance will be 3 minutes.\n" +
+                            "\n" +
+                            "4. The decision of judges is final and binding.\n" +
+                            "\n" +
+                            "Finals-\n" +
+                            "\n" +
+                            "1. Participants selected in the Prelims will move on to the Finals, in which the Participant has to come prepared with a different song.\n" +
+                            "\n" +
+                            "2. A karaoke track or an instrument of their choice is compulsory in this round.\n" +
+                            "\n" +
+                            "3. Time alotted for each performance will be 5 minutes.\n" +
+                            "\n" +
+                            "4. The decision of the judges shall be final and binding",
 
                     //DUETS
                     "Prelims - \n" +
@@ -416,7 +467,7 @@ public class EventDetails {
                             "• Karaoke tracks are compulsory.  \n" +
                             "• Musical Instruments are NOT ALLOWED.  \n" +
                             "• The decision of the judges will be final and binding. ",
-                    //Unpluged
+                    //Unpluged Euphony
                     "Participants can perform musical piece on an instrument.\n" +
                             "Maximum time limit: 7 minutes.\n" +
                             "Participants should bring the instrument required for their performance.( karaoke not allowed but for beats & rhytm supporting music of other instruments is allowed).\n" +
@@ -424,130 +475,136 @@ public class EventDetails {
                             "The judges will critique the contestant’s performance based on the presentation,and instrumentation skills.\n" +
                             "Performer needs to perform using a single instrument.",
                     //Battle of Bands
-                    "First round will be a online round(there will be no elimination in this round). Participating teams have to send a video not exceeding 10 mins on or before 12 th Feb,2019.This is qualifying round.\n" +
-                            "The band must have a minimum of 3 members and a maximum of 8 members.\n" +
-                            "The time limit for the performance, including the time allotted for sound check, is 25 minutes(stage in & stage out). Negative Marking will be there for exceeding time limit.\n" +
-                            "The teams must perform 3 songs: One  Original Composition(preferably) and Two Cover of any eastern/western song.\n" +
-                            "Note: Language is not a constraint for music. Songs in English, Hindi or any other regional language are most welcomed. Versatility will give you extra edge over your opponents.\n" +
-                            "The band must have at least one guitarist, one bassist and a drummer.\n" +
-                            "Decision of the judge & organising team will be final and any team violating the rules will be disqualified.",
+                    "1) The time limit for the performance, including the time allotted for sound check is 25mins(stage in and stage out).\n" +
+                            "\n" +
+                            "2) Exceeding the time limit will result in negative marking.\n" +
+                            "\n" +
+                            "3) No pre-recorded audio or MIDI interfaces are allowed. However, bands can use looper pedals for live looping.\n" +
+                            "\n" +
+                            "4) All Original Compositions must have their lyrics printed/written.\n" +
+                            "\n" +
+                            "5) Each band must give a performance consisting of minimum 2 songs(or more) strictly within the indicated time limit.\n" +
+                            "\n" +
+                            "6) There upper limit for the number of members in a band 8, however, at \n" +
+                            "any point in time, at least 3 members need to be on the stage.\n" +
+                            "\n" +
+                            "7) There is no restriction on the language of the songs.\n" +
+                            "\n" +
+                            "Note: \n" +
+                            "Drum sets will be provided on the stage and participants are not allowed to remove the drum set/parts from the podium.\n" +
+                            "The arrangement of all other instruments must be made by the participants themselves.\n" +
+                            "\n" +
+                            "\n" +
+                            "Decision of the judges and the organizing team will be final and abiding.\n" +
+                            "\n" +
+                            "Any team violating any rule will be disqualified.",
             },
             {//Theme Quiz
                     "1. Team size – 2 members\n" +
                             "\n2. Cross college/school teams not allowed.\n" +
                             "\n3. Written prelims followed by finals.\n" +
-                            "\n4. Quizmaster's decision would be final at all circumstances.\n",
+                            "\n4. Quiz Master's decision would be final at all circumstances.\n",
                     //SpEnt
                     "1. Team size – 2 members\n" +
                             "\n2. Cross college/school teams not allowed.\n" +
                             "\n3. Written prelims followed by finals.\n" +
-                            "\n4. Quizmaster's decision would be final at all circumstances.\n",
+                            "\n4. Quiz Master's decision would be final at all circumstances.\n",
                     //BizTech Quiz
                     "1. Team size – 2 members\n" +
                             "\n2. Cross college/school teams not allowed.\n" +
                             "\n3. Written prelims followed by finals.\n" +
-                            "\n4. Quizmaster's decision would be final at all circumstances.\n",
+                            "\n4. Quiz Master's decision would be final at all circumstances.\n",
                     //India quiz
                     "1. Team size – 2 members\n" +
                             "\n2. Cross college/school teams not allowed.\n" +
                             "\n3. Written prelims followed by finals.\n" +
-                            "\n4. Quizmaster's decision would be final at all circumstances.\n",
+                            "\n4. Quiz Master's decision would be final at all circumstances.\n",
             },
             {//Face Painting
-                    "o There should be 2 members in each and every team.  \n" +
-                            "oParticipants are not allowed to use anything except materials provided by Co-coordinator.  \n" +
-                            "oTime limit is 1 hour.  oTeams are not allowed to take any kind of external help.  \n" +
-                            "oParticipants must bring their Culfest registration card.  \n" +
-                            "oIf any team found guilty of violating rules, it would be eliminated.  \n" +
-                            "oSkin friendly colours will be provided.  \n" +
-                            "o It is a theme based event. ",
+                    "• There should be 2 members in each and every team. \n" +
+                            "• Participants are not allowed to use anything except materials provided by Co-coordinator. \n" +
+                            "• Time limit is 1 hour. \n" +
+                            "• Teams are not allowed to take any kind of external help. \n" +
+                            "• Participants must bring their Culfest registration card. \n" +
+                            "• If any team found guilty of violating rules, it would be eliminated. \n" +
+                            "• Skin friendly colours will be provided. \n" +
+                            "• It is a theme based event.\n",
                     //Rangoli
-                    "oParticipants are not allowed to use anything except materials provided by Coordinator\n" +
-                            "oTheme based event. \n" +
-                            "o Limited colours will be provided. oTime limit is 2 hour.   \n" +
-                            "o Participants must bring their Culfest registration card.  \n" +
-                            "o Teams are not allowed to take any kind of external help.  \n" +
-                            "o If any team found guilty of violating rules, that team would be eliminated.  \n" +
-                            "o There should be 2 members in each and every team. ",
+                    "Rules for Round 1 \n" +
+                            "• Participants are not allowed to use anything except materials provided by Co-coordinator. \n" +
+                            "• Time limit is 1 hour. \n" +
+                            "• Participants must bring their Culfest registration card. \n" +
+                            "• Teams are not allowed to take any kind of external help. \n" +
+                            "• If any team found guilty of violating rules, that team would be eliminated. \n" +
+                            "• there should be 2 members in each and every team. \n" +
+                            "• Theme based event.\n" +
+                            "\n" +
+                            "Rules for Round 2 \n" +
+                            "• Time limit is 2 hours. \n" +
+                            "• Limited colours will be provided. \n" +
+                            "• Participants will have to make the same rangoli which they have drawn in round 1 otherwise team will be eliminated.\n",
                     //Triathlon
-                    "o Team event (2 members per team)  \n" +
-                            "o Participants are supposed to use only those materials provided by coordinators.  \n" +
-                            "o Participants must bring their Culfest registration card.  \n" +
-                            "o If any team found guilty of violating rules, it would be eliminated.  \n" +
-                            "o Time Limit of the event is 2 hr.  \n" +
-                            "o It is a Theme based event. ",
+                    "• Team event (2 members per team) \n" +
+                            "• Participants are supposed to use only those materials provided by coordinators. \n" +
+                            "• Participants must bring their Culfest registration card. \n" +
+                            "• If any team found guilty of violating rules, it would be eliminated. \n" +
+                            "• Time Limit of the event is 1 hr. \n" +
+                            "• It is a Theme based event.\n",
                     //Claydoh
-                    "o Team event (2 members per team).  \n" +
-                            "oParticipants are supposed to use only those materials provided by coordinators.  \n" +
-                            "oParticipants must bring their Culfest registration card.  \n" +
-                            "oIf any team found guilty of violating rules, that team would be eliminated.   \n" +
-                            "o Time Limit of the event is 1.5 hr.  \n" +
-                            "oIt is a theme based event. ",
+                    "• Team event (2 members per team). \n" +
+                            "• Participants are supposed to use only those materials provided by coordinators. \n" +
+                            "• Participants must bring their Culfest registration card. \n" +
+                            "• If any team found guilty of violating rules, that team would be eliminated. \n" +
+                            "• Time Limit of the event is 1.5 hr. \n" +
+                            "• It is a theme based event\n",
                     //Poshak
-                    "o There can be a maximum of 3 members and minimum 2 in each and every team.  \n" +
-                            "o Participants are not allowed to use anything except materials provided by Cocoordinator.  \n" +
-                            "o Time limit is 2 hour.  \n" +
-                            "o Teams are not allowed to take any kind of external help.  \n" +
-                            "o Participants must bring their Culfest registration card.  \n" +
-                            "o If any team found guilty of violating rules, it would be eliminated.   \n" +
-                            "o It is a theme based event. ",
+                    "• There can be a maximum of 3 members and minimum 2 in each and every team. \n" +
+                            "• Participants are not allowed to use anything except materials provided by Co-coordinator. \n" +
+                            "• Time limit is 1 hour. \n" +
+                            "• Teams are not allowed to take any kind of external help. \n" +
+                            "• Participants must bring their Culfest registration card. \n" +
+                            "• If any team found guilty of violating rules, it would be eliminated. \n" +
+                            "• It is a theme based event.\n",
                     //Finger Painting
-                    "o Participants are not allowed to use anything except materials provided by Co-coordinator.   \n" +
-                            "o Time limit is 1 hour.   \n" +
-                            "o Teams are not allowed to take any kind of external help.  \n" +
-                            "oParticipants must bring their Culfest registration card.  \n" +
-                            "oIf any team found guilty of violating rules, it would be eliminated.  \n" +
-                            "oIt is a theme based event. \n" +
-                            "oSingle participation is allowed. ",
+                    "• Participants are supposed to use only those materials provided by coordinators. \n" +
+                            "• Participants must bring their Culfest registration card. \n" +
+                            "• If any team found guilty of violating rules, it would be eliminated. \n" +
+                            "• Time Limit of the event is 1 hr. \n" +
+                            "• It is a Theme based event.\n"+
+                            "• single participation is allowed",
+                    //Soap Carving
+                    "•\tMAXIMUM NUMBER OF TEAM MEMBERS: 1\n" +
+                            "•\t1 hour event\n" +
+                            "•\tAll contestants will be provided with a large (bath size) bar soap, a soap carving “knife”, pencil, and Popsicle stick.\n" +
+                            "•\tExamples : https://in.pinterest.com/explore/soap-carving/\n"
             },
             {//Fashion
                     //Panache
-                    "To avoid all conflicts, misunderstandings and to maintain the smooth operation of the event, all participating teams must undertake the following rules laid down by the Culfest’19 team for the fashion event PANACHE to be eligible for participation.\n\n" +
-                            "1. Theme selection is open. All the teams will have their own individual theme.\n" +
-                            "2. You are free to choose any theme and will be marked accordingly, but 10 marks are there for your\n" +
-                            "overall performance's relation to the theme of the fest. Any two teams with similar themes will be\n" +
-                            "subjected to deduction in points irrespective of who copied whom or in the sequence they performed.\n" +
-                            "3. It is a team event. A team must consist of minimum 12 models and maximum up to 18 models but\n" +
-                            "with not more than 11 models to be present on stage at a time, in addition to designers,\n" +
-                            "choreographer and supporting members.\n" +
-                            "4. Each team has to provide a background video otherwise a default video will be played.\n" +
-                            "5. Performance time would be minimum 10 minutes and maximum 14 minutes. Further 1.5 minutes are\n" +
-                            "provided to set-up the stage prior to the performance (if required) also the teams need to mention it\n" +
-                            "before- hand to the coordinators and 0.5 minutes to clear the stage after the performance. Points will\n" +
-                            "be deducted for exceeding the time limit.\n" +
-                            "6. One person per team should be there to manage the soundtrack and one for the lights. No\n" +
-                            "supporting staff will be provided by us. The teams are responsible for their own music and sequence.\n" +
-                            "7. If lighting facility is to be availed, one person of the group can supervise the lighting.Otherwise it will\n" +
-                            "be up to the lights group.\n" +
-                            "8. Emphasis will be given to clothing, walking style, originality, attitude and representation of the theme.\n" +
-                            "9. No props and costumes will be provided by us. Teams have to bring their own costumes and props.\n" +
-                            "10. Use of materials like candles, matches, cigarettes, alcohol and any other hazardous material on stage\n" +
-                            "is prohibited. Teams are required to contact Segment Head before using such materials like color smoke.\n" +
-                            "11. Two copies of soundtrack should be submitted in advance of standard audio format .wav or .mp3 of\n" +
-                            "sound quality 192kbps or above to coordinators (in pendrives only).\n" +
-                            "12. Vulgarity of any kind would lead to disqualification of team from the event. Hence if the organisers(culfest team) feel\n" +
-                            "that any stunt of costume design can be deemed as vulgar, it is strongly advised to consult the organisers\n" +
-                            "(Segment Head) then performing it directly on stage otherwise your team may get disqualified.\n" +
-                            "Organizers reserve the right to cancel any round and disqualify teams who do not adhere to the rules.\n" +
-                            "13. The decision of the judges and the Segment Head will be final and binding.\n" +
-                            "14. It is imperative that all team members must possess a valid college/school id which must be\n" +
-                            "presented at the time of registration. However, makeup artist could be a hired professional.\n" +
-                            "15. A green room would be provided for changing purpose.\n" +
-                            "16. No make-up artist will be provided. Teams will have to arrange one for themselves.\n" +
-                            "17. Exchange of team members from one team to another can only proceed with the authentication of\n" +
-                            "the involved team captain/s and the member who wishes to shift so.\n" +
-                            "18. There will be a deduction in points for a team in the case where similar formation, music, dresses or\n" +
-                            "props is found. The point deduction can only occur with a valid proof/testimony proving that it is a\n" +
-                            "genuine complaint.\n" +
-                            "19. If a member quits a team for whatsoever reason, may not join another team of the same\n" +
-                            "classification for the current academic year, to ensure that the knowledge gained from one team\n" +
-                            "cannot be misused by another. In a situation where this happens, the team found to be guilty will be\n" +
-                            "disqualified and can be banned from participating in the CulFest for the following year.\n" +
-                            "20. Rules might undergo slight changes depending on the situation.\n" +
-                            "21. Please refer to our website for the updated rules.\n" +
-                            "22. All decision taken with respect to the above points by the Segment Head will be final. All the teams\n" +
-                            "are advised to take on the fest with professionalism and enthusiasm. The main objective must be to\n" +
-                            "improve oneself and discover/enhance talents and focus on the growth of the Institution.",
+                    "To avoid all conflicts, misunderstandings and to maintain the smooth operation of the event, all participating teams must undertake the following rules laid down by the Culfest’20 team for the fashion event PANACHE to be eligible for participation.\n" +
+                            "\n" +
+                            "1.\tYou are free to choose any theme and will be marked accordingly, but 10 marks are there for your overall performance's relation to the theme of the fest. Any two teams with similar themes will be subjected to deduction in points irrespective of who copied whom or in the sequence they performed.\n" +
+                            "2.\t It is a team event. A team must consist of minimum 12 models and maximum up to 18 models.\n" +
+                            "3.\t Each team must provide a background video otherwise a default video will be played.\n" +
+                            "4.\t Performance time would be minimum 10 minutes and maximum of 12 minutes. Further 1.5 minutes are provided to set-up the stage prior to the performance (if required) also the teams need to mention it before- hand to the coordinators and 1 minutes to clear the stage after the performance. Points will be deducted for exceeding the time limit.\n" +
+                            "5.\t One person per team should be there to manage the soundtrack and for the lights. No supporting staff will be provided by us. The teams are responsible for their own music sequence.\n" +
+                            "6.\t If lighting facility is to be availed, one person of the group can supervise the lighting. Otherwise it will be up to the lights group.\n" +
+                            "7.\t Emphasis will be given to clothing, walking style, originality, attitude and representation of the theme.\n" +
+                            "8.\tTeams must bring their own costumes and props.\n" +
+                            "9.\tUse of materials like candles, matches, cigarettes, alcohol and any other hazardous material on stage is prohibited. Teams are required to contact coordinators/segment head before using materials like smoke or dry ice.\n" +
+                            "10.\t Two copies of soundtrack should be submitted in advance of standard audio format .wav or .mp3 of sound quality 192kbps or above to coordinators (in pendrives only).\n" +
+                            "11.\t Vulgarity of any kind would lead to disqualification of team from the event. Hence if the team feels that any stunt of costume design can be deemed as vulgar, it is strongly advised to consult the coordinators than performing it directly on stage otherwise the team may get disqualified. Organizers reserve the right to cancel any round and disqualify any team which do not adhere to the rules.\n" +
+                            "12.\tIt is imperative that all team members must possess a valid college id which must be presented at the time of registration. However, makeup artist could be a hired professional.\n" +
+                            "13.\t A green room would be provided to each team for changing purpose.\n" +
+                            "14.\tApart from the performance awards, a best designer award would be awarded to the team with an extraordinary collection and a Cosplay award for the best outfit.\n" +
+                            "\n" +
+                            "ADDITIONAL RULES (APPLICABLE ONLY FOR TEAMS FROM NIT JAMSHEDPUR)\n" +
+                            "\n" +
+                            "1.\tFor exchanging/transferring team members from one team to another, the segment head must be informed beforehand by both the involving team heads.\n" +
+                            "\n" +
+                            "2.\tPractice slots for the main stage would be only available one day before the event and it would be decided by a draw system by the organizing team.\n" +
+                            "\n" +
+                            "3.\tPlease refer to our website for any new updates.\n"+
+                            "\n\nNOTE: The decision of the judges and the organizing committee will be final and binding. All the teams are advised to take on the fest with professionalism and enthusiasm. The main objective must be to improve oneself and discover/enhance talents and focus on the growth of the Institution.",
                     //Best Designer
                     "For best designer, the judging criteria will be based on the following:\n" +
                             "1. Creativity\n 2. Perfection\n 3. Overall look" +
@@ -610,6 +667,8 @@ public class EventDetails {
                             "9) The judge’s decision will be final and binding.  \n" +
                             " \n" +
                             "10) The organising team owns all the rights to make any necessary change in the rules if required. ",
+                    //Instant Khichdi
+                    "chaato judge ki"
             },
             {//Instant-o-Graphy
                     "1. There is no Prelims round for entry into the contest.  \n" +
@@ -635,18 +694,6 @@ public class EventDetails {
                             "• Participants are required to participate in teams of 2.   \n" +
                             "• Prelims round will be a written round.   \n" +
                             "• Teams qualifying the prelims make it to the final rounds ",
-                    //JAM
-                    " The errors which will be considered are-   \n" +
-                            "• Plagiarism   \n" +
-                            "• Queen’s English   \n" +
-                            "• Standard format   \n" +
-                            "• Late start   \n" +
-                            "• Early start   \n" +
-                            "• Gesticulation   \n" +
-                            "• Over dramatization   \n" +
-                            "• Post qualification   \n" +
-                            "• Beating around the bush   \n" +
-                            "• Grammatical error   ",
                     //Journalism
                     "There will be two rounds in Journalism: Prelims and Finals. A maximum of 8 teams will be shortlisted for the finals.   \n" +
                             "Prelims –   \n" +
@@ -656,7 +703,7 @@ public class EventDetails {
                             "• The write up can be either in Hindi or English. You will have to stick to one language throughout the competition, i.e. if you get selected for the finals, the reporting has to be done in the language you chose in prelims.   \n" +
                             "Finals –   \n" +
                             "• Any team member should not be replaced.   \n" +
-                            "• The m ode of communication/reporting has to be the same as that chosen in Prelims.   \n" +
+                            "• The mode of communication/reporting has to be the same as that chosen in Prelims.   \n" +
                             "• Every team will be allotted the equipment for 30 minutes each day.   \n" +
                             "• The events to be covered shall be chosen by the team.   \n" +
                             "• The teams need to cover the festival in a way that they may find suitable. They may take interviews as well and/or report about the ongoing events.   \n" +
@@ -673,7 +720,7 @@ public class EventDetails {
                             "• An abstract must be submitted on the given topic for preliminary screening. The topic will be uploaded soon.   \n" +
                             "• The length of the abstract must not exceed 400 words.   \n" +
                             "• The contact details must be properly mentioned.   \n" +
-                            "• The abstract must be mailed to lds1968nitjsr@gmail.com by 13th February.   \n" +
+                            "• The abstract must be mailed to gensec.lds@nitjsr.ac.in by 12th February.   \n" +
                             "Finals –   \n" +
                             "• In the finals, each team will be competing against one another for a total sum of 8 minutes. • Each pair of teams will be given a separate topic.   \n" +
                             "• The organizers will be deciding which team will be for or against the motion. The decision will be binding.   \n" +
@@ -684,6 +731,28 @@ public class EventDetails {
                             "• There will be total 6 teams in the Onsite Finals.   \n" +
                             "• A written prelim round will be conducted to select the top 6 teams for the finals.  \n" +
                             "• Decision of the quiz master will be binding and final for all and any team violating the rules will be disqualified.",
+                    //JAM
+                    " The errors which will be considered are-   \n" +
+                            "• Plagiarism   \n" +
+                            "• Queen’s English   \n" +
+                            "• Standard format   \n" +
+                            "• Late start   \n" +
+                            "• Early start   \n" +
+                            "• Gesticulation   \n" +
+                            "• Over dramatization   \n" +
+                            "• Post qualification   \n" +
+                            "• Beating around the bush   \n" +
+                            "• Grammatical error   ",
+                    //Poetry Slam
+                            "•\tEvaluation will be based on recitation of poems in the time limit of 6 minutes. \n" +
+                            "•\tPoems can be in both English and Hindi. \n" +
+                            "•\tPoems can be on any subject and in any style but must be original. \n" +
+                            "•\tUse of props, special costumes, musical instruments or pre-recorded music is not allowed. \n" +
+                            "•\tThis is an individual event and is open to all. \n" +
+                            "•\tPoems once performed may not be repeated in further rounds, except in case of tie-breaking rounds, violation of which disqualifies the poet. Therefore, each poet should plan on bringing at least 3 original poems to compete, with an extra poem as buffer for a tie. \n" +
+                            "•\tTime limit is three minutes. After three minutes, there is a 10-second grace period after which a penalty of 0.5 is automatically deducted, without warning, from each poet’s overall score for every subsequent ten seconds. \n" +
+                            "•\tThe judges will give each poem a score from 0 to 10. \n" +
+                            "•\tThe total score for a poet will be the sum of the scores by all the judges in the panel for a particular round and will be considered for their qualification to next round. \n"
             },
             {//Antarakshi
                     "1.Participants have to register in a team of two.\n" +
@@ -770,13 +839,8 @@ public class EventDetails {
                             "MAYANK KUMAR \n" +
                             "8340501782 \n",
                     //Journalism
-                    " Prashant Krishna \n" +
-                            "7004163380\n" +
-                            "\n" +
-                            "JOINT COORDINATOR : \n" +
-                            "\n" +
-                            "Akash Kumar\n" +
-                            "7717754187/ 8580013648 ",
+                    "Co-ordinator: VIJAY SRIHARSHA (+91  9491264544)" +
+                            "\nJoint Co-ordinator- Mayank (+91 9075167388) ",
                     //Halla bol
                     "Dushyant Chaudhary  \n" +
                             "8077842641  \n" +
@@ -797,26 +861,21 @@ public class EventDetails {
                             "Pranav Kumar singh\n" +
                             "7764042620",
                     //Battle of Bands
-                    "ANUKUL GAURAV\n" +
-                            "8210587745  \n" +
-                            " \n" +
-                            "JOINT COORDINATOR \n" +
+                    "Coordinator:\n" +
+                            "Harshal Desai\n" +
+                            "8210045546\n" +
                             "\n" +
-                            "SIMANT\n" +
-                            "8051223209\n" +
+                            "Joint Coordinator-1:\n" +
+                            "Viswajeet Singh\n" +
+                            "7218514087\n" +
                             "\n" +
-                            "HARSHAL DESAI\n" +
-                            "9767293762",
+                            "Joint Coordinator-2: \n" +
+                            "Saloni Majhi\n" +
+                            "+91 6205182911",
                     //Panache
-                    "SURAJ SURESH \n" +
-                            "8921446731 \n" +
-                            " \n" +
-                            "JOINT COORDINATOR \n" +
-                            "\n" +
-                            "AKSHANSH KUMAR  SINGH\n" +
-                            "7781031677\n" +
-                            "NIPURN JAIN\n" +
-                            "7990027827",
+                    "SEGMENT HEAD: SYED SHAHI IMRAN (8210353936)\n" +
+                            "CO-ORDINATOR: NITIN DHIMAN (7206607969)\n" +
+                            "JOINT COORDINATORS: ESLAVATH SRAVN (6303583813)\n",
                     //Poshak
                     " Vikrant Kumar\n " +
                             "8294484301\n" +
@@ -866,51 +925,49 @@ public class EventDetails {
 
             {
                     //Culfest Idol
-                    "SOMNATH MIRDHA \n" +
-                            "8789363482 \n" +
-                            " \n" +
-                            "JOINT COORDINATOR  \n" +
+                    "Coordinator:\n" +
+                            "Piyush Ranjan\n" +
+                            "6207950740\n" +
                             "\n" +
-                            "PIYUSH RANJAN\n" +
-                            "8102790193 ",
-                    //The Voice
-                    "PRATEEKSHA RAJWAR\n" +
-                            "7779872918  \n" +
+                            "Joint Coordinator:\n" +
+                            "Vishal Gupta\n" +
+                            "7783848287",
+                    //The Voice Concordia
+                    "Yash Prasad\n" +
+                            "73019 94883\n" +
                             "\n" +
-                            "JOINT COORDINATOR:   \n" +
-                            "\n" +
-                            "AMAN RAJ\n" +
-                            "9973988973",
+                            "Utsab Banerjee\n" +
+                            "72948 68462",
                     //Duets
-                    "RISHABH DOSHI\n" +
-                            "9327526244  \n" +
-                            " \n" +
-                            "JOINT COORDINATOR : \n" +
+                    "Coordinator\n" +
                             "\n" +
-                            "ASHWANI KUMAR \n" +
-                            " 7274801371 \n",
-                    //Unplugged
-                    "PRASHANT KRISHNA\n" +
-                            "7004163380  \n" +
-                            " \n" +
-                            "JOINT COORDINATOR : \n" +
+                            "Anushka Mukherjee\n" +
+                            "7759030768\n" +
                             "\n" +
-                            "SANTANU DAS\n" +
-                            "7003798241   \n" +
+                            "Joint coordinator \n" +
                             "\n" +
-                            "LABANI SARKAR\n" +
-                            "8918185085 \n",
+                            "Ratna Rasi\n" +
+                            "93814 87347",
+                    //Unplugged Euphony
+                    "Coordinator\n" +
+                            "Aman Raj\n" +
+                            "9973988973\n" +
+                            "\n" +
+                            "Joint Coordinator\n" +
+                            "Srijan Banerjee\n" +
+                            "97096 85999",
                     //Battle of bands
-                    "ANUKUL GAURAV\n" +
-                            "8210587745  \n" +
-                            " \n" +
-                            "JOINT COORDINATOR : \n" +
+                    "Coordinator:\n" +
+                            "Harshal Desai\n" +
+                            "8210045546\n" +
                             "\n" +
-                            "SIMANT\n" +
-                            "8051223209 \n" +
+                            "Joint Coordinator-1:\n" +
+                            "Viswajeet Singh\n" +
+                            "7218514087\n" +
                             "\n" +
-                            "HARSHAL DESAI\n" +
-                            "9767293762"
+                            "Joint Coordinator-2: \n" +
+                            "Saloni Majhi\n" +
+                            "+91 6205182911"
             },
 
             {
@@ -994,27 +1051,18 @@ public class EventDetails {
                             "Joint coordinator : \n" +
                             "\n" +
                             "TALLURI DURGA RAJESWARI\n" +
-                            "9676223525 "
+                            "9676223525 ",
+                    //Soap Carving
+                    "Hello, kon?, ham bole, kon?, ham bole, nahi janti"
+
             },
-            {
-                    "SURAJ SURESH \n" +
-                            "8921446731 \n" +
-                            " \n" +
-                            "JOINT COORDINATOR \n" +
-                            "\n" +
-                            "AKSHANSH KUMAR  SINGH\n" +
-                            "7781031677\n" +
-                            "NIPURN JAIN\n" +
-                            "7990027827",
-                    "SURAJ SURESH \n" +
-                            "8921446731 \n" +
-                            " \n" +
-                            "JOINT COORDINATOR \n" +
-                            "\n" +
-                            "AKSHANSH KUMAR  SINGH\n" +
-                            "7781031677\n" +
-                            "NIPURN JAIN\n" +
-                            "7990027827"
+            {//Panache
+                    "SEGMENT HEAD: SYED SHAHI IMRAN (8210353936)\n" +
+                            "CO-ORDINATOR: NITIN DHIMAN (7206607969)\n" +
+                            "JOINT COORDINATORS: ESLAVATH SRAVN (6303583813)\n",
+                    "SEGMENT HEAD: SYED SHAHI IMRAN (8210353936)\n" +
+                            "CO-ORDINATOR: NITIN DHIMAN (7206607969)\n" +
+                            "JOINT COORDINATORS: ESLAVATH SRAVN (6303583813)\n"
             },
             {
                     //Rangmanch
@@ -1051,7 +1099,9 @@ public class EventDetails {
                             "Joint Coordinator : \n" +
                             "\n" +
                             "Kunal \n" +
-                            "9852225814 "
+                            "9852225814 ",
+                    //Instant Khichdi
+                    ""
             },
             {
                     //Instant-o-Graphy
@@ -1072,51 +1122,26 @@ public class EventDetails {
                             "8709939789 "
             },
             {   //Potpurri
-                    "Shubham Gaurav (Hindi Potpourri)\n" +
-                            "9155677552, 7903544151\n" +
-                            "\n" +
-                            "Aparajita Srivastava  (English Potpourri)  \n" +
-                            "9113785949 \n" +
-                            "\n" +
-                            "JOINT COORDINATOR :\n" +
-                            "\n" +
-                            "Anjali Dubey ( English potpourri) \n" +
-                            "7980768740 \n" +
-                            "\n" +
-                            "Mrinal singh( Hindi potpourri) \n" +
-                            "7260862275 \n",
-                    //JAM
-                    "Arijit Bhattacharjee \n" +
-                            "9612913357, 7005467390 \n" +
-                            "\n" +
-                            "JOINT COORDINATOR :  \n" +
-                            "\n" +
-                            "Kunal\n" +
-                            "9113156369 ",
+                    "CO-ORDINATORS- Chiranjeev (English Potpourri) (+91 7606971547)\n" +
+                            "Aditya Singh Gehlot (Hindi Potpourri) (+91 9304161989)\n"+
+                            "\nJoint Co-ordinator- Harshleen (English Potpourri) (+91 9669555520)"+
+                            "\nNishal (Hindi Potpourri) (+91 9121288503)",
                     //Journalism
-                    "Prashant Krishna\n" +
-                            "7004163380\n" +
-                            "\n" +
-                            "JOINT COORDINATOR : \n" +
-                            "\n" +
-                            "Akash kumar\n" +
-                            "7717754187 / 8580013648",
+                    "Co-ordinator: VIJAY SRIHARSHA (+91  9491264544)"+
+                            "\nJoint Co-ordinator- Mayank (+91 9075167388)",
                     //Policy Debate
-                    "Arjun sanjay kumar Goyal\n" +
-                            "9825113966 \n" +
-                            "\n" +
-                            "JOINT COORDINATOR: \n" +
-                            "\n" +
-                            "Abhishek Jha\n" +
-                            "9599699843",
+                    "CO-ORDINATORS- RISHI RAJ (+91  9473456052) "+
+                            "\nJoint Co-ordinator- Arti (+91 7260045695)",
                     //SSMQ
-                    "Riya Mehta\n" +
-                            "7209772585 \n" +
-                            "\n" +
-                            "JOINT COORDINATOR – \n" +
-                            "\n" +
-                            "Aditya Singh Gehlot\n" +
-                            "9304161989 "
+                    "CO-ORDINATOR- AMIT JHA (+91 6201288797) "+
+                            "\nJoint Co-ordinator-  Sarthak (+91 6388120669)",
+                    //JAM
+                    "CO-ORDINATOR- KUNAL (+91  9113156369)"+
+                    "\nJoint Co-ordinator- Aakash (+91 9889293612",
+                    //Poetry Slam
+                    "CO-ORDINATOR-  ABHISHEK SINGH (+91 8580150664)"+
+                            "\nJoint Co-ordinator- Garima (+91 8630035903)"
+
             },
             {
                     //Antaraksari
