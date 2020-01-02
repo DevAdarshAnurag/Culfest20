@@ -1,11 +1,17 @@
 package com.nitjsr.culfest20.models;
 
 public class Notification {
- private String title, description;
+    public String title, body, id;
+    public int event;
 
-    public Notification(String title, String description) {
+    public Notification() {
+    }
+
+    public Notification(String title, String body, String id, int event) {
         this.title = title;
-        this.description = description;
+        this.body = body;
+        this.id = id;
+        this.event = event;
     }
 
     public String getTitle() {
@@ -16,11 +22,27 @@ public class Notification {
         this.title = title;
     }
 
-    public String getDescription() {
-        return description;
+    public String getBody() {
+        return body;
     }
 
-    public void setDescription(String description) {
-        this.description = description;
+    public void setBody(String body) {
+        this.body = body;
+    }
+
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
+    }
+
+    public int getEvent() {
+        return event;
+    }
+
+    public void setEvent(int event) {
+        this.event = event;
     }
 }

@@ -28,7 +28,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_marginStart="8dp"
-        android:layout_marginBottom="8dp"
+        android:layout_marginBottom="16dp"
         android:src="@drawable/ic_youtube"
         app:fab_colorNormal="#e60000"
         app:fab_colorPressed="@color/colorAccent"

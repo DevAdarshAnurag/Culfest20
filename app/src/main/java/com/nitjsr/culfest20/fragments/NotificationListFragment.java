@@ -5,8 +5,15 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.RelativeLayout;
 
 import com.github.clans.fab.FloatingActionButton;
+import com.github.ybq.android.spinkit.SpinKitView;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 import com.nitjsr.culfest20.R;
 import com.nitjsr.culfest20.adapters.NotificationAdapter;
 import com.nitjsr.culfest20.models.Notification;
@@ -26,6 +33,8 @@ import androidx.recyclerview.widget.RecyclerView;
 public class NotificationListFragment extends Fragment {
 
     private List<Notification> list = new ArrayList<>();
+    private SpinKitView progressBar;
+    private RelativeLayout relLayout;
 
     public NotificationListFragment() {
         // Required empty public constructor
@@ -41,42 +50,35 @@ public class NotificationListFragment extends Fragment {
 
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
-        list.add(new Notification("Hello 0. This is very very big Title.", "Description 1. \n Big description. \n big"));
 
-        list.add(new Notification("Hello 1", "Description 1"));
+        progressBar = view.findViewById(R.id.noti_list_progress_bar);
+        relLayout = view.findViewById(R.id.noti_list_view);
 
-        list.add(new Notification("Hello 1", "Description 1"));
-
-        list.add(new Notification("Hello 1", "Description 1"));
-
-        list.add(new Notification("Hello 1", "Description 1"));
-
-        list.add(new Notification("Hello 1", "Description 1"));
-
-        list.add(new Notification("Hello 1", "Description 1"));
-
-        list.add(new Notification("Hello 1", "Description 1"));
-
-        list.add(new Notification("Hello 1", "Description 1"));
-
-        list.add(new Notification("Hello 1", "Description is big. Bahut bada description. Bahute bada description."));
-        list.add(new Notification("Hello 1", "Description 1"));
-        list.add(new Notification("Hello 1", "Description 1"));
-        list.add(new Notification("Hello 1", "Description 1"));
-        list.add(new Notification("Hello 1", "Description 1"));
-
-        list.add(new Notification("Hello 1", "Description 1"));
-        list.add(new Notification("Hello 1", "Description 1"));
-        list.add(new Notification("Hello 1", "Description 1"));
-        list.add(new Notification("Hello 1", "Description 1"));
-
-
-        final RecyclerView recyclerView = view.findViewById(R.id.recycler_view);
+        RecyclerView recyclerView = view.findViewById(R.id.recycler_view);
         NotificationAdapter recyclerViewAdapter = new NotificationAdapter(getActivity(), list);
         recyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
         recyclerView.setAdapter(recyclerViewAdapter);
-        final FloatingActionButton buttonReturnToTop = view.findViewById(R.id.fab_noti_top);
+        FloatingActionButton buttonReturnToTop = view.findViewById(R.id.fab_noti_top);
 
+        DatabaseReference dbref = FirebaseDatabase.getInstance().getReference("notification");
+        dbref.addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                list.clear();
+                progressBar.setVisibility(View.GONE);
+                relLayout.setVisibility(View.VISIBLE);
+                for(DataSnapshot ds : dataSnapshot.getChildren())
+                {
+                    Notification notification = ds.getValue(Notification.class);
+                    list.add(0,notification);
+                }
+                recyclerViewAdapter.notifyDataSetChanged();
+            }
+            @Override
+            public void onCancelled(@NonNull DatabaseError databaseError) {
+
+            }
+        });
         buttonReturnToTop.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

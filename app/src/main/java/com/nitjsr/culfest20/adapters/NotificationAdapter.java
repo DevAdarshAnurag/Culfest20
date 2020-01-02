@@ -9,6 +9,7 @@ import android.widget.TextView;
 
 import com.nitjsr.culfest20.R;
 import com.nitjsr.culfest20.models.Notification;
+import com.nitjsr.culfest20.utilities.EventDetails;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
@@ -38,17 +39,16 @@ public class NotificationAdapter extends RecyclerView.Adapter<NotificationAdapte
     @Override
     public void onBindViewHolder(@NonNull final MyViewHolder holder, int position) {
 
-
         holder.title.setText((CharSequence) mList.get(position).getTitle());
-
-        holder.description.setText((CharSequence) mList.get(position).getDescription());
+        holder.notiIcon.setImageResource(EventDetails.eventIcon[mList.get(position).getEvent()]);
+        holder.body.setText((CharSequence) mList.get(position).getBody());
 
         holder.expand.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
                 holder.expand.setVisibility(View.INVISIBLE);
-                holder.description.setVisibility(View.VISIBLE);
+                holder.body.setVisibility(View.VISIBLE);
                 holder.contract.setVisibility(View.VISIBLE);
 
             }
@@ -57,7 +57,7 @@ public class NotificationAdapter extends RecyclerView.Adapter<NotificationAdapte
             @Override
             public void onClick(View v) {
                  holder.contract.setVisibility(View.INVISIBLE);
-                 holder.description.setVisibility(View.GONE);
+                 holder.body.setVisibility(View.GONE);
                  holder.expand.setVisibility(View.VISIBLE);
             }
         });
@@ -67,7 +67,7 @@ public class NotificationAdapter extends RecyclerView.Adapter<NotificationAdapte
     public void onViewDetachedFromWindow(@NonNull MyViewHolder holder) {
         super.onViewDetachedFromWindow(holder);
         holder.contract.setVisibility(View.INVISIBLE);
-        holder.description.setVisibility(View.GONE);
+        holder.body.setVisibility(View.GONE);
         holder.expand.setVisibility(View.VISIBLE);
     }
 
@@ -78,15 +78,16 @@ public class NotificationAdapter extends RecyclerView.Adapter<NotificationAdapte
 
     public static class MyViewHolder extends RecyclerView.ViewHolder{
 
-       private TextView title, description;
-       private ImageView expand, contract;
+       private TextView title, body;
+       private ImageView expand, contract, notiIcon;
 
         public MyViewHolder(@NonNull View itemView) {
             super(itemView);
             expand =itemView.findViewById(R.id.expand_sign_down);
             contract = itemView.findViewById(R.id.contract_sign_up);
             title = itemView.findViewById(R.id.title);
-            description = itemView.findViewById(R.id.description);
+            body = itemView.findViewById(R.id.noti_body);
+            notiIcon = itemView.findViewById(R.id.noti_icon);
         }
 
     }

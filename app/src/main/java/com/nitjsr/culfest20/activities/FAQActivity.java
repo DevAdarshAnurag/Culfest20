@@ -33,7 +33,7 @@ public class FAQActivity extends AppCompatActivity {
         list.add(new FAQ("Question : " + "How one can be the Campus Ambassador of Culfest 20?", "Answer : " + "If you want to represent Culfest in your college and city, it is very simple through Campus Ambassador Program. Be a part of it and help us bring more participation. Anyone with good communication and managerial skills can apply for this. For more details on registration you may contact Public Relations team of Culfest 20."));
         list.add(new FAQ("Question : " + "Can people of any age-group attend Culfest 20?", "Answer : " + "No, Only school or college students are allowed."));
 
-        list.add(new FAQ("Question : " + "How do I register online for the  Culfest 20?", "Answer : " + "Go to your Profile section in Culfest 20 app and get your Culfest ID(CFAXXXX). But offline registration needs to be done in order to participate in the events."));
+        list.add(new FAQ("Question : " + "How do I register online for the  Culfest 20?", "Answer : " + "Go to your Profile section in Culfest20 app and get your Culfest ID(CFAXXXX). But offline registration needs to be done in order to participate in the events."));
 
         list.add(new FAQ("Question : " + "What is the process of offline registration?", "Answer : " + "Registration process will start from few days before 14th February and will be open all the time during the fest except during the time of pronites. You need to show your Culfest ID and pay the required amount in order to confirm your registration."));
         list.add(new FAQ("Question : " + "What is the registration fee for Culfest 20?", "Answer : " + "Registration fee for Culfest 20 will be disclosed later"));

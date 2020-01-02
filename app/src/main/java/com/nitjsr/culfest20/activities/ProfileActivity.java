@@ -121,7 +121,7 @@ public class ProfileActivity extends AppCompatActivity {
         list.add(new Events(R.drawable.ic_mega_events,R.color.colorPrimaryDark,"Mega Events","\u20B9 2,38,000"));
         list.add(new Events(R.drawable.ic_dance,R.color.fb,"Dance","\u20B9 60,600"));
         list.add(new Events(R.drawable.ic_vocals,R.color.insta,"Vocals","\u20B9 58,600"));
-        list.add(new Events(R.drawable.ic_qunite,R.color.red,"QuNITe","\u20B9 42,000"));
+        list.add(new Events(R.drawable.ic_qunite,R.color.red,"Quiz","\u20B9 42,000"));
         list.add(new Events(R.drawable.ic_fine_arts,R.color.gold,"Fine Arts","\u20B9 50,800"));
         list.add(new Events(R.drawable.ic_fashion,R.color.colorAccent,"Fashion","\u20B9 70,000"));
         list.add(new Events(R.drawable.ic_dramatics,R.color.colorPrimaryDark,"Dramatics","\u20B9 90,000"));

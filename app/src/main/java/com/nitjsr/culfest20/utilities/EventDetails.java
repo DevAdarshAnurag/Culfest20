@@ -18,6 +18,10 @@ public class EventDetails {
     };
 
 
+    public static final int eventIcon[] = new int[]{R.drawable.ic_lightbulb_outline_black_24dp,R.drawable.ic_mega_events,R.drawable.ic_dance,
+            R.drawable.ic_vocals,R.drawable.ic_qunite,R.drawable.ic_fine_arts,R.drawable.ic_fashion,R.drawable.ic_dramatics,R.drawable.ic_photography,
+            R.drawable.ic_literary,R.drawable.ic_informals};
+
     public static final int bgEvent[] = new int[]{
             R.drawable.bg_vocals,R.drawable.bg_dance,R.drawable.bg_vocals,R.drawable.bg_quiz,R.drawable.bg_fine_arts,R.drawable.bg_vocals,
             R.drawable.bg_drama,R.drawable.bg_phocus,R.drawable.bg_literary,R.drawable.bg_vocals

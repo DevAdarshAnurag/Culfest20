@@ -6,22 +6,38 @@
     android:layout_height="match_parent"
     tools:context=".fragments.NotificationListFragment">
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recycler_view"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent" />
-
-    <com.github.clans.fab.FloatingActionButton
-        android:id="@+id/fab_noti_top"
+    <com.github.ybq.android.spinkit.SpinKitView
+        android:id="@+id/noti_list_progress_bar"
+        style="@style/SpinKitView.ThreeBounce"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="8dp"
-        android:src="@drawable/ic_go_top"
-        app:fab_colorNormal="@color/gold"
-        app:fab_colorPressed="@color/colorAccent"
-        app:fab_size="normal" />
+        android:layout_centerInParent="true"
+        app:SpinKit_Color="@color/colorPrimary" />
+
+    <RelativeLayout
+        android:id="@+id/noti_list_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/fab_noti_top"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="16dp"
+            android:src="@drawable/ic_go_top"
+            app:fab_colorNormal="@color/gold"
+            app:fab_colorPressed="@color/colorAccent"
+            app:fab_size="normal" />
+
+    </RelativeLayout>
 
 </RelativeLayout>

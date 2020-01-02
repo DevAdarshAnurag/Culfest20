@@ -166,7 +166,7 @@
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
             android:layout_marginStart="8dp"
-            android:layout_marginBottom="8dp"
+            android:layout_marginBottom="16dp"
             app:menu_animationDelayPerItem="60"
             app:menu_backgroundColor="@android:color/transparent"
             app:menu_buttonSpacing="0dp"

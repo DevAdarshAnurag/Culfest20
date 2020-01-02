@@ -108,24 +108,30 @@ public class RegisterActivity extends AppCompatActivity {
 
                         @Override
                         public void onComplete(@Nullable DatabaseError databaseError, boolean b, @Nullable DataSnapshot dataSnapshot) {
-                            String culfestId = "CFA";
-                            if (cid < 10)
-                                culfestId = culfestId + "000" + cid;
-                            else if (cid < 100)
-                                culfestId = culfestId + "00" + cid;
-                            else if (cid < 1000)
-                                culfestId = culfestId + "0" + cid;
+                            if(b && dataSnapshot!=null) {
+                                String culfestId = "CFA";
+                                if (cid < 10)
+                                    culfestId = culfestId + "000" + cid;
+                                else if (cid < 100)
+                                    culfestId = culfestId + "00" + cid;
+                                else if (cid < 1000)
+                                    culfestId = culfestId + "0" + cid;
+                                else
+                                    culfestId = culfestId + cid;
+                                User user = new User(name, institute, instituteId, contact, finalAcc, false, false, false, finalTShirt, uid, email, culfestId);
+                                reference.setValue(user).addOnSuccessListener(new OnSuccessListener<Void>() {
+                                    @Override
+                                    public void onSuccess(Void aVoid) {
+                                        Toast.makeText(RegisterActivity.this, "Registered Successfully", Toast.LENGTH_LONG).show();
+                                        startActivity(new Intent(RegisterActivity.this, DBCheckActivity.class));
+                                        finish();
+                                    }
+                                });
+                            }
                             else
-                                culfestId = culfestId + cid;
-                            User user = new User(name, institute, instituteId, contact, finalAcc,false,false,false, finalTShirt, uid, email, culfestId);
-                            reference.setValue(user).addOnSuccessListener(new OnSuccessListener<Void>() {
-                                @Override
-                                public void onSuccess(Void aVoid) {
-                                    Toast.makeText(RegisterActivity.this, "Registered Successfully", Toast.LENGTH_LONG).show();
-                                    startActivity(new Intent(RegisterActivity.this, DBCheckActivity.class));
-                                    finish();
-                                }
-                            });
+                            {
+                                Toast.makeText(RegisterActivity.this, "Registration Failed. Try Again.", Toast.LENGTH_SHORT).show();
+                            }
                         }
                     });
 

@@ -42,18 +42,6 @@ public class EventChipAdapter extends RecyclerView.Adapter<EventChipAdapter.myVi
     @Override
     public void onBindViewHolder(@NonNull EventChipAdapter.myViewHolder holder, int position) {
         Events event = list.get(position);
-        DatabaseReference ref = FirebaseDatabase.getInstance().getReference(event.getEventName()).child(FirebaseAuth.getInstance().getCurrentUser().getUid());
-        ref.addValueEventListener(new ValueEventListener() {
-            @Override
-            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-                if(dataSnapshot.exists())
-                    holder.chip.setChipBackgroundColorResource(event.getEventColor());
-            }
-            @Override
-            public void onCancelled(@NonNull DatabaseError databaseError) {
-
-            }
-        });
         holder.chip.setText(event.getEventName());
         holder.chip.setChipIconResource(event.getEventImage());
         holder.chip.setChipIconSize(32);
@@ -64,6 +52,18 @@ public class EventChipAdapter extends RecyclerView.Adapter<EventChipAdapter.myVi
                 intent.putExtra("event_id",position);
                 intent.setFlags(Intent.FLAG_ACTIVITY_SINGLE_TOP);
                 context.startActivity(intent);
+            }
+        });
+        DatabaseReference ref = FirebaseDatabase.getInstance().getReference(event.getEventName()).child(FirebaseAuth.getInstance().getCurrentUser().getUid());
+        ref.addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                if(dataSnapshot.exists())
+                    holder.chip.setChipBackgroundColorResource(event.getEventColor());
+            }
+            @Override
+            public void onCancelled(@NonNull DatabaseError databaseError) {
+
             }
         });
     }
