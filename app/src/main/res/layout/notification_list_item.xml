@@ -24,7 +24,8 @@
             android:layout_height="32dp"
             android:layout_marginStart="8dp"
             android:contentDescription="@string/notification_icon"
-            android:src="@drawable/ic_lightbulb_outline_black_24dp" />
+            android:src="@drawable/ic_lightbulb_outline_black_24dp"
+            android:tint="@color/black" />
 
         <TextView
             android:id="@+id/title"

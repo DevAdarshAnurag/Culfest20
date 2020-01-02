@@ -26,15 +26,10 @@ public class DeveloperActivity extends AppCompatActivity {
 
         ArrayList<Developer> devList = new ArrayList<Developer>();
         devList.add(new Developer("Adarsh 'nightmare' Anurag","8797834204", "https://www.linkedin.com/in/adarsh-anurag-b7a0ba128/","https://www.instagram.com/adarsh_nightmare_anurag", R.drawable.ic_stat_onesignal_default));
-        devList.add(new Developer("Champa 'petrol' Sama","","","",R.drawable.ic_stat_onesignal_default));
+        devList.add(new Developer("Himesh 'petrol' Patel","","","",R.drawable.ic_stat_onesignal_default));
         devList.add(new Developer("Abhinay Kumar", "8825326346",  "https://www.linkedin.com/in/abhinay-kumar-3b3345178","https://www.instagram.com/kumarabhinay599",R.drawable.ic_stat_onesignal_default));
         devList.add(new Developer("Nikhil","","","",R.drawable.ic_stat_onesignal_default));
-        devList.add(new Developer("Shubham","","","",R.drawable.ic_stat_onesignal_default));
-        devList.add(new Developer("Martande","","","",R.drawable.ic_stat_onesignal_default));
-        devList.add(new Developer("Dhambere","","","",R.drawable.ic_stat_onesignal_default));
-        devList.add(new Developer("Martande","","","",R.drawable.ic_stat_onesignal_default));
-        devList.add(new Developer("Dhambere","","","",R.drawable.ic_stat_onesignal_default));
-
+        devList.add(new Developer("Kartik Bhargava","","","",R.drawable.ic_stat_onesignal_default));
         RecyclerView recyclerView = findViewById(R.id.rv_developers);
         DeveloperAdapter developerAdapter = new DeveloperAdapter(devList,this);
         recyclerView.setLayoutManager(new LinearLayoutManager(DeveloperActivity.this));

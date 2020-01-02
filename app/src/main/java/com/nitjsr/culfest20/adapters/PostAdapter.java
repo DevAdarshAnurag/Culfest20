@@ -57,7 +57,7 @@ public class PostAdapter extends RecyclerView.Adapter<PostAdapter.MyViewHolder> 
 
             @Override
             public void onError(Exception e) {
-                Picasso.get().load(posts.get(position).getImage()).into(holder.image, new Callback() {
+                Picasso.get().load(posts.get(position).getImage()).placeholder(R.drawable.bg_culfest_post).into(holder.image, new Callback() {
                     @Override
                     public void onSuccess() {
 
@@ -72,7 +72,7 @@ public class PostAdapter extends RecyclerView.Adapter<PostAdapter.MyViewHolder> 
             }
         });
         //lots of work to do......
-        holder.nlikes.setText((posts.get(position).getLikes().size() - 1)+"");
+        holder.nlikes.setText((posts.get(position).getLikes().size() - 1) + "");
         holder.description.setText(posts.get(position).getDescription());
         if (FirebaseAuth.getInstance().getCurrentUser() != null) {
             if (posts.get(position).getLikes().containsKey(FirebaseAuth.getInstance().getUid())) {
@@ -116,8 +116,8 @@ public class PostAdapter extends RecyclerView.Adapter<PostAdapter.MyViewHolder> 
         }
         DownloadManager downloadManager = (DownloadManager) context.getSystemService(Context.DOWNLOAD_SERVICE);
         DownloadManager.Request request = new DownloadManager.Request(Uri.parse(url));
-        request.setTitle("Culfest Post");
-        request.setDescription("Downloading");
+        request.setTitle("Culfest'20 Image");
+        request.setDescription("Downloading...");
         request.setMimeType("image/jpeg");
         request.setNotificationVisibility(DownloadManager.Request.VISIBILITY_VISIBLE_NOTIFY_COMPLETED);
         request.setDestinationInExternalPublicDir(Environment.DIRECTORY_DCIM, File.separator + "Culfest20" + File.separator + filename);

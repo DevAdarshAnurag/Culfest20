@@ -8,7 +8,7 @@ public class EventDetails {
             "Mega Events",
             "Dance",
             "Vocals",
-            "QuNITe",
+            "Quiz",
             "Fine Arts",
             "Fashion",
             "Dramatics",
@@ -31,7 +31,7 @@ public class EventDetails {
             {"Face Painting","Rangoli","Triathlon","Claydoh","Poshak","Finger Painting","Soap Carving"},
             {"Panache","Best Designer"},
             {"Rangmanch","Panch Parmeshwar","Halla Bol","Mime","Instant Khichdi"},
-            {"Instant-o-Graphy","48 hours"},
+            {"Instant-o-Graphy","MIS-EN-SCENE"},
             {"Potpourri","Journalism","Policy Debate","SSMQ","Just a Minute","Poetry Slam"},
             {"Antakshari","Paper Dance","Blind Date","PUBG","My Way or Highway"}
     };
@@ -671,23 +671,33 @@ public class EventDetails {
                     "chaato judge ki"
             },
             {//Instant-o-Graphy
-                    "1. There is no Prelims round for entry into the contest.  \n" +
-                            "2. This is a solo/team event. The team can have a maximum of 2 members.  \n" +
-                            "3. The photographs are to be taken relevant to the theme which will be provided to you in the campus, at room 212, during 10:00 am-12:00 pm on 15/02/2019  \n" +
-                            "4. [Three] themes have to be chosen at random, out of which [two] are to be selected by a team.  \n" +
-                            "5. The photographs must be taken during the Culfest’19 period and they must contain proper EXIF data (date time on which the photo was taken, embedded in the file).  \n" +
-                            "6. General Image Retouching (adjustments of Exposure, Contrast, Cropping, etc.) and Color Correction is permitted  \n" +
-                            "7. Image Manipulation as Graphic-Alteration is not allowed  8. Submission Deadline: 11:59 pm on 16/02/2019.  \n" +
-                            "9. The Results are most likely to be announced on 17/02/2019 on the Culfest's Facebook Page.",
-                    //48 Hours
-                    "1. There is no Prelims round for entry into this contest. \n" +
-                            "2. This is a team event. The team can have a maximum representation of 3 members.  \n" +
-                            "3. The themes shall be posted on the Facebook Page/Website of Culfest at 10:00 am on the first day of the fest.  \n" +
-                            "4. The video must be submitted at 10:00 am on the final day of fest.  \n" +
-                            "5. Use of DSLRs for recording the videos should be preferred, but a better quality smartphone camera is also recommended.  \n" +
-                            "6. Genre of the video shall be based on your own interpretations.   \n" +
-                            "7. The video should include the Team Name and the Title as the opening credits.   \n" +
-                            "8. Video length limit is 5 minutes including credits.",
+                    "1. There is no preliminary round for entry into the contest.\n" +
+                            "2. You can come up with a team of minimum 1 member and maximum of 2 members.\n" +
+                            "3. The photographs are to be taken relevant to the topic which will be provided to you in the campus, in the room 212, during 10:00 am-12:00 pm on Date: XX.XX.XXXX\n" +
+                            "4. [Three] themes have to be chosen at random, out of which [two] are to be selected by a team.\n" +
+                            "5. The photographs must be taken during the Culfest'20 period and they must contain\n" +
+                            "proper EXIF data (date time on which the photo was taken, embedded in the file).\n" +
+                            "6. General Image Retouching Exposure (adjustments of Contrast, Cropping, etc.) and\n" +
+                            "Color Correction is permitted.\n" +
+                            "7. Image manipulation as Graphic-Alteration is not allowed.\n" +
+                            "8. Submission Deadline : XX.XX.XXXX at time XXXXXXXXX\n" +
+                            "9. The Results are most likely to be announced on  date: on the Culfest’s Facebook, and the app.\n",
+                    //48 Hours or MISE-EN-SCENE
+                    "• This is an online event.\n" +
+                            "• You are not needed to be present in the campus for this event.\n" +
+                            "• There is no registration fee, if and only if you want to participate in only this event in CULFEST'20. In this case you need to contact the Coordinator of this event to get your \"Phocus registration Id\" which is free of cost. But if You have a Culfest Id.(Which is registered for all the events on-site), you can participate without the “Phocus Registration ID”.\n" +
+                            "• Registration form will be provided on the facebook page of “Phocus” by 31st January 2020. \n" +
+                            "• \"Phocus registration Id\" is only valid for this event and participants will not get any type of goodies, T-Shirts and accommodation from team CULFEST.\n" +
+                            "• You need to provide your bank details to coordinators at the time of registration.\n" +
+                            "• There is no preliminary round for entry into this contest.\n" +
+                            "• This is a team event. The team can have a maximum of 3 members and a minimum of 1 member..\n" +
+                            "• The themes will be posted on the Facebook Page/Website of Culfest as well as facebook page of Phocus at 10:00am on 7 February 2020.  \n" +
+                            "• The video must be submitted at/before 10:00 am on 14th Feb 2020.\n" +
+                            "• Use of DSLRs for recording the videos should be preferred, but a better quality smartphone camera is also recommended.\n" +
+                            "• Genre of the video shall be based on your own interpretations.\n" +
+                            "• The video should include the Team Name and the Title as the opening credits.\n" +
+                            "• Video length limit is 5 minutes including credits.\n" +
+                            "• You need to upload your film on Google Drive or Youtube with at least 3 raw footages & share the link with Team Phocus.\n",
             },
             {//Potpourri
                     "• Number of Events ( 2): English Potpourri and Hindi Potpourri   \n" +
@@ -842,24 +852,12 @@ public class EventDetails {
                     "Co-ordinator: VIJAY SRIHARSHA (+91  9491264544)" +
                             "\nJoint Co-ordinator- Mayank (+91 9075167388) ",
                     //Halla bol
-                    "Dushyant Chaudhary  \n" +
-                            "8077842641  \n" +
-                            "\n" +
-                            "Joint Coordinator : \n" +
-                            "\n" +
-                            "Yash Prasad  \n" +
-                            "7301994883  \n" +
-                            "\n" +
-                            "Akanksha Sudhanshu  \n" +
-                            "9939616812",
+                    "Coordinator- \nTarun awasthi(7897130875)\n" +
+                            "Joint Coordinator-\nDevbrat Kumar Modi(99835 38068)\n" +
+                            "Rishita Jain( 94793 07427)",
                     //Theme quiz
-                    " Ujjwal Gupta\n" +
-                            "7979886735 \n" +
-                            " \n" +
-                            "Joint Coordinator:\n " +
-                            "\n" +
-                            "Pranav Kumar singh\n" +
-                            "7764042620",
+                    "Coordinator-\nAditya Kumar Singh(9430000276)\n" +
+                            "Joint Coordinator-\n Rahul Ranjan(7258962614)",
                     //Battle of Bands
                     "Coordinator:\n" +
                             "Harshal Desai\n" +
@@ -877,13 +875,10 @@ public class EventDetails {
                             "CO-ORDINATOR: NITIN DHIMAN (7206607969)\n" +
                             "JOINT COORDINATORS: ESLAVATH SRAVN (6303583813)\n",
                     //Poshak
-                    " Vikrant Kumar\n " +
-                            "8294484301\n" +
-                            "\n" +
-                            "Joint Coordinator:\n " +
-                            "\n" +
-                            "Gaurang Bairathi \n" +
-                            " 7014889685 ",
+                    "Coordinator-\n"+
+                            "Aatish(9304136867)"+
+                            "Joint Coordinator-\n"+
+                            "Shivam(9523349049)",
             },
             {
                     //Foot Loose
@@ -972,154 +967,89 @@ public class EventDetails {
 
             {
                     //Theme quiz
-                    "Ujjwal Gupta\n" +
-                            "7979886735\n" +
-                            "\n" +
-                            "Joint Coordinator:\n" +
-                            "\n" +
-                            "Pranav Kumar singh\n" +
-                            "7764042620",
+                    "Coordinator- \nAditya Kumar Singh(9430000276)\n" +
+                            "Joint Coordinator- \nRahul Ranjan(7258962614)",
                     //Spent quiz
-                    "Abhishek Singh\n" +
-                            "8580150664\n" +
-                            "\n" +
-                            "Joint Coordinator:\n" +
-                            "\n" +
-                            "Mayank Mallick\n" +
-                            "9650917865",
+                    "Coordinator- \nMayank Mallick (9650917865)\n" +
+                            "Joint Coordinator- \nSourav singh (9128215023)",
                     //Biztech quiz
-                    " Piyush\n" +
-                            "8651628740\n" +
-                            "\n" +
-                            "Joint Coordinator:\n" +
-                            "\n" +
-                            "Shitanshu Kumar\n" +
-                            "7908377898 ",
+                    "Coordinator- \nVishal Raj (9304191836)\n" +
+                            "JJoint Coordinator- \nAyush Ratna(8986617968)",
                     //India quiz
-                    "Akash Jha\n" +
-                            "9097670851\n" +
-                            "\n" +
-                            "Joint Coordinator:\n" +
-                            "\n" +
-                            "SHANTANU KUMAR\n" +
-                            "8210870024 "
+                    "Coordinator- \nRonit Muduli(8637271700)\n" +
+                            "Joint Coordinator- \nAman Saurav(7488991553)"
             },
             {   //Face Painting
-                    "ANMOL\n" +
-                            "9801119003\n" +
-                            "\n" +
-                            "JOINT COORDINATOR:\n" +
-                            "\n" +
-                            "SHRESTA SONKAR\n" +
-                            "7974044565",
+                    "Coordinator-\n"+
+                    "Shresta(7974044565)\n"+
+                    "Joint Coordinator-\n"+
+                    "Ujala(8434102105)",
                     //Rangoli
-                    " MLN BHARGAV\n" +
-                            "9177634929 \n" +
-                            "\n" +
-                            "Joint coordinator: \n" +
-                            "\n" +
-                            "RIDDHI\n" +
-                            "9939949490 ",
+                    "Coordinator-\n"+
+                    "T. Durga Rajeshwari(8639702817)\n"+
+                    "Joint Coordinator-\n"+
+                    "Sivanag(7013860584)",
                     //Triathlon
-                    "JEET KUMAR YADAV\n" +
-                            "8987580314 \n" +
-                            "\n" +
-                            "Joint coordinator :\n" +
-                            "\n" +
-                            "SUGANDH\n" +
-                            "8919288804 ",
+                    "Coordinator-\n"+
+                    "Riddhi(8789466365)\n" +
+                            "Joint Coordinator-\n"+
+                    "Rohan(8426862427)",
                     //Claydoh
-                    "MANSI\n" +
-                            "9973356195 \n" +
-                            "\n" +
-                            "Joint Coordinator:\n" +
-                            "\n" +
-                            "Abhishek Verma\n" +
-                            "9314092297 \n",
+                    "Coordinator-\n"+
+                    "Abhishek(9314092297)\n"+
+                    "Joint Coordinator-\n"+
+                    "Shristi(6205658185)",
                     //Poshak
-                    " Vikrant kumar\n" +
-                            "8294484301 \n" +
-                            "\n" +
-                            "Joint coordinator :\n" +
-                            "\n" +
-                            "Satyam sonkar\n" +
-                            "8765438034 / 9140417855",
+                    "Coordinator-\n"+
+                    "Aatish(9304136867)"+
+                    "Joint Coordinator-\n"+
+                    "Shivam(9523349049)",
                     //Finger Painting
-                    " A.H.V SAI KAMAL KUMAR \n" +
-                            "7995120400 \n" +
-                            "\n" +
-                            "Joint coordinator : \n" +
-                            "\n" +
-                            "TALLURI DURGA RAJESWARI\n" +
-                            "9676223525 ",
+                    "Coordinator-\n"+
+                    "Afjal(8789278802)\n"+
+                    "Joint Coordinator-\n"+
+                    "Sagar(8873558721)",
                     //Soap Carving
-                    "Hello, kon?, ham bole, kon?, ham bole, nahi janti"
+                    "N/A"
 
             },
             {//Panache
-                    "SEGMENT HEAD: SYED SHAHI IMRAN (8210353936)\n" +
-                            "CO-ORDINATOR: NITIN DHIMAN (7206607969)\n" +
-                            "JOINT COORDINATORS: ESLAVATH SRAVN (6303583813)\n",
-                    "SEGMENT HEAD: SYED SHAHI IMRAN (8210353936)\n" +
-                            "CO-ORDINATOR: NITIN DHIMAN (7206607969)\n" +
-                            "JOINT COORDINATORS: ESLAVATH SRAVN (6303583813)\n"
+                    "SEGMENT HEAD: \nSYED SHAHI IMRAN (8210353936)\n" +
+                            "CO-ORDINATOR: \nNITIN DHIMAN (7206607969)\n" +
+                            "JOINT COORDINATORS: \nESLAVATH SRAVN (6303583813)\n",
+                    "SEGMENT HEAD: \nSYED SHAHI IMRAN (8210353936)\n" +
+                            "CO-ORDINATOR: \nNITIN DHIMAN (7206607969)\n" +
+                            "JOINT COORDINATORS: \nESLAVATH SRAVN (6303583813)\n"
             },
             {
                     //Rangmanch
-                    "Priya KUmari\n" +
-                            "7294958587\n" +
-                            " \n" +
-                            "Joint coordinator : \n" +
-                            "\n" +
-                            "Mayank Kashyap\n" +
-                            "9110192391 ",
+                    "Coordinator- \nShubham Kumar(7219998519)\n" +
+                            "Joint Coordinator-\nVatsal Raj(7667100790)",
                     //Panch Parmeshwar
-                    "Pragati Gupta \n" +
-                            "8235817548  \n" +
-                            " \n" +
-                            "Joint coordinator : \n" +
-                            "\n" +
-                            "Vishal \n" +
-                            "8210280815 ",
+                    "Coordinator-\nSubhamay Naskar(7362938154)\n" +
+                            "Joint Coordinator- \nMayank Kumar(9075167388)",
                     //Halla Bol
-                    "Dushyant Chaudhary\n" +
-                            "8077842641  \n" +
-                            " \n" +
-                            "Joint Coordinator : \n" +
-                            "\n" +
-                            "Yash Prasad\n" +
-                            "7301994883 \n" +
-                            "\n" +
-                            "Akanksha Sudhanshu \n" +
-                            "9939616812 ",
+                    "Coordinator-\n Tarun Awasthi(7897130875)\n" +
+                            "Joint Coordinator-\nDevbrat Kumar Modi(9983538068)\n"+
+                            "Rishita Jain( 94793 07427)",
                     //Mime
-                    "ANKITA KUMARI \n" +
-                            "7635062185  \n" +
-                            " \n" +
-                            "Joint Coordinator : \n" +
-                            "\n" +
-                            "Kunal \n" +
-                            "9852225814 ",
+                    "Coordinator- \nAkanksha sudhanshu(8789777982)\n" +
+                            "Joint Coordinator-\nShubham Mishra(8340762521)",
                     //Instant Khichdi
-                    ""
+                    "Coordinator-\nKunal(9110161408)\n" +
+                            "Joint Coordinator-\nShalini Singh (6203952149)"
             },
             {
                     //Instant-o-Graphy
-                    "Sanay Dev\n" +
-                            "7903197762, 8986739905 \n" +
-                            " \n" +
-                            "Joint Coordinator   \n" +
-                            "\n" +
-                            "Lakhan Mardi \n" +
-                            "7782891819 ",
-                    //48 Hours
-                    "Purushottam Kumar \n" +
-                            "9097784035 \n" +
-                            " \n" +
-                            "Joint Coordinator   \n" +
-                            "\n" +
-                            "Gautam Kuber \n" +
-                            "8709939789 "
+                    "Coordinator-\n" +
+                            "Lakhan Mardi(9110074754)"+
+                            "Joint coordinator-\n" +
+                            "Kartik Bhargava(8318006807)",
+                    //48 Hours or MIS-EN-SCENE
+                    "Coordinator-\n" +
+                            "Saurabh Mishra(7360919595)"+
+                            "Joint coordinator-\n" +
+                            "Abhishek Kumar(9135799675)"
             },
             {   //Potpurri
                     "CO-ORDINATORS- Chiranjeev (English Potpourri) (+91 7606971547)\n" +

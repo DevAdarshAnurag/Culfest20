@@ -71,7 +71,7 @@ public class PostFragment extends Fragment {
                     for (DataSnapshot dss : ds.child("likes").getChildren()) {
                         temp.getLikes().put(dss.getKey(), dss.getValue(Integer.class));
                     }
-                    posts.add(temp);
+                    posts.add(0,temp);
                 }
 
                 postAdapter.notifyDataSetChanged();

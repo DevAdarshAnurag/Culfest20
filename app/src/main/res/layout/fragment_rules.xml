@@ -11,6 +11,7 @@
         android:layout_height="match_parent"
         android:layout_margin="4dp"
         android:padding="16dp"
+        app:cardBackgroundColor="@color/colorPrimaryLight"
         app:cardCornerRadius="4dp">
 
         <ScrollView

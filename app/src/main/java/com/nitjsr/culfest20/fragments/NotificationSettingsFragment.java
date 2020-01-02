@@ -130,5 +130,61 @@ public class NotificationSettingsFragment extends Fragment implements CompoundBu
             else
                 OneSignal.sendTag("informals","false");
         }
+        if(buttonView.getId() == R.id.dance)
+        {
+            if(megaEvents.isChecked())
+                OneSignal.sendTag("dance","true");
+            else
+                OneSignal.sendTag("dance","false");
+        }
+        if(buttonView.getId() == R.id.vocals)
+        {
+            if(megaEvents.isChecked())
+                OneSignal.sendTag("vocals","true");
+            else
+                OneSignal.sendTag("vocals","false");
+        }
+        if(buttonView.getId() == R.id.qunite)
+        {
+            if(megaEvents.isChecked())
+                OneSignal.sendTag("quiz","true");
+            else
+                OneSignal.sendTag("quiz","false");
+        }
+        if(buttonView.getId() == R.id.fine_arts)
+        {
+            if(megaEvents.isChecked())
+                OneSignal.sendTag("fine_arts","true");
+            else
+                OneSignal.sendTag("fine_arts","false");
+        }
+        if(buttonView.getId() == R.id.fashion)
+        {
+            if(megaEvents.isChecked())
+                OneSignal.sendTag("fashion","true");
+            else
+                OneSignal.sendTag("fashion","false");
+        }
+        if(buttonView.getId() == R.id.dramatics)
+        {
+            if(megaEvents.isChecked())
+                OneSignal.sendTag("dramatics","true");
+            else
+                OneSignal.sendTag("dramatics","false");
+        }
+        if(buttonView.getId() == R.id.photography)
+        {
+            if(megaEvents.isChecked())
+                OneSignal.sendTag("photography","true");
+            else
+                OneSignal.sendTag("photography","false");
+        }
+        if(buttonView.getId() == R.id.literary)
+        {
+            if(megaEvents.isChecked())
+                OneSignal.sendTag("literary","true");
+            else
+                OneSignal.sendTag("literary","false");
+        }
     }
 }

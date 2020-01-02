@@ -8,6 +8,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.LinearLayout;
+import android.widget.Toast;
 
 import com.nitjsr.culfest20.R;
 import com.nitjsr.culfest20.activities.DeveloperActivity;
@@ -47,6 +48,20 @@ public class OthersFragment extends Fragment {
         map = view.findViewById(R.id.cv_maps);
         developers = view.findViewById(R.id.cv_developers);
         share = view.findViewById(R.id.cv_share);
+
+        sponsors.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(getContext(), "Coming Soon...", Toast.LENGTH_SHORT).show();
+            }
+        });
+
+        team.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(getContext(), "Coming Soon...", Toast.LENGTH_SHORT).show();
+            }
+        });
 
         stickers.setOnClickListener(new View.OnClickListener() {
             @Override

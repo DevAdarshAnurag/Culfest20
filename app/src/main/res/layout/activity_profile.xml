@@ -145,8 +145,7 @@
             android:layout_centerInParent="true"
             android:layout_marginStart="32dp"
             android:background="@color/transparent"
-            android:orientation="vertical"
-            android:src="@drawable/bg_culfest_post">
+            android:orientation="vertical">
 
             <TextView
                 android:layout_width="match_parent"

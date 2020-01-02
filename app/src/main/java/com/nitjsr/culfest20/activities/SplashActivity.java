@@ -131,7 +131,8 @@ public class SplashActivity extends AppCompatActivity {
             });
 
         } catch (ApiException e) {
-            //Toast.makeText(this,e.getMessage(),Toast.LENGTH_SHORT).show();
+            Toast.makeText(this,e.getMessage()+". Log in failed.",Toast.LENGTH_SHORT).show();
+            signOut();
             guestLogin.setVisibility(View.VISIBLE);
             signInButton.setVisibility(View.VISIBLE);
             findViewById(R.id.loader).setVisibility(View.INVISIBLE);
