@@ -17,22 +17,20 @@ public class EventDetails {
             "Informals"
     };
 
-
     public static final int eventIcon[] = new int[]{R.drawable.ic_lightbulb_outline_black_24dp,R.drawable.ic_mega_events,R.drawable.ic_dance,
             R.drawable.ic_vocals,R.drawable.ic_qunite,R.drawable.ic_fine_arts,R.drawable.ic_fashion,R.drawable.ic_dramatics,R.drawable.ic_photography,
             R.drawable.ic_literary,R.drawable.ic_informals};
 
     public static final int bgEvent[] = new int[]{
-            R.drawable.bg_vocals,R.drawable.bg_dance,R.drawable.bg_vocals,R.drawable.bg_quiz,R.drawable.bg_fine_arts,R.drawable.bg_vocals,
-            R.drawable.bg_drama,R.drawable.bg_phocus,R.drawable.bg_literary,R.drawable.bg_vocals
-    };
+            R.drawable.bg_mega_events,R.drawable.bg_dance,R.drawable.bg_vocals,R.drawable.bg_quiz,R.drawable.bg_fine_arts,R.drawable.bg_fashion,
+            R.drawable.bg_dramatics,R.drawable.bg_phocus,R.drawable.bg_literary,R.drawable.bg_informals};
 
     public static final String subEventList[][]=new String[][]{
             {"Choreo Night","Journalism","Halla Bol","Theme Quiz","Battle of Bands","Panache","Poshak"},
             {"Foot Loose","Dancing Duo","Shake On Beat","Choreo Night"},
             {"Culfest Idol","Concordia","Dulcet Duo","Euphony","Battle of Bands"},
             {"Theme Quiz","SpEnt Quiz","BizTech Quiz","EBSB Quiz"},
-            {"Face Painting","Rangoli","Triathlon","Claydoh","Poshak","Finger Painting","Soap Carving"},
+            {"Face Painting","Rangoli","Triathlon","Claydoh","Poshak","Finger Painting"},
             {"Panache","Best Designer"},
             {"Rangmanch","Panch Parmeshwar","Halla Bol","Mime","Instant Khichdi"},
             {"Instant-o-Graphy","MIS-EN-SCENE"},
@@ -45,11 +43,11 @@ public class EventDetails {
             {"\u20B9 4,800","\u20B9 9,000","\u20B9 4,800","\u20B9 42,000"},
             {"\u20B9 4,800","\u20B9 4,800","\u20B9 9,000","\u20B9 4,000","\u20B9 36,000"},
             {"\u20B9 15,000","\u20B9 9,000","\u20B9 9,000","\u20B9 9,000"},
-            {"\u20B9 7,200","\u20B9 7,200","\u20B9 9,200","\u20B9 7,200","\u20B9 15,000","\u20B9 5,000","\u20B9 kal lena"},
+            {"\u20B9 7,200","\u20B9 7,200","\u20B9 9,200","\u20B9 7,200","\u20B9 15,000","\u20B9 5,000"},
             {"\u20B9 65,000","\u20B9 5,000"},
-            {"\u20B9 26,000","\u20B9 9,000","\u20B9 42,000","\u20B9 15,000","\u20B9 kal lena"},
+            {"\u20B9 26,000","\u20B9 9,000","\u20B9 42,000","\u20B9 15,000","\u20B9 N/A"},
             {"\u20B9 5,000","\u20B9 5,000"},
-            {"\u20B9 13,000","\u20B9 4,500","\u20B9 18,000","\u20B9 9,000","\u20B9 9,000","\u20B9 kal lena"},
+            {"\u20B9 13,000","\u20B9 4,500","\u20B9 18,000","\u20B9 9,000","\u20B9 9,000","\u20B9 N/A"},
             {"","","","",""}
     };
 
@@ -149,9 +147,7 @@ public class EventDetails {
                     //Poshak
                     "‘We love your style when you face up to our challenge of inventing it. ’\n\n Do you believe in creativity? Do you think some fragments of newspaper and an urn of glue is  sufficient to fashion a dress? Then visit your mind palace for inventive designs and prepare to drape your friend with your scrap ensembles. POSHAK is your chance of shaping ordinary into extraordinary. Fashion beseeches you to set new trends! \n",
                     //Finger Painting
-                    "Do you remember how good it felt to touch the paint with your bare hands and use it to create wall art .So  its  time to relive the moments , Culfest'20  presents fine art event finger painting where you can show your creativity coupled with imagination, and let the colours speak up for the creativity and innovation in you.",
-                    //Soap Carving
-                    "Soap carving can be an interesting pastime, a hobby that can be enjoyed by both the young and the old. During the 1920s and 1930s soap carving was so popular that a national annual competition was sponsored by the Proctor and Gamble Company inviting up to 4,000 entries in 1935. So why not just grab a chisel and start shaping your imagination and make your own Disney world come true in this Culfest '20."
+                    "Do you remember how good it felt to touch the paint with your bare hands and use it to create wall art .So  its  time to relive the moments , Culfest'20  presents fine art event finger painting where you can show your creativity coupled with imagination, and let the colours speak up for the creativity and innovation in you."
             },
             {//Fashion
                     "When the lights, camera and heart-pounding music are on, the vision of models " +
@@ -190,7 +186,7 @@ public class EventDetails {
                     //Mime
                     "As they say,  \"Actions speak louder than words\". Culfest gives you a great opportunity to prove this by taking part in MIME. Mime is the art of acting out a story through body motions, without the usage of speech. ",
                     //Instant Khichdi
-                    ""
+                    "Coming soon"
 
             },
 
@@ -575,12 +571,7 @@ public class EventDetails {
                             "• If any team found guilty of violating rules, it would be eliminated. \n" +
                             "• Time Limit of the event is 1 hr. \n" +
                             "• It is a Theme based event.\n"+
-                            "• single participation is allowed",
-                    //Soap Carving
-                    "•\tMAXIMUM NUMBER OF TEAM MEMBERS: 1\n" +
-                            "•\t1 hour event\n" +
-                            "•\tAll contestants will be provided with a large (bath size) bar soap, a soap carving “knife”, pencil, and Popsicle stick.\n" +
-                            "•\tExamples : https://in.pinterest.com/explore/soap-carving/\n"
+                            "• single participation is allowed"
             },
             {//Fashion
                     //Panache
@@ -672,7 +663,7 @@ public class EventDetails {
                             " \n" +
                             "10) The organising team owns all the rights to make any necessary change in the rules if required. ",
                     //Instant Khichdi
-                    "chaato judge ki"
+                    "cooming soon..."
             },
             {//Instant-o-Graphy
                     "1. There is no preliminary round for entry into the contest.\n" +
@@ -1012,9 +1003,7 @@ public class EventDetails {
                     "Coordinator-\n"+
                     "Afjal(8789278802)\n"+
                     "Joint Coordinator-\n"+
-                    "Sagar(8873558721)",
-                    //Soap Carving
-                    "N/A"
+                    "Sagar(8873558721)"
 
             },
             {//Panache

@@ -74,6 +74,7 @@ public class PostAdapter extends RecyclerView.Adapter<PostAdapter.MyViewHolder> 
         //lots of work to do......
         holder.nlikes.setText((posts.get(position).getLikes().size() - 1) + "");
         holder.description.setText(posts.get(position).getDescription());
+        holder.time.setText(posts.get(position).getTimestamp());
         if (FirebaseAuth.getInstance().getCurrentUser() != null) {
             if (posts.get(position).getLikes().containsKey(FirebaseAuth.getInstance().getUid())) {
                 holder.like.setImageResource(R.drawable.ic_hearts_red);
@@ -133,8 +134,7 @@ public class PostAdapter extends RecyclerView.Adapter<PostAdapter.MyViewHolder> 
     class MyViewHolder extends RecyclerView.ViewHolder {
 
         ImageView image, down;
-        TextView title, nlikes;
-        TextView description;
+        TextView title, nlikes, description, time;
         ImageView like;
 
 
@@ -146,6 +146,7 @@ public class PostAdapter extends RecyclerView.Adapter<PostAdapter.MyViewHolder> 
             nlikes = itemView.findViewById(R.id.nlikes);
             down = itemView.findViewById(R.id.download);
             like = itemView.findViewById(R.id.like);
+            time = itemView.findViewById(R.id.time_stamp);
         }
     }
 

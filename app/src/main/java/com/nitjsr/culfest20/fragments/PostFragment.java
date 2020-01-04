@@ -114,7 +114,7 @@ public class PostFragment extends Fragment {
                     if (!wasRestored) {
                         youTubePlayer = player;
                         youTubePlayer.setPlayerStyle(YouTubePlayer.PlayerStyle.DEFAULT);
-                        youTubePlayer.cuePlaylist("BqgEDu3HRX1bFC6_WDbNVC2BZxMVvbXG");
+                        youTubePlayer.cuePlaylist("PLBqgEDu3HRX0pZmbTipQuuKyUi0pbuCF2");
                     }
                 }
 
