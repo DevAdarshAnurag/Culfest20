@@ -88,6 +88,19 @@ public class OthersFragment extends Fragment {
             }
         });
 
+        share.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent shareIntent = new Intent(Intent.ACTION_SEND);
+                shareIntent.setType("text/plain");
+                shareIntent.putExtra(Intent.EXTRA_SUBJECT, "Culfest '20");
+                String shareMessage = "";
+                shareMessage = shareMessage + "https://play.google.com/store/apps/details?id=" + getContext().getPackageName() + "\n";
+                shareIntent.putExtra(Intent.EXTRA_TEXT, shareMessage);
+                launch(Intent.createChooser(shareIntent, "Share..."));
+            }
+        });
+
         BounceView.addAnimTo(sponsors);
         BounceView.addAnimTo(team);
         BounceView.addAnimTo(stickers);
