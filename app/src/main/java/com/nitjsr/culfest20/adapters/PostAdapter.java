@@ -4,6 +4,7 @@ import android.app.DownloadManager;
 import android.content.Context;
 import android.net.Uri;
 import android.os.Environment;
+import android.os.Handler;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -88,7 +89,6 @@ public class PostAdapter extends RecyclerView.Adapter<PostAdapter.MyViewHolder> 
                         holder.like.setImageResource(R.drawable.ic_hearts_red);
                     } else {
                         FirebaseDatabase.getInstance().getReference("posts").child(posts.get(position).getId()).child("likes").child(FirebaseAuth.getInstance().getUid()).setValue(1);
-                        Log.i("1", posts.get(position).getId());
                         holder.like.setImageResource(R.drawable.ic_hearts_grey);
                     }
                 }
@@ -99,6 +99,25 @@ public class PostAdapter extends RecyclerView.Adapter<PostAdapter.MyViewHolder> 
             @Override
             public void onClick(View view) {
                 downloadImage(posts.get(position).getImage(), posts.get(position).getTimestamp());
+            }
+        });
+
+        holder.image.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if(holder.doubleClick)
+                {
+                    FirebaseDatabase.getInstance().getReference("posts").child(posts.get(position).getId()).child("likes").child(FirebaseAuth.getInstance().getUid()).setValue(1);
+                }
+                else {
+                    holder.doubleClick = true;
+                    new Handler().postDelayed(new Runnable() {
+                        @Override
+                        public void run() {
+                            holder.doubleClick = false;
+                        }
+                    }, 500);
+                }
             }
         });
 
@@ -137,6 +156,8 @@ public class PostAdapter extends RecyclerView.Adapter<PostAdapter.MyViewHolder> 
         TextView title, nlikes, description, time;
         ImageView like;
 
+        boolean doubleClick;
+
 
         public MyViewHolder(@NonNull View itemView) {
             super(itemView);
@@ -147,6 +168,7 @@ public class PostAdapter extends RecyclerView.Adapter<PostAdapter.MyViewHolder> 
             down = itemView.findViewById(R.id.download);
             like = itemView.findViewById(R.id.like);
             time = itemView.findViewById(R.id.time_stamp);
+            doubleClick=false;
         }
     }
 

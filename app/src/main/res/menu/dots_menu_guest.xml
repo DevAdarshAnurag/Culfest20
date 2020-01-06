@@ -18,4 +18,8 @@
         android:id="@+id/website"
         android:title="Website"
         app:showAsAction="never"/>
+    <item
+        android:id="@+id/rate"
+        android:title="Rate us"
+        app:showAsAction="never"/>
 </menu>

@@ -150,6 +150,18 @@ public class MainActivity extends AppCompatActivity {
             case R.id.faq:
                 startActivity(new Intent(MainActivity.this, FAQActivity.class));
                 break;
+            case R.id.rate:
+                Uri uri = Uri.parse("market://details?id=" + this.getPackageName());
+                Intent i = new Intent(Intent.ACTION_VIEW, uri);
+                i.addFlags(Intent.FLAG_ACTIVITY_NO_HISTORY | Intent.FLAG_ACTIVITY_NEW_DOCUMENT |
+                        Intent.FLAG_ACTIVITY_MULTIPLE_TASK);
+                try {
+                    startActivity(i);
+                } catch (Exception e) {
+                    startActivity(new Intent(Intent.ACTION_VIEW,
+                            Uri.parse("http://play.google.com/store/apps/details?id=" + this.getPackageName())));
+                }
+                break;
         }
         return super.onOptionsItemSelected(item);
     }

@@ -24,6 +24,10 @@
         android:title="Website"
         app:showAsAction="never"/>
     <item
+        android:id="@+id/rate"
+        android:title="Rate us"
+        app:showAsAction="never"/>
+    <item
         android:id="@+id/log_out"
         android:title="Log Out"
         app:showAsAction="never"/>

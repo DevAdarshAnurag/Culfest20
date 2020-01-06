@@ -39,38 +39,43 @@ public class EventDetails {
     };
 
     public static final String subEventPrizes[][]=new String[][]{
-            {"\u20B9 42,000","\u20B9 18,000","\u20B9 42,000","\u20B9 15,000","\u20B9 36,000","\u20B9 70,000","\u20B9 15,000"},
+            {"\u20B9 42,000","\u20B9 18,000","\u20B9 40,000","\u20B9 15,000","\u20B9 36,000","\u20B9 65,000","\u20B9 15,000"},
             {"\u20B9 4,800","\u20B9 9,000","\u20B9 4,800","\u20B9 42,000"},
             {"\u20B9 4,800","\u20B9 4,800","\u20B9 9,000","\u20B9 4,000","\u20B9 36,000"},
             {"\u20B9 15,000","\u20B9 9,000","\u20B9 9,000","\u20B9 9,000"},
             {"\u20B9 7,200","\u20B9 7,200","\u20B9 9,200","\u20B9 7,200","\u20B9 15,000","\u20B9 5,000"},
             {"\u20B9 65,000","\u20B9 5,000"},
-            {"\u20B9 26,000","\u20B9 9,000","\u20B9 42,000","\u20B9 15,000","\u20B9 N/A"},
+            {"\u20B9 24,000","\u20B9 7,000","\u20B9 40,000","\u20B9 15,000","\u20B9 6000"},
             {"\u20B9 5,000","\u20B9 5,000"},
-            {"\u20B9 13,000","\u20B9 4,500","\u20B9 18,000","\u20B9 9,000","\u20B9 9,000","\u20B9 N/A"},
+            {"\u20B9 13,000","\u20B9 18,000","\u20B9 9,000","\u20B9 9,000","\u20B9 4,000","\u20B9 3000"},
             {"","","","",""}
     };
 
     public static String description[][] = new String[][]{
-            {//ChoreoNight
-                    "Synchronize your steps to the 'dhol', act your costumes to represent your character and who knows you might land on a bounty. Come this Culfest and let your team craft to win hearts. This gala event promises to give you life long memories.",
+            {       //ChoreoNight
+                    "Synchronize your steps to the 'dhol', act your costumes to represent your character and who knows you might land on a bounty. Come this Culfest and let your team craft to win hearts. This gala event promises to give you life long memories."+
+                    "\n\nPrize distribution:\n1st - \u20B9 22,000 \n 2nd - \u20B9 12,000 \n 3rd - \u20B9 8,000 \n",
                     //Journalism
                     "“Anybody can be a journalist. There are opportunities for all of us to contribute to stories “. If you’re an intellectually curious person— let’s assume that you are—you are likely to have embraced a number of notions about how the world works, how it should work and who should be running it. There should be no strings attached to your opinions, no one asking you to tone it down, and nobody that really wishes you to just shut the hell up and report just the fluffy pieces. You should also lack the warm and fuzzy attitude of your naysayers (and the trolls) who are always right when they spout off at the mouth in the comment section or on social media. In the age of the internet and social media, what does it mean to be a journalist? What is journalism?   \n" +
                             "1. Getting accurate information fast And treating it skeptically.   \n" +
                             "2. Good journalism also means treating your audience with respect And treating the truth with respect   \n" +
                             "3. Doing it carefully, properly and ethically.   \n" +
-                            "4. No matter what the medium.",
+                            "4. No matter what the medium."+
+                            "\n\nPrize distribution:\n1st - \u20B9 9,000 \n 2nd - \u20B9 6,000 \n 3rd - \u20B9 3,000 \n",
                     //Halla Bol
-                    "The street play event: An art that encompasses entertainment with community education. Carpe Diem provides you a creative platform to make aware the incognizant – a place to voice your concerns. A one of a kind competition will test enthusiasm and energy of teams in tight packed performances on given issues. Come and showcase the creativity in you against the odd of not having a stage set for you. Remember to bring back the feel of the 90’s though. ",
+                    "The street play event: An art that encompasses entertainment with community education. Carpe Diem provides you a creative platform to make aware the incognizant – a place to voice your concerns. A one of a kind competition will test enthusiasm and energy of teams in tight packed performances on given issues. Come and showcase the creativity in you against the odd of not having a stage set for you. Remember to bring back the feel of the 90’s though."+
+                            "\n\nPrize distribution:\n1st - \u20B9 18,000 \n 2nd - \u20B9 13,000 \n 3rd - \u20B9 9,000 \n",
                     //Theme Quiz
-                    "Reminiscence  the wonders of past and traverse through the annals of time to the glorious era of antiquity. The theme quiz will take you on a hopping ride to the bygone centuries leaving you with a sense of awe and astonishment. Fasten your seatbelts and enjoy the ride.",
+                    "Reminiscence  the wonders of past and traverse through the annals of time to the glorious era of antiquity. The theme quiz will take you on a hopping ride to the bygone centuries leaving you with a sense of awe and astonishment. Fasten your seatbelts and enjoy the ride."+
+                            "\n\nPrize distribution:\n1st - \u20B9 7,000 \n 2nd - \u20B9 5,000 \n 3rd - \u20B9 3,000 \n",
                     //Battle of Bands
                     "“The true beauty of music is that it connects people. It carries a message, and we, the musicians, are the messengers.” - Ron Ayers  \n" +
                             "If you have a message that can stir the mass into unison, wait no more because Culfest’19 brings you, just the dais you need. " +
                             "Battle of Band provides you with the opportunity of presenting your own idea of band music and, displaying your talent like never before. " +
                             "Let the audience have a taste of your creation and leave them craving for more. Practice like you have never won. Perform like you have never lost. " +
                             "Don’t keep calm, set the stage on fire and the crowd up roaring." +
-                            " Note: Register before 12th February for this event. A maximum of 10 teams are allowed. ",
+                            " Note: Register before 12th February for this event. A maximum of 10 teams are allowed."+
+                    "\n\nPrize distribution:\n1st - \u20B9 15,000 \n 2nd - \u20B9 12,000 \n 3rd - \u20B9 9,000 \n",
                     //Panche
                     "When the lights, camera and heart-pounding music are on, the vision of models " +
                             "sashaying down the ramp is absolutely enthralling, for the students, professors " +
@@ -91,63 +96,84 @@ public class EventDetails {
                             "someone would respond to it in such a negative way. " +
                             "If it didn't matter, you would express a disinterest... Not a dislike!\" - Robin " +
                             "Givhan\n\n" +
-                            "Nobody can stay unconsumed from the 'fashion ka jalwa' for a long time.",
+                            "Nobody can stay unconsumed from the 'fashion ka jalwa' for a long time."+
+                            "\n\nPrize distribution:\n1st - \u20B9 32,000 \n 2nd - \u20B9 20,000 \n 3rd - \u20B9 10,000 \n",
                     //Poshak
-                    "‘We love your style when you face up to our challenge of inventing it. ’ Do you believe in creativity? Do you think some fragments of newspaper and an urn of glue is sufficient to fashion a dress? Then visit your mind palace for inventive designs and prepare to drape your friend with your scrap ensembles. POSHAK is your chance of shaping ordinary into extraordinary. Fashion beseeches you to set new trends!\n"
+                    "‘We love your style when you face up to our challenge of inventing it. ’ Do you believe in creativity? Do you think some fragments of newspaper and an urn of glue is sufficient to fashion a dress? Then visit your mind palace for inventive designs and prepare to drape your friend with your scrap ensembles. POSHAK is your chance of shaping ordinary into extraordinary. Fashion beseeches you to set new trends!\n"+
+                            "\n\nPrize distribution:\n1st - \u20B9 7,000 \n 2nd - \u20B9 5,000 \n 3rd - \u20B9 3,000 \n"
             },
 
             {//Foot Loose
-                    "“Great dancers are not great because of their technique; it’s because of their passion.” Do you think you have it in you what it takes to do the locking and popping of b-Boer? Or you consider yourself more of a freestyler? It doesn’t matter if you are a jazz dancer or a \"chak de phatte\" bhangra specialist. Put your dancing shoes and compete in the solo dance competition to prove that you are a connoisseur when it comes to grooving to the beats. ",
+                    "“Great dancers are not great because of their technique; it’s because of their passion.” Do you think you have it in you what it takes to do the locking and popping of b-Boer? Or you consider yourself more of a freestyler? It doesn’t matter if you are a jazz dancer or a \"chak de phatte\" bhangra specialist. Put your dancing shoes and compete in the solo dance competition to prove that you are a connoisseur when it comes to grooving to the beats."+
+                            "\n\nPrize distribution:\n1st - \u20B9 2,500 \n 2nd - \u20B9 1,500 \n 3rd - \u20B9 800 \n",
 
                     //Dancing Duo
-                    "'“It is with your feet that you move... but it is with your heart that you dance...” This competition gives you the perfect opportunity to shake your booty with your buddy. If you have steaming hot chemistry and mellow synchronisation then dress classy and dance cheesy with your partner and set the stage on fire. Dance before the music is over. Live before your life is over. ",
+                    "'“It is with your feet that you move... but it is with your heart that you dance...” This competition gives you the perfect opportunity to shake your booty with your buddy. If you have steaming hot chemistry and mellow synchronisation then dress classy and dance cheesy with your partner and set the stage on fire. Dance before the music is over. Live before your life is over."+
+                            "\n\nPrize distribution:\n1st - \u20B9 4,000 \n 2nd - \u20B9 3,000 \n 3rd - \u20B9 2,000 \n",
 
                     //Shake On Beat
                     "To dance is to be out of yourself. “Larger, more beautiful, more powerful\"  \n" +
-                            "If you think you have that \"dance ka keeda\" in you, our stage awaits your ‘dhamakedaar’ entry. Be it classical, contemporary, hip hop or the likes; if you think you can dance anytime ,anywhere, in any dance form come show us what you got and set the stage ablaze with your dance moves in one of the most exciting and fun-filled events of Culfest-19! ",
+                            "If you think you have that \"dance ka keeda\" in you, our stage awaits your ‘dhamakedaar’ entry. Be it classical, contemporary, hip hop or the likes; if you think you can dance anytime ,anywhere, in any dance form come show us what you got and set the stage ablaze with your dance moves in one of the most exciting and fun-filled events of Culfest'20!"+
+                            "\n\nPrize distribution:\n1st - \u20B9 2,500 \n 2nd - \u20B9 1,500 \n 3rd - \u20B9 800 \n",
                     //ChoreoNight
-                    "Synchronize your steps to the 'dhol', act your costumes to represent your character and who knows you might land on a bounty. Come this Culfest and let your team craft to win hearts. This gala event promises to give you life long memories."
+                    "Synchronize your steps to the 'dhol', act your costumes to represent your character and who knows you might land on a bounty. Come this Culfest and let your team craft to win hearts. This gala event promises to give you life long memories."+
+                            "\n\nPrize distribution:\n1st - \u20B9 22,000 \n 2nd - \u20B9 12,000 \n 3rd - \u20B9 8,000 \n"
             },
             {//Culfest Idol
-                    "Admirer of the rich folk culture and music? Don’t feel lost in this rock and jazz buzzing western environment because here is your chance to win the day. Participate in this event and tune the audience to your strings. Give everyone a glimpse of the Kishore Da or the  Lata Mangeshkar hidden inside you.",
+                    "Admirer of the rich folk culture and music? Don’t feel lost in this rock and jazz buzzing western environment because here is your chance to win the day. Participate in this event and tune the audience to your strings. Give everyone a glimpse of the Kishore Da or the  Lata Mangeshkar hidden inside you."+
+                            "\n\nPrize distribution:\n1st - \u20B9 2,500 \n 2nd - \u20B9 1,500 \n 3rd - \u20B9 800 \n",
                     //The Voice Concordia
                     "Concordia, the Roman goddess of harmony had strived to achieve World peace through her gift of Music. Since the starting of times, Music has known no boundaries and has continously brought people closer together. Music is that freedom that moves people of all cultures, languages and origins; and so in this celebration of cultures that Culest'20 is, we look for voices that create harmony through Music. To all the Freddie Mercury, Lady Gaga, Eminem, or Frank Sinatra out there waiting for their moment: THIS IS IT!\n" +
                             "\n" +
-                            "Culfest'20 brings to you the Western Vocals solo-singing competition. Participants will be judged based on their Vocal skills, performance and rhtyhm, among several other criterions. Do Check out the Rules of the event, beacause ......\"Rules are good! Rules help control the fun\"-Monica Geller.",
+                            "Culfest'20 brings to you the Western Vocals solo-singing competition. Participants will be judged based on their Vocal skills, performance and rhtyhm, among several other criterions. Do Check out the Rules of the event, beacause ......\"Rules are good! Rules help control the fun\"-Monica Geller."+
+                            "\n\nPrize distribution:\n1st - \u20B9 2,500 \n 2nd - \u20B9 1,500 \n 3rd - \u20B9 800 \n",
                     //Duets Dulcet Duo
-                    "To sing a duet means to share with someone both the pleasure and responsibility of making music. One skillful singer on stage is great, but two soloists performing can be quirky, romantic and a treat to the senses. Culfest’20 brings you the opportunity to perform a duet and create a melody like never before. Be it a sweet mesmerizing ghazal or a scintillating bright qawwali; be it folk or filmi; in a nutshell be it any genre of music; you can showcase your song on our platform. So, here's a chance to prove yourself, say the Bobbsey's twins, birds of a feather or peas in a pod of euphonic music, provide a treat to the ears of the audience and reach the zenith to win the event!",
-                    //Unpluged Euphony
-                    "And the night shall be filled with music and the cares that infest the day shall fold their tents like the Arabs and as silently steal away.\n"+ "Music is peace, thought, wisdom. Music is forever. If music soothes and softens your soul as well , if you are willing give a go at the notes and skilfully play any musical  instrument, then Euphony is the perfect platform for you . Euphony is a solo instrumental competition in culfest'20. Let your instrument do the magic and mesmerise everyone.",
+                    "To sing a duet means to share with someone both the pleasure and responsibility of making music. One skillful singer on stage is great, but two soloists performing can be quirky, romantic and a treat to the senses. Culfest’20 brings you the opportunity to perform a duet and create a melody like never before. Be it a sweet mesmerizing ghazal or a scintillating bright qawwali; be it folk or filmi; in a nutshell be it any genre of music; you can showcase your song on our platform. So, here's a chance to prove yourself, say the Bobbsey's twins, birds of a feather or peas in a pod of euphonic music, provide a treat to the ears of the audience and reach the zenith to win the event!"+
+                            "\n\nPrize distribution:\n1st - \u20B9 4,000 \n 2nd - \u20B9 3,000 \n 3rd - \u20B9 2,000 \n",
+                    //Unplugged Euphony
+                    "And the night shall be filled with music and the cares that infest the day shall fold their tents like the Arabs and as silently steal away.\n"+ "Music is peace, thought, wisdom. Music is forever. If music soothes and softens your soul as well , if you are willing give a go at the notes and skilfully play any musical  instrument, then Euphony is the perfect platform for you . Euphony is a solo instrumental competition in Culfest'20. Let your instrument do the magic and mesmerise everyone."+
+                            "\n\nPrize distribution:\n1st - \u20B9 2,500 \n 2nd - \u20B9 1,500 \n",
                     //Battle of Bands
                     "“The true beauty of music is that it connects people. It carries a message, and we, the musicians, are the messengers.” - Ron Ayers\n" +
                             "If you have a message that can stir the mass into unison, " +
                             "wait no more because Culfest’20 brings you, just the dais you need." +
                             " Battle of Band provides you with the opportunity of presenting your own idea of band music and, displaying your talent like never before." +
                             " Let the audience have a taste of your creation and leave them craving for more. Practice like you have never won. Perform like you have never lost. " +
-                            "Don’t keep calm, set the stage on fire and the crowd up roaring. Note: Register before 12th February for this event. A maximum of 10 teams are allowed."
+                            "Don’t keep calm, set the stage on fire and the crowd up roaring. Note: Register before 12th February for this event. A maximum of 10 teams are allowed."+
+                            "\n\nPrize distribution:\n1st - \u20B9 15,000 \n 2nd - \u20B9 12,000 \n 3rd - \u20B9 9,000 \n"
             },
 
             {//Theme Quiz
-                    "Reminiscence  the wonders of past and traverse through the annals of time to the glorious era of antiquity. The theme quiz will take you on a hopping ride to the bygone centuries leaving you with a sense of awe and astonishment. Fasten your seatbelts and enjoy the ride.",
+                    "Reminiscence  the wonders of past and traverse through the annals of time to the glorious era of antiquity. The theme quiz will take you on a hopping ride to the bygone centuries leaving you with a sense of awe and astonishment. Fasten your seat-belts and enjoy the ride."+
+                            "\n\nPrize distribution:\n1st - \u20B9 7,000 \n 2nd - \u20B9 5,000 \n 3rd - \u20B9 3,000 \n",
                     //SpEnt
-                    "The SpEnt Quiz is the amalgamation of the most sought after genres of Quizzing- Sports and the Engaging World of  Entertainment.  It’s the perfect stage to showcase your wide knowledge of trivia ranging from the feats in the sporting world to the works of your favourite pop star . Get. Set. Quiz.",
+                    "The SpEnt Quiz is the amalgamation of the most sought after genres of Quizzing- Sports and the Engaging World of  Entertainment.  It’s the perfect stage to showcase your wide knowledge of trivia ranging from the feats in the sporting world to the works of your favourite pop star . Get. Set. Quiz."+
+                            "\n\nPrize distribution:\n1st - \u20B9 4,000 \n 2nd - \u20B9 3,000 \n 3rd - \u20B9 2,000 \n",
                     //BizTech quiz
-                    "Business and Technology are the two ever changing facets of the 21st century. From the world of brand logos to the making of Tech giants, the quiz will cover it all. So put on your thinking Hats and be ready to be enthralled.",
+                    "Business and Technology are the two ever changing facets of the 21st century. From the world of brand logos to the making of Tech giants, the quiz will cover it all. So put on your thinking Hats and be ready to be enthralled."+
+                            "\n\nPrize distribution:\n1st - \u20B9 4,000 \n 2nd - \u20B9 3,000 \n 3rd - \u20B9 2,000 \n",
                     //India quiz
-                    "India Quiz or the Ek Bharat Shreshtha Bharat Quiz is a small attempt to capture the spirit of India which lies in it’s varied land and people.\n कोस-कोस पर बदले पानी, चार कोस पर वाणी.",
+                    "India Quiz or the Ek Bharat Shreshtha Bharat Quiz is a small attempt to capture the spirit of India which lies in it’s varied land and people.\n कोस-कोस पर बदले पानी, चार कोस पर वाणी."+
+                            "\n\nPrize distribution:\n1st - \u20B9 4,000 \n 2nd - \u20B9 3,000 \n 3rd - \u20B9 2,000 \n",
             },
             {//Face Painting
-                    "Life is a great big canvas, and we should throw all the paint on it. Face painting is an event which true to its name, provides the participants the opportunity to smear the faces of their partners with myriad hues as per the themes provided. All those who dream of transforming people into butterflies, ghosts, witches or animals... FACES presents a perfect stage, this Culfest 2020 to transform your dreams into reality. Grab the opportunity to paint picturesque faces and sail away with exciting prizes. ",
+                    "Life is a great big canvas, and we should throw all the paint on it. Face painting is an event which true to its name, provides the participants the opportunity to smear the faces of their partners with myriad hues as per the themes provided. All those who dream of transforming people into butterflies, ghosts, witches or animals... FACES presents a perfect stage, this Culfest 2020 to transform your dreams into reality. Grab the opportunity to paint picturesque faces and sail away with exciting prizes."+
+                            "\n\nPrize distribution:\n1st - \u20B9 3,200 \n 2nd - \u20B9 2,400 \n 3rd - \u20B9 1,600 \n",
                     //Rangoli
-                    "Rangolis are a visual treat due to their intricacy and varied colours present in it. They have been an integral part of Indian culture, finding their place both during festivities, rituals and hospitable occasions.  FACES provides  you an opportunity to show the beauty of your thoughts blended with the artistry you possess and add colours  to the sunset sky; by floating colourful clouds and win exciting prizes.",
+                    "Rangolis are a visual treat due to their intricacy and varied colours present in it. They have been an integral part of Indian culture, finding their place both during festivities, rituals and hospitable occasions.  FACES provides  you an opportunity to show the beauty of your thoughts blended with the artistry you possess and add colours  to the sunset sky; by floating colourful clouds and win exciting prizes."+
+                            "\n\nPrize distribution:\n1st - \u20B9 3,200 \n 2nd - \u20B9 2,400 \n 3rd - \u20B9 1,600 \n",
                     //Triathlon
-                    "Sketching is the breath of art. It helps to put feelings into a drawing. Culfest’20 brings to you this event which explores the artist within you. So bring out the best in you and showcase your skills with the majestic strokes of a pencil. Put down your vivid imagination diffused with your aesthetic sense and show the world the power of the artist within you. So gear up for this upcoming event which presents you with a 3 in 1 opportunity to give dimensions to your feelings.",
+                    "Sketching is the breath of art. It helps to put feelings into a drawing. Culfest’20 brings to you this event which explores the artist within you. So bring out the best in you and showcase your skills with the majestic strokes of a pencil. Put down your vivid imagination diffused with your aesthetic sense and show the world the power of the artist within you. So gear up for this upcoming event which presents you with a 3 in 1 opportunity to give dimensions to your feelings."+
+                            "\n\nPrize distribution:\n1st - \u20B9 4,200 \n 2nd - \u20B9 3,000 \n 3rd - \u20B9 2,000 \n",
                     //Claydoh
-                    "Squeezing and squishing through the dough, moulding and giving wings to our imagination is what this event is all about. The tangible nature of clay, makes it feasible to mould it to different shapes and sculptures which combined with the remedial effects it offers Makes it enjoyable for both kids and adults alike to play with it. Culfest’20 presents this fun filled event to create 3-d models and bag a prize!!",
+                    "Squeezing and squishing through the dough, moulding and giving wings to our imagination is what this event is all about. The tangible nature of clay, makes it feasible to mould it to different shapes and sculptures which combined with the remedial effects it offers Makes it enjoyable for both kids and adults alike to play with it. Culfest’20 presents this fun filled event to create 3-d models and bag a prize!!"+
+                            "\n\nPrize distribution:\n1st - \u20B9 3,200 \n 2nd - \u20B9 2,400 \n 3rd - \u20B9 1,600 \n",
                     //Poshak
-                    "‘We love your style when you face up to our challenge of inventing it. ’\n\n Do you believe in creativity? Do you think some fragments of newspaper and an urn of glue is  sufficient to fashion a dress? Then visit your mind palace for inventive designs and prepare to drape your friend with your scrap ensembles. POSHAK is your chance of shaping ordinary into extraordinary. Fashion beseeches you to set new trends! \n",
+                    "‘We love your style when you face up to our challenge of inventing it. ’\n\n Do you believe in creativity? Do you think some fragments of newspaper and an urn of glue is  sufficient to fashion a dress? Then visit your mind palace for inventive designs and prepare to drape your friend with your scrap ensembles. POSHAK is your chance of shaping ordinary into extraordinary. Fashion beseeches you to set new trends!"+
+                            "\n\nPrize distribution:\n1st - \u20B9 7,000 \n 2nd - \u20B9 5,000 \n 3rd - \u20B9 3,000 \n",
                     //Finger Painting
-                    "Do you remember how good it felt to touch the paint with your bare hands and use it to create wall art .So  its  time to relive the moments , Culfest'20  presents fine art event finger painting where you can show your creativity coupled with imagination, and let the colours speak up for the creativity and innovation in you."
+                    "Do you remember how good it felt to touch the paint with your bare hands and use it to create wall art .So  its  time to relive the moments , Culfest'20  presents fine art event finger painting where you can show your creativity coupled with imagination, and let the colours speak up for the creativity and innovation in you."+
+                            "\n\nPrize distribution:\n1st - \u20B9 2,500 \n 2nd - \u20B9 1,500 \n 3rd - \u20B9 1,000 \n"
             },
             {//Fashion
                     "When the lights, camera and heart-pounding music are on, the vision of models " +
@@ -169,50 +195,67 @@ public class EventDetails {
                             "someone would respond to it in such a negative way. " +
                             "If it didn't matter, you would express a disinterest... Not a dislike!\" - Robin " +
                             "Givhan\n\n" +
-                            "Nobody can stay unconsumed from the 'fashion ka jalwa' for a long time.",
+                            "Nobody can stay unconsumed from the 'fashion ka jalwa' for a long time."+
+                            "\n\nPrize distribution:\n1st - \u20B9 32,000 \n 2nd - \u20B9 20,000 \n 3rd - \u20B9 10,000 \n"+
+                    "\nCos Play Prize - \u20B9 3,000",
 
                     "This fashion event rewards the best and most creative minds for their unique and appealing fashion sense and their eye for "+
-                            "detail and their quest for perfection."
+                            "detail and their quest for perfection."+
+                            "\n\nPrize distribution:\n1st - \u20B9 5,000"
 
             },
             {//Rangmanch
-                    "They say, “we are the actors whereas World is the stage”. So it becomes mandatory to express yourself, to pour out your inner thoughts and to show the real talent of Drama. If you have dramatics as your passion then CULFEST gives you the vital chance of expressing your thoughts to the people and to do good for the society.  \n" +
+                    "They say, “we are the actors whereas World is the stage”. So it becomes mandatory to express yourself, to pour out your inner thoughts and to show the real talent of Drama. If you have dramatics as your passion then CULFEST gives you the vital chance of expressing your thoughts to the people and to do good for the society.\n" +
                             " \n" +
-                            "For all these we welcome you to participate in the so called rangmanch competition called as SKIT COMPETITION ",
+                            "For all these we welcome you to participate in the so called rangmanch competition called as SKIT COMPETITION."+
+                            "\n\nPrize distribution:\n1st - \u20B9 11,000 \n 2nd - \u20B9 8,000 \n 3rd - \u20B9 5,000 \n",
                     //Panch Parmeshwar
-                    "“Panch Parmeshwar” is basically like a panchayat where the people in the villages are asked to solve their disputes based on the discussion between two groups and the decision is taken by a team consisting of six members where 5 members are called panch and one is the sarpanch. This type of thing is being practiced in the most of the villages and is very popular among the villages. ",
+                    "“Panch Parmeshwar” is basically like a panchayat where the people in the villages are asked to solve their disputes based on the discussion between two groups and the decision is taken by a team consisting of six members where 5 members are called panch and one is the sarpanch. This type of thing is being practiced in the most of the villages and is very popular among the villages."+
+                            "\n\nPrize distribution:\n1st - \u20B9 4,000 \n 2nd - \u20B9 3,000 \n",
                     //Halla Bol
-                    " The street play event: An art that encompasses entertainment with community education. Carpe Diem provides you a creative platform to make aware the incognizant – a place to voice your concerns. A one of a kind competition will test enthusiasm and energy of teams in tight packed performances on given issues. Come and showcase the creativity in you against the odd of not having a stage set for you. Remember to bring back the feel of the 90’s though.",
+                    " The street play event: An art that encompasses entertainment with community education. Carpe Diem provides you a creative platform to make aware the incognizant – a place to voice your concerns. A one of a kind competition will test enthusiasm and energy of teams in tight packed performances on given issues. Come and showcase the creativity in you against the odd of not having a stage set for you. Remember to bring back the feel of the 90’s though."+
+                            "\n\nPrize distribution:\n1st - \u20B9 18,000 \n 2nd - \u20B9 13,000 \n 3rd - \u20B9 9,000 \n",
                     //Mime
-                    "As they say,  \"Actions speak louder than words\". Culfest gives you a great opportunity to prove this by taking part in MIME. Mime is the art of acting out a story through body motions, without the usage of speech. ",
+                    "As they say,  \"Actions speak louder than words\". Culfest gives you a great opportunity to prove this by taking part in MIME. Mime is the art of acting out a story through body motions, without the usage of speech."+
+                            "\n\nPrize distribution:\n1st - \u20B9 7,000 \n 2nd - \u20B9 5,000 \n 3rd - \u20B9 3,000 \n",
                     //Instant Khichdi
-                    "Coming soon"
+                    "Coming soon..."+
+                            "\n\nPrize distribution:\n1st - \u20B9 3,000 \n 2nd - \u20B9 2,000 \n 3rd - \u20B9 1,000 \n"
 
             },
 
             {//Instant-o-Graphy
-                    "Do you have an eye for something exceptional in the wildest of the places or to capture your vision in a frame and show it to the World? If you're willing to explore your passion for Photography and are ready for a challenge, this Event is for you. With 36-hours in your hands, the clock is ticking while you struggle to bring your imagination to life and compete for the best.",
+                    "Do you have an eye for something exceptional in the wildest of the places or to capture your vision in a frame and show it to the World? If you're willing to explore your passion for Photography and are ready for a challenge, this Event is for you. With 36-hours in your hands, the clock is ticking while you struggle to bring your imagination to life and compete for the best."+
+                            "\n\nPrize distribution:\n1st - \u20B9 3,000 \n 2nd - \u20B9 2,000 \n",
                     //48 Hours
-                    "You are a Youtube Star with 10.9M followers. You just tweeted on what video should you make next. The fans poured in a few of the suggestions and you pick up the top re-tweeted suggestion. You post videos every Friday and it's already  Wednesday Hurry Up! You've just got 48 hours for the fan requests. As a  Youtuber, your fans are everything, every single penny you earn through AdSense is the sincerity you have put in your works. The better the content, the larger your fandom grows! So, get-on with your ideas! Tick-Tock! Tick-Tock!"
+                    "You are a Youtube Star with 10.9M followers. You just tweeted on what video should you make next. The fans poured in a few of the suggestions and you pick up the top re-tweeted suggestion. You post videos every Friday and it's already  Wednesday Hurry Up! You've just got 48 hours for the fan requests. As a  Youtuber, your fans are everything, every single penny you earn through AdSense is the sincerity you have put in your works. The better the content, the larger your fandom grows! So, get-on with your ideas! Tick-Tock! Tick-Tock!"+
+                            "\n\nPrize distribution:\n1st - \u20B9 3,000 \n 2nd - \u20B9 2,000 \n"
             },
             {//Potpourri
-                    "“Potpourri” refers to “a miscellaneous or diverse set of things”. Add to it a spicy twist of literature and voila! You have successfully cooked your way through this extravaganza event. Welcome to the event that has everything for everyone: be it a casual reader solving trivial puzzles, or a lover of the arts taking delight in the romance between language and entertainment. Be prepared for a marathon of word and vocabulary games that test not only your wits but your presence of mind as well in a time pressed environment.",
+                    "“Potpourri” refers to “a miscellaneous or diverse set of things”. Add to it a spicy twist of literature and voila! You have successfully cooked your way through this extravaganza event. Welcome to the event that has everything for everyone: be it a casual reader solving trivial puzzles, or a lover of the arts taking delight in the romance between language and entertainment. Be prepared for a marathon of word and vocabulary games that test not only your wits but your presence of mind as well in a time pressed environment."+
+                            "\n\nPrize distribution:(Hindi Potpourri)\n1st - \u20B9 3,000 \n 2nd - \u20B9 2,000 \n 3rd - \u20B9 1,500 \n"+
+                            "\n\nPrize distribution:(English Potpourri)\n1st - \u20B9 2,500 \n 2nd - \u20B9 1,500 \n 3rd - \u20B9 800 \n",
                     //Journalism
                     "Anybody can be a journalist. There are opportunities for all of us to contribute to stories If you're an intellectually curious person— let's assume that you are—you are likely to have embraced a number of notions about how the world works, how it should work and who should be running it. There should be no strings attached to your opinions, no one asking you to tone it down, and nobody that really wishes you to just shut the hell up and report just the fluffy pieces. You should also lack the warm and fuzzy attitude of your naysayers (and the trolls) who are always right when they spout off at the mouth in the comment section or on social media. \n In the age of the internet and social media, what does it mean to be a journalist? What is journalism?\n" +
                             "\n1 Getting accurate information fast  And treating it skeptically.\n" +
                             "\n2 Getting accurate information fast  And treating it skeptically.\n" +
                             "\n3 Doing it carefully, properly and ethically.\n" +
-                            "\n4 No matter what the medium.",
+                            "\n4 No matter what the medium."+
+                            "\n\nPrize distribution:\n1st - \u20B9 9,000 \n 2nd - \u20B9 6,000 \n 3rd - \u20B9 3,000 \n",
                     //Policy Debate
-                    "It is better to debate a question without settling it than to settle a question without debating it”.\n While the pen might be mightier than the sword, it is observed that when words get a tongue they shake mountains. So Mademoiselles and Messieurs, here’s your opportunity to move mountains with your thoughts and ideas. Iron out the kinks in your throat as you prepare to shine on stage with the only armory being your voice.\n Protect your opinion when the war is waged; it might as well be the only thing by your side. Confound your opponents and convince your audience. If you think stage-fright could get the better of you, overpower it with your confidence.\n The greatest battle of words and wits is here.\n",
+                    "It is better to debate a question without settling it than to settle a question without debating it”.\n While the pen might be mightier than the sword, it is observed that when words get a tongue they shake mountains. So Mademoiselles and Messieurs, here’s your opportunity to move mountains with your thoughts and ideas. Iron out the kinks in your throat as you prepare to shine on stage with the only armory being your voice.\n Protect your opinion when the war is waged; it might as well be the only thing by your side. Confound your opponents and convince your audience. If you think stage-fright could get the better of you, overpower it with your confidence.\n The greatest battle of words and wits is here.\n"+
+                            "\n\nPrize distribution:\n1st - \u20B9 4,000 \n 2nd - \u20B9 3,000 \n 3rd - \u20B9 2,000 \n",
                     //SSMQ
                     "“ Trust yourself, you know more than you think you do”.\n" +
                             "Culfest’19 brings to you the mother of all quizzes-the SSMQ- with questions from every topic under the sun. Be sure to exercise your brain to its limit and surprise many, including yourself. This is where the best minds compete for glory. It’s not just about knowledge, but also about thinking differently, getting the timing right, and of course, having a little bit of luck on your side! \n" +
-                            "So if you think you’ve got what it takes to make a mark, then do come and be a part of this grand event.\n",
+                            "So if you think you’ve got what it takes to make a mark, then do come and be a part of this grand event."+
+                            "\n\nPrize distribution:\n1st - \u20B9 4,000 \n 2nd - \u20B9 3,000 \n 3rd - \u20B9 2,000 \n",
                     //JAM
-                    " Grammar Nazis! In a world with ever increasing usage of slang an incorrect grammar, we share your concern for the English language, and understand the importance of maintaining the language in it’s untouched form. So here’s an opportunity to show the world how it’s done. Just-A-Minute (or JAM) is an all-round-fun event that is all about the control of the mind over the mouth. Can you make it through sixty seconds of non-stop talking without hesitation, repetition, or deviation? Or will the sheer pressure make you crumble and have your competitors pounce on you in an instant? It is a fun filled literary event where the participants have to speak on the given topic for a maximum of 1 minute. While speaking, they cannot make certain errors. If any one of the fellow participant spots an error while participant is speaking, he/she can clap and point out the error for which they will be rewarded points. Points are also awarded for the time span for which a participant speaks. So fill that unforgiving minute with sixty seconds worth of impeccable English and you would be the winner",
+                    " Grammar Nazis! In a world with ever increasing usage of slang an incorrect grammar, we share your concern for the English language, and understand the importance of maintaining the language in it’s untouched form. So here’s an opportunity to show the world how it’s done. Just-A-Minute (or JAM) is an all-round-fun event that is all about the control of the mind over the mouth. Can you make it through sixty seconds of non-stop talking without hesitation, repetition, or deviation? Or will the sheer pressure make you crumble and have your competitors pounce on you in an instant? It is a fun filled literary event where the participants have to speak on the given topic for a maximum of 1 minute. While speaking, they cannot make certain errors. If any one of the fellow participant spots an error while participant is speaking, he/she can clap and point out the error for which they will be rewarded points. Points are also awarded for the time span for which a participant speaks. So fill that unforgiving minute with sixty seconds worth of impeccable English and you would be the winner"+
+                            "\n\nPrize distribution:\n1st - \u20B9 2,400 \n 2nd - \u20B9 1,400 \n 3rd - \u20B9 700 \n",
                     //Poetry Slam
-                    "Poetry is the unexplored ocean that many fear to set sail on, clinging on to the safety of the calm harbor. But that’s not who ships are built for. Aboard the stage with hundreds of poets as they embark on a poetic journey against the crashing waves, and continue until you’re the last one standing. All forms of storytelling, songwriting, stand-up comedy and cold hard poetry are welcome. "
+                    "Poetry is the unexplored ocean that many fear to set sail on, clinging on to the safety of the calm harbor. But that’s not who ships are built for. Aboard the stage with hundreds of poets as they embark on a poetic journey against the crashing waves, and continue until you’re the last one standing. All forms of storytelling, songwriting, stand-up comedy and cold hard poetry are welcome."+
+                            "\n\nPrize distribution:\n1st - \u20B9 2,000 \n 2nd - \u20B9 1,000 \n"
             },
             {//Antakshri
                     "It's not a quiz, it's kind of a movie which you always love watching. There will be singing... There will be dialogues to do... There might be some grooving to tunes if the Quiz Master finds you hot.",

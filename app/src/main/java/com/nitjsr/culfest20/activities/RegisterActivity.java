@@ -3,6 +3,7 @@ package com.nitjsr.culfest20.activities;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.RadioGroup;
 import android.widget.Toast;
 
@@ -64,6 +65,9 @@ public class RegisterActivity extends AppCompatActivity {
         findViewById(R.id.register).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                Button button = (Button)view;
+                button.setVisibility(View.INVISIBLE);
+                Toast.makeText(RegisterActivity.this,"Please wait...",Toast.LENGTH_SHORT).show();
                 final String name = etName.getText().toString().trim();
                 final String institute = etInstitute.getText().toString().trim();
                 final String instituteId = etInstituteId.getText().toString().trim();
@@ -131,6 +135,7 @@ public class RegisterActivity extends AppCompatActivity {
                             else
                             {
                                 Toast.makeText(RegisterActivity.this, "Registration Failed. Try Again.", Toast.LENGTH_SHORT).show();
+                                button.setVisibility(View.VISIBLE);
                             }
                         }
                     });
