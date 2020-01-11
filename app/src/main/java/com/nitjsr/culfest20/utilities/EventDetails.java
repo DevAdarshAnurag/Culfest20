@@ -876,237 +876,197 @@ public class EventDetails {
     public static String coordinators[][] = new String[][]{
             {
                     //Choreo Night
-                    "D.BHARGAV \n" +
-                            "7075751692  \n" +
-                            "\n" +
-                            "Joint coordinator  \n" +
-                            "\n" +
-                            "SHOUVIK PATRA  \n" +
-                            "9820181459   \n" +
-                            "\n" +
-                            "MAYANK KUMAR \n" +
-                            "8340501782 \n",
+                    "Coordinator-\n"+
+                            "Goutmi (7059603339)\n"+"\n"+
+                            "Joint coordinator-\n"+
+                            "Himanshu (9610690992)\n"+
+                            "Sumith (6205163165)\n",
                     //Journalism
-                    "Co-ordinator: VIJAY SRIHARSHA (+91  9491264544)" +
-                            "\nJoint Co-ordinator- Mayank (+91 9075167388) ",
+                    "Coordinator-\n Vijay Sriharsha (9491264544)\n" +
+                            "\nJoint Coordinator- \nMayank (9075167388)\n",
                     //Halla bol
-                    "Coordinator- \nTarun awasthi(7897130875)\n" +
-                            "Joint Coordinator-\nDevbrat Kumar Modi(99835 38068)\n" +
-                            "Rishita Jain( 94793 07427)",
+                    "Coordinator- \nTarun Awasthi (7897130875)\n" +"\n"+
+                            "Joint Coordinator-\nDevbrat Kumar Modi (9983538068)\n" +
+                            "Rishita Jain (9479307427)",
                     //Theme quiz
-                    "Coordinator-\nAditya Kumar Singh(9430000276)\n" +
-                            "Joint Coordinator-\n Rahul Ranjan(7258962614)",
+                    "Coordinator-\nAditya Kumar Singh (9430000276)\n" +"\n"+
+                            "Joint Coordinator-\n Rahul Ranjan (7258962614)",
                     //Battle of Bands
-                    "Coordinator:\n" +
-                            "Harshal Desai\n" +
-                            "8210045546\n" +
+                    "Coordinator-\n" +
+                            "Harshal Desai (8210045546)\n" +"\n"+
+                            "Joint Coordinator-\n" +
+                            "Viswajeet Singh (7218514087)" +
                             "\n" +
-                            "Joint Coordinator-1:\n" +
-                            "Viswajeet Singh\n" +
-                            "7218514087\n" +
-                            "\n" +
-                            "Joint Coordinator-2: \n" +
-                            "Saloni Majhi\n" +
-                            "+91 6205182911",
+                            "Saloni Majhi (6205182911)\n",
                     //Panache
-                    "SEGMENT HEAD: SYED SHAHI IMRAN (8210353936)\n" +
-                            "CO-ORDINATOR: NITIN DHIMAN (7206607969)\n" +
-                            "JOINT COORDINATORS: ESLAVATH SRAVN (6303583813)\n",
+                            "Coordinator-\n Nitin Dhiman (7206607969)\n" +"\n"+
+                            "Joint Coordinator-\n Eslavath Sravn (6303583813)\n",
                     //Poshak
                     "Coordinator-\n"+
-                            "Aatish(9304136867)"+
+                            "Aatish(9304136867)\n"+"\n"+
                             "Joint Coordinator-\n"+
                             "Shivam(9523349049)",
             },
             {
                     //Foot Loose
-                    "KANISHKA  \n" +
-                            "7277181420   \n" +
-                            " \n" +
-                            "Joint coordinator:  \n" +
-                            "\n" +
-                            "JYOTI KUMARI \n" +
-                            "9709241232 ",
+                    "Coordinator-\n"+
+                            "Raushan (7004635588)\n"+
+                            "Joint coordinator-\n"+"\n"+
+                            "Shashank (9490878262)\n"+
+                            "Bidisha (8985080658)\n",
                     //Dancing Duo
-                    "J. SUSHMA 9515905284\n" +
-                            "\n" +
-                            "Joint-coordinator:  \n" +
-                            "\n" +
-                            "AKRITY \n" +
-                            "8079031382 ",
+                    "Coordinator-\n"+
+                            "Swati (7070449702)\n"+"\n"+
+                            "Joint coordinator-\n"+
+                            "Brama (6303716175)\n"+
+                            "Dev (9912584021)\n",
                     //Shake on beat
-                    "SALONI SETH \n" +
-                            "7800780655 \n" +
-                            "\n" +
-                            "Joint coordinator: \n" +
-                            "\n" +
-                            "SWATI HANSDA \n" +
-                            "7070449702 ",
+                    "Coordinator-\n"+
+                            "Mayank (9571496779)\n"+"\n"+
+                            "Joint coordinator-\n"+
+                            "Rakesh (9381116781)\n"+
+                            "Vishaka (8328194533)\n",
                     //Choreonight
-                    "D.BHARGAV \n" +
-                            "7075751692  \n" +
-                            "\n" +
-                            "Joint coordinator  \n" +
-                            "\n" +
-                            "SHOUVIK PATRA  \n" +
-                            "9820181459   \n" +
-                            "\n" +
-                            "MAYANK KUMAR \n" +
-                            "8340501782 \n"
+                    "Coordinator-\n"+
+                            "Goutmi (7059603339)\n"+"\n"+
+                            "Joint coordinator-\n"+
+                            "Himanshu (9610690992)\n"+
+                            "Sumith (6205163165)\n",
             },
 
 
             {
                     //Culfest Idol
-                    "Coordinator:\n" +
-                            "Piyush Ranjan\n" +
-                            "6207950740\n" +
-                            "\n" +
-                            "Joint Coordinator:\n" +
-                            "Vishal Gupta\n" +
-                            "7783848287",
+                    "Coordinator-\n" +
+                            "Piyush Ranjan (6207950740)\n" +"\n"+
+                            "Joint Coordinator-\n" +
+                            "Vishal Gupta (7783848287)",
                     //The Voice Concordia
-                    "Yash Prasad\n" +
-                            "73019 94883\n" +
+                    "Coordinator-\nYash Prasad(7301994883)\n" +
                             "\n" +
-                            "Utsab Banerjee\n" +
-                            "72948 68462",
+                            "Joint Coordinator-\nUtsab Banerjee(7294868462)",
                     //Duets
-                    "Coordinator\n" +
+                    "Coordinator-" +
                             "\n" +
-                            "Anushka Mukherjee\n" +
-                            "7759030768\n" +
-                            "\n" +
-                            "Joint coordinator \n" +
-                            "\n" +
-                            "Ratna Rasi\n" +
-                            "93814 87347",
+                            "Anushka Mukherjee (7759030768)\n" +"\n"+
+                            "Joint coordinator-\n" +
+                            "Ratna Rasi (93814 87347)",
                     //Unplugged Euphony
-                    "Coordinator\n" +
-                            "Aman Raj\n" +
-                            "9973988973\n" +
-                            "\n" +
-                            "Joint Coordinator\n" +
-                            "Srijan Banerjee\n" +
-                            "97096 85999",
+                    "Coordinator-\n" +
+                            "Aman Raj (9973988973)\n" +"\n"+
+                            "Joint Coordinator-\n" +
+                            "Srijan Banerjee (9709685999)",
                     //Battle of bands
-                    "Coordinator:\n" +
-                            "Harshal Desai\n" +
-                            "8210045546\n" +
+                    "Coordinator-\n" +
+                            "Harshal Desai (8210045546)\n" +"\n"+
+                            "Joint Coordinator-\n" +
+                            "Viswajeet Singh (7218514087)" +
                             "\n" +
-                            "Joint Coordinator-1:\n" +
-                            "Viswajeet Singh\n" +
-                            "7218514087\n" +
-                            "\n" +
-                            "Joint Coordinator-2: \n" +
-                            "Saloni Majhi\n" +
-                            "+91 6205182911"
+                            "Saloni Majhi (6205182911)\n",
             },
 
             {
                     //Theme quiz
-                    "Coordinator- \nAditya Kumar Singh(9430000276)\n" +
+                    "Coordinator- \nAditya Kumar Singh(9430000276)\n" +"\n"+
                             "Joint Coordinator- \nRahul Ranjan(7258962614)",
                     //Spent quiz
-                    "Coordinator- \nMayank Mallick (9650917865)\n" +
+                    "Coordinator- \nMayank Mallick (9650917865)\n" +"\n"+
                             "Joint Coordinator- \nSourav singh (9128215023)",
                     //Biztech quiz
-                    "Coordinator- \nVishal Raj (9304191836)\n" +
+                    "Coordinator- \nVishal Raj (9304191836)\n" +"\n"+
                             "JJoint Coordinator- \nAyush Ratna(8986617968)",
                     //India quiz
-                    "Coordinator- \nRonit Muduli(8637271700)\n" +
+                    "Coordinator- \nRonit Muduli(8637271700)\n" +"\n"+
                             "Joint Coordinator- \nAman Saurav(7488991553)"
             },
             {   //Face Painting
                     "Coordinator-\n"+
-                    "Shresta(7974044565)\n"+
+                    "Shresta(7974044565)\n"+"\n"+
                     "Joint Coordinator-\n"+
                     "Ujala(8434102105)",
                     //Rangoli
                     "Coordinator-\n"+
-                    "T. Durga Rajeshwari(8639702817)\n"+
+                    "T. Durga Rajeshwari(8639702817)\n"+"\n"+
                     "Joint Coordinator-\n"+
                     "Sivanag(7013860584)",
                     //Triathlon
                     "Coordinator-\n"+
-                    "Riddhi(8789466365)\n" +
+                    "Riddhi(8789466365)\n" +"\n"+
                             "Joint Coordinator-\n"+
                     "Rohan(8426862427)",
                     //Claydoh
                     "Coordinator-\n"+
-                    "Abhishek(9314092297)\n"+
+                    "Abhishek(9314092297)\n"+"\n"+
                     "Joint Coordinator-\n"+
                     "Shristi(6205658185)",
                     //Poshak
                     "Coordinator-\n"+
-                    "Aatish(9304136867)"+
+                    "Aatish(9304136867)\n"+"\n"+
                     "Joint Coordinator-\n"+
                     "Shivam(9523349049)",
                     //Finger Painting
                     "Coordinator-\n"+
-                    "Afjal(8789278802)\n"+
+                    "Afjal(8789278802)\n"+"\n"+
                     "Joint Coordinator-\n"+
                     "Sagar(8873558721)"
 
             },
             {//Panache
-                    "SEGMENT HEAD: \nSYED SHAHI IMRAN (8210353936)\n" +
-                            "CO-ORDINATOR: \nNITIN DHIMAN (7206607969)\n" +
-                            "JOINT COORDINATORS: \nESLAVATH SRAVN (6303583813)\n",
-                    "SEGMENT HEAD: \nSYED SHAHI IMRAN (8210353936)\n" +
-                            "CO-ORDINATOR: \nNITIN DHIMAN (7206607969)\n" +
-                            "JOINT COORDINATORS: \nESLAVATH SRAVN (6303583813)\n"
+                    "Coordinator-\n Nitin Dhiman (7206607969)\n" +"\n"+
+                            "Joint Coordinator-\n Eslavath Sravn (6303583813)\n",
+                    "Coordinator-\n Nitin Dhiman (7206607969)\n" +"\n"+
+                            "Joint Coordinator-\n Eslavath Sravn (6303583813)\n"
             },
             {
                     //Rangmanch
-                    "Coordinator- \nShubham Kumar(7219998519)\n" +
+                    "Coordinator- \nShubham Kumar(7219998519)\n" +"\n"+
                             "Joint Coordinator-\nVatsal Raj(7667100790)",
                     //Panch Parmeshwar
-                    "Coordinator-\nSubhamay Naskar(7362938154)\n" +
+                    "Coordinator-\nSubhamay Naskar(7362938154)\n" +"\n"+
                             "Joint Coordinator- \nMayank Kumar(9075167388)",
                     //Halla Bol
-                    "Coordinator-\n Tarun Awasthi(7897130875)\n" +
+                    "Coordinator-\n Tarun Awasthi(7897130875)\n" +"\n"+
                             "Joint Coordinator-\nDevbrat Kumar Modi(9983538068)\n"+
                             "Rishita Jain( 94793 07427)",
                     //Mime
-                    "Coordinator- \nAkanksha sudhanshu(8789777982)\n" +
+                    "Coordinator- \nAkanksha sudhanshu(8789777982)\n" +"\n"+
                             "Joint Coordinator-\nShubham Mishra(8340762521)",
                     //Instant Khichdi
-                    "Coordinator-\nKunal(9110161408)\n" +
+                    "Coordinator-\nKunal(9110161408)\n" +"\n"+
                             "Joint Coordinator-\nShalini Singh (6203952149)"
             },
             {
                     //Instant-o-Graphy
                     "Coordinator-\n" +
-                            "Lakhan Mardi(9110074754)"+
+                            "Lakhan Mardi(9110074754)\n"+"\n"+
                             "Joint coordinator-\n" +
                             "Kartik Bhargava(8318006807)",
                     //48 Hours or MIS-EN-SCENE
                     "Coordinator-\n" +
-                            "Saurabh Mishra(7360919595)"+
+                            "Saurabh Mishra(7360919595)\n"+
                             "Joint coordinator-\n" +
                             "Abhishek Kumar(9135799675)"
             },
             {   //Potpurri
-                    "CO-ORDINATORS- Chiranjeev (English Potpourri) (+91 7606971547)\n" +
-                            "Aditya Singh Gehlot (Hindi Potpourri) (+91 9304161989)\n"+
-                            "\nJoint Co-ordinator- Harshleen (English Potpourri) (+91 9669555520)"+
-                            "\nNishal (Hindi Potpourri) (+91 9121288503)",
+                    "Coordinator-\n Chiranjeev (English Potpourri) (7606971547)\n" +
+                            "Aditya Singh Gehlot (Hindi Potpourri) (9304161989)\n"+
+                            "\nJoint Co-ordinator-\n Harshleen (English Potpourri) (9669555520)"+
+                            "\nNishal (Hindi Potpourri) (9121288503)",
                     //Journalism
-                    "Co-ordinator: VIJAY SRIHARSHA (+91  9491264544)"+
-                            "\nJoint Co-ordinator- Mayank (+91 9075167388)",
+                    "Co-ordinator-\n Vijay Sriharsha (9491264544)"+"\n"+
+                            "\nJoint Co-ordinator-\n Mayank (9075167388)",
                     //Policy Debate
-                    "CO-ORDINATORS- RISHI RAJ (+91  9473456052) "+
-                            "\nJoint Co-ordinator- Arti (+91 7260045695)",
+                    "Coordinator-\n Rishi Raj (9473456052) "+"\n"+
+                            "\nJoint Coordinator-\n Arti (7260045695)",
                     //SSMQ
-                    "CO-ORDINATOR- AMIT JHA (+91 6201288797) "+
-                            "\nJoint Co-ordinator-  Sarthak (+91 6388120669)",
+                    "Coordinator-\n Amit Jha (6201288797) "+"\n"+
+                            "\nJoint Co-ordinator- \n Sarthak (6388120669)",
                     //JAM
-                    "CO-ORDINATOR- KUNAL (+91  9113156369)"+
-                    "\nJoint Co-ordinator- Aakash (+91 9889293612",
+                    "Coordinator-\n Kunal ( 9113156369)"+"\n"+
+                    "\nJoint Coordinator-\n Aakash (9889293612)",
                     //Poetry Slam
-                    "CO-ORDINATOR-  ABHISHEK SINGH (+91 8580150664)"+
-                            "\nJoint Co-ordinator- Garima (+91 8630035903)"
+                    "Coordinator-\nAbhishek Singh (8580150664)"+"\n"+
+                            "\nJoint Co-ordinator-\nGarima (8630035903)"
 
             },
             {

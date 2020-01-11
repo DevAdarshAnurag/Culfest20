@@ -37,9 +37,10 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_below="@id/tv_coord"
+                    android:autoLink="all"
                     android:padding="8dp"
                     android:textColor="@color/secondaryText"
-                    android:textSize="12sp" />
+                    android:textSize="14sp" />
             </RelativeLayout>
         </ScrollView>
     </androidx.cardview.widget.CardView>
