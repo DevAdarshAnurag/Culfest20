@@ -39,23 +39,23 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
     public void onMapReady(GoogleMap googleMap) {
         mMap = googleMap;
         mMap.getUiSettings().setCompassEnabled(false);
-//        try {
-//            // Customise the styling of the base map using a JSON object defined
-//            // in a raw resource file.
-//            boolean success = mMap.setMapStyle(
-//                    MapStyleOptions.loadRawResourceStyle(getApplicationContext(),R.raw.map_style));
-//
-//            if (!success) {
-//                Log.e(TAG, "Style parsing failed.");
-//            }
-//        } catch (Resources.NotFoundException e) {
-//            Log.e(TAG, "Can't find style. Error: ", e);
-//        }
+        try {
+            // Customise the styling of the base map using a JSON object defined
+            // in a raw resource file.
+            boolean success = mMap.setMapStyle(
+                    MapStyleOptions.loadRawResourceStyle(getApplicationContext(),R.raw.map_style));
+
+            if (!success) {
+                Log.e(TAG, "Style parsing failed.");
+            }
+        } catch (Resources.NotFoundException e) {
+            Log.e(TAG, "Can't find style. Error: ", e);
+        }
         addLocations();
     }
 
     private void addLocations() {
-        LatLng loc = new LatLng(22.776921, 86.143166);
+        LatLng loc = new LatLng(22.7764308,86.144961);
 
         CameraPosition cameraPosition = new CameraPosition.Builder()
                 .target(loc)      // Sets the center of the map to Mountain View
@@ -63,7 +63,7 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
                 .bearing(-10)
                 .tilt(90)
                 .build();
-        mMap.animateCamera(CameraUpdateFactory.newCameraPosition(cameraPosition), 2222, null);
+        mMap.animateCamera(CameraUpdateFactory.newCameraPosition(cameraPosition), 3333, null);
     }
 
     @Override
