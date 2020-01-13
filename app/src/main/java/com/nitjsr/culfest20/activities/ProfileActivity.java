@@ -131,6 +131,7 @@ public class ProfileActivity extends AppCompatActivity {
         GridLayoutManager gridLayoutManager = new GridLayoutManager(this,3,GridLayoutManager.HORIZONTAL,false);
         eventRecycler.setLayoutManager(gridLayoutManager);
         EventChipAdapter adapter = new EventChipAdapter(ProfileActivity.this,list);
+        adapter.notifyDataSetChanged();
         eventRecycler.setAdapter(adapter);
     }
 

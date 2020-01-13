@@ -51,6 +51,15 @@ public class FAQAdapter extends RecyclerView.Adapter<FAQAdapter.MyViewHolder> {
                 }
             }
         });
+
+        holder.faqQuestion.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                holder.ivFaq.setImageResource(R.drawable.ic_faq_less);
+                holder.faqAnswer.setVisibility(View.VISIBLE);
+            }
+        });
+
     }
 
     @Override

@@ -11,10 +11,10 @@ import com.nitjsr.culfest20.R;
 import com.nitjsr.culfest20.models.Notification;
 import com.nitjsr.culfest20.utilities.EventDetails;
 
+import java.util.List;
+
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
-
-import java.util.List;
 
 public class NotificationAdapter extends RecyclerView.Adapter<NotificationAdapter.MyViewHolder> {
     private List<Notification> mList;
@@ -32,7 +32,7 @@ public class NotificationAdapter extends RecyclerView.Adapter<NotificationAdapte
     public MyViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View view;
         LayoutInflater mInflater = LayoutInflater.from(context);
-        view= mInflater.inflate(R.layout.notification_list_item,parent, false);
+        view = mInflater.inflate(R.layout.notification_list_item, parent, false);
         return new MyViewHolder(view);
     }
 
@@ -46,19 +46,25 @@ public class NotificationAdapter extends RecyclerView.Adapter<NotificationAdapte
         holder.expand.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
                 holder.expand.setVisibility(View.INVISIBLE);
                 holder.body.setVisibility(View.VISIBLE);
                 holder.contract.setVisibility(View.VISIBLE);
-
             }
         });
         holder.contract.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                 holder.contract.setVisibility(View.INVISIBLE);
-                 holder.body.setVisibility(View.GONE);
-                 holder.expand.setVisibility(View.VISIBLE);
+                holder.contract.setVisibility(View.INVISIBLE);
+                holder.body.setVisibility(View.GONE);
+                holder.expand.setVisibility(View.VISIBLE);
+            }
+        });
+        holder.title.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                holder.expand.setVisibility(View.INVISIBLE);
+                holder.body.setVisibility(View.VISIBLE);
+                holder.contract.setVisibility(View.VISIBLE);
             }
         });
     }
@@ -76,14 +82,14 @@ public class NotificationAdapter extends RecyclerView.Adapter<NotificationAdapte
         return mList.size();
     }
 
-    public static class MyViewHolder extends RecyclerView.ViewHolder{
+    public static class MyViewHolder extends RecyclerView.ViewHolder {
 
-       private TextView title, body;
-       private ImageView expand, contract, notiIcon;
+        private TextView title, body;
+        private ImageView expand, contract, notiIcon;
 
         public MyViewHolder(@NonNull View itemView) {
             super(itemView);
-            expand =itemView.findViewById(R.id.expand_sign_down);
+            expand = itemView.findViewById(R.id.expand_sign_down);
             contract = itemView.findViewById(R.id.contract_sign_up);
             title = itemView.findViewById(R.id.title);
             body = itemView.findViewById(R.id.noti_body);
