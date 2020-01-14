@@ -105,7 +105,7 @@ public class SubEventActivity extends AppCompatActivity implements View.OnClickL
         FragmentManager fragmentManager = getSupportFragmentManager();
         FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
         FragmentTransactionExtended fragmentTransactionExtended =
-                new FragmentTransactionExtended(this, fragmentTransaction, new AboutFragment(), fragment, R.id.content);
+                new FragmentTransactionExtended(this, fragmentTransaction, new Fragment(), fragment, R.id.content);
         fragmentTransactionExtended.addTransition(FragmentTransactionExtended.GLIDE);
         fragmentTransactionExtended.commit();
     }

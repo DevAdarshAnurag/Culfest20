@@ -83,6 +83,18 @@ public class ProfileActivity extends AppCompatActivity {
             getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         }
 
+        ArrayList<Events> list=new ArrayList<Events>();
+        list.add(new Events(R.drawable.ic_mega_events,R.color.colorPrimaryDark,"Mega Events","\u20B9 2,31,000"));
+        list.add(new Events(R.drawable.ic_dance,R.color.fb,"Dance","\u20B9 60,600"));
+        list.add(new Events(R.drawable.ic_vocals,R.color.insta,"Vocals","\u20B9 58,600"));
+        list.add(new Events(R.drawable.ic_qunite,R.color.red,"Quiz","\u20B9 42,000"));
+        list.add(new Events(R.drawable.ic_fine_arts,R.color.gold,"Fine Arts","\u20B9 50,800"));
+        list.add(new Events(R.drawable.ic_fashion,R.color.colorAccent,"Fashion","\u20B9 70,000"));
+        list.add(new Events(R.drawable.ic_dramatics,R.color.colorPrimaryDark,"Dramatics","\u20B9 92,000"));
+        list.add(new Events(R.drawable.ic_photography,R.color.fb,"Photography","\u20B9 10,000"));
+        list.add(new Events(R.drawable.ic_literary,R.color.insta,"Literary","\u20B9 56,000"));
+        list.add(new Events(R.drawable.ic_informals,R.color.red,"Informals"," "));
+
         firebaseUser = FirebaseAuth.getInstance().getCurrentUser();
         String uid = firebaseUser.getUid();
         profileName = findViewById(R.id.profile_name);
@@ -117,22 +129,12 @@ public class ProfileActivity extends AppCompatActivity {
             }
         });
 
-        ArrayList<Events> list=new ArrayList<Events>();
-        list.add(new Events(R.drawable.ic_mega_events,R.color.colorPrimaryDark,"Mega Events","\u20B9 2,31,000"));
-        list.add(new Events(R.drawable.ic_dance,R.color.fb,"Dance","\u20B9 60,600"));
-        list.add(new Events(R.drawable.ic_vocals,R.color.insta,"Vocals","\u20B9 58,600"));
-        list.add(new Events(R.drawable.ic_qunite,R.color.red,"Quiz","\u20B9 42,000"));
-        list.add(new Events(R.drawable.ic_fine_arts,R.color.gold,"Fine Arts","\u20B9 50,800"));
-        list.add(new Events(R.drawable.ic_fashion,R.color.colorAccent,"Fashion","\u20B9 70,000"));
-        list.add(new Events(R.drawable.ic_dramatics,R.color.colorPrimaryDark,"Dramatics","\u20B9 92,000"));
-        list.add(new Events(R.drawable.ic_photography,R.color.fb,"Photography","\u20B9 10,000"));
-        list.add(new Events(R.drawable.ic_literary,R.color.insta,"Literary","\u20B9 56,000"));
-        list.add(new Events(R.drawable.ic_informals,R.color.red,"Informals"," "));
         GridLayoutManager gridLayoutManager = new GridLayoutManager(this,3,GridLayoutManager.HORIZONTAL,false);
         eventRecycler.setLayoutManager(gridLayoutManager);
         EventChipAdapter adapter = new EventChipAdapter(ProfileActivity.this,list);
-        adapter.notifyDataSetChanged();
         eventRecycler.setAdapter(adapter);
+        adapter.notifyDataSetChanged();
+        eventRecycler.hasFixedSize();
     }
 
     private void fetchDetails(String uid) {
