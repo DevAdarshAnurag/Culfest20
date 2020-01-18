@@ -51,12 +51,25 @@ public class PersonRecyclerViewAdapter extends RecyclerView.Adapter<PersonRecycl
     @Override
     public void onBindViewHolder(@NonNull MyViewHolder holder, int position) {
 
-        holder.name.setText(list.get(position).getName());
-        holder.post.setText(list.get(position).getPost());
+        Person person = list.get(position);
+        holder.name.setText(person.getName());
+        holder.post.setText(person.getPost());
 
-        Picasso.get().load(list.get(position).getThumbnail()).placeholder(R.drawable.ic_launcher).into(holder.imageView);
-        final String[] number = {list.get(position).getWhatsappNumber()};
+        Picasso.get().load(person.getThumbnail()).placeholder(R.drawable.ic_launcher).into(holder.imageView);
+        final String[] number = {person.getWhatsappNumber()};
 
+        if(person.getWhatsappNumber().equals(""))
+        {
+            holder.whatsapp.setVisibility(View.INVISIBLE);
+        }
+        if(person.getFacebook().equals(""))
+        {
+            holder.facebook.setVisibility(View.INVISIBLE);
+        }
+        if(person.getInstagram().equals(""))
+        {
+            holder.instagram.setVisibility(View.INVISIBLE);
+        }
 
         holder.whatsapp.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -75,32 +88,27 @@ public class PersonRecyclerViewAdapter extends RecyclerView.Adapter<PersonRecycl
             }
         });
 
-//        holder.facebook.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                try {
-//                    Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("fb://profile/" + fb_id));
-//                    context.startActivity(intent);
-//                } catch (Exception e) {
-//                    context.startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.facebook.com/" + fb_username)));
-//                }
-//            }
-//        });
+        holder.facebook.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                try {
+                    context.startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(person.getFacebook())));
+                } catch (Exception e) {
+                    //
+                }
+            }
+        });
 
-//        holder.linkedin.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.linkedin.com/in/" + linkedId));
-//                final PackageManager packageManager = context.getPackageManager();
-//                final List<ResolveInfo> list = packageManager.queryIntentActivities(intent, PackageManager.MATCH_DEFAULT_ONLY);
-//                if (list.isEmpty()) {
-//                    intent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.linkedin.com/profile/view?id=" + linkedId));
-//                }
-//                context.startActivity(intent);
-//
-//            }
-//        });
-
+        holder.instagram.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                try {
+                    context.startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(person.getInstagram())));
+                } catch (Exception e) {
+                    //
+                }
+            }
+        });
     }
 
     @Override
@@ -111,13 +119,13 @@ public class PersonRecyclerViewAdapter extends RecyclerView.Adapter<PersonRecycl
     public class MyViewHolder extends RecyclerView.ViewHolder {
 
         CircleImageView imageView;
-        ImageView whatsapp, instagram, linkedin;
+        ImageView whatsapp, instagram, facebook;
         TextView name,post;
 
 
         public MyViewHolder(@NonNull View itemView) {
             super(itemView);
-            linkedin = itemView.findViewById(R.id.linkedin);
+            facebook = itemView.findViewById(R.id.person_fb);
             name = itemView.findViewById(R.id.person_name);
             post = itemView.findViewById(R.id.person_post);
             imageView = itemView.findViewById(R.id.person_image);

@@ -1,5 +1,6 @@
 package com.nitjsr.culfest20.activities;
 
+import android.animation.ValueAnimator;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.graphics.Bitmap;
@@ -9,13 +10,13 @@ import android.text.TextUtils;
 import android.view.Gravity;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.GridLayout;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.PopupWindow;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
+import com.airbnb.lottie.LottieAnimationView;
 import com.google.android.gms.auth.api.signin.GoogleSignIn;
 import com.google.android.gms.auth.api.signin.GoogleSignInClient;
 import com.google.android.gms.auth.api.signin.GoogleSignInOptions;
@@ -54,6 +55,7 @@ public class ProfileActivity extends AppCompatActivity {
     TextView profileName, profileInstitute, profileId, profileEmail, profileTShirt;
     CircleImageView profileImage;
     ImageView profilePayment, qr;
+    LottieAnimationView qrcode;
     RelativeLayout progress;
     RecyclerView eventRecycler;
 
@@ -83,17 +85,17 @@ public class ProfileActivity extends AppCompatActivity {
             getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         }
 
-        ArrayList<Events> list=new ArrayList<Events>();
-        list.add(new Events(R.drawable.ic_mega_events,R.color.colorPrimaryDark,"Mega Events","\u20B9 2,31,000"));
-        list.add(new Events(R.drawable.ic_dance,R.color.fb,"Dance","\u20B9 60,600"));
-        list.add(new Events(R.drawable.ic_vocals,R.color.insta,"Vocals","\u20B9 58,600"));
-        list.add(new Events(R.drawable.ic_qunite,R.color.red,"Quiz","\u20B9 42,000"));
-        list.add(new Events(R.drawable.ic_fine_arts,R.color.gold,"Fine Arts","\u20B9 50,800"));
-        list.add(new Events(R.drawable.ic_fashion,R.color.colorAccent,"Fashion","\u20B9 70,000"));
-        list.add(new Events(R.drawable.ic_dramatics,R.color.colorPrimaryDark,"Dramatics","\u20B9 92,000"));
-        list.add(new Events(R.drawable.ic_photography,R.color.fb,"Photography","\u20B9 10,000"));
-        list.add(new Events(R.drawable.ic_literary,R.color.insta,"Literary","\u20B9 56,000"));
-        list.add(new Events(R.drawable.ic_informals,R.color.red,"Informals"," "));
+        ArrayList<Events> list = new ArrayList<Events>();
+        list.add(new Events(R.drawable.ic_mega_events, R.color.colorPrimaryDark, "Mega Events", "\u20B9 2,31,000"));
+        list.add(new Events(R.drawable.ic_dance, R.color.fb, "Dance", "\u20B9 60,600"));
+        list.add(new Events(R.drawable.ic_vocals, R.color.insta, "Vocals", "\u20B9 58,600"));
+        list.add(new Events(R.drawable.ic_qunite, R.color.red, "Quiz", "\u20B9 42,000"));
+        list.add(new Events(R.drawable.ic_fine_arts, R.color.gold, "Fine Arts", "\u20B9 50,800"));
+        list.add(new Events(R.drawable.ic_fashion, R.color.colorAccent, "Fashion", "\u20B9 70,000"));
+        list.add(new Events(R.drawable.ic_dramatics, R.color.colorPrimaryDark, "Dramatics", "\u20B9 92,000"));
+        list.add(new Events(R.drawable.ic_photography, R.color.fb, "Photography", "\u20B9 10,000"));
+        list.add(new Events(R.drawable.ic_literary, R.color.insta, "Literary", "\u20B9 56,000"));
+        list.add(new Events(R.drawable.ic_informals, R.color.red, "Informals", " "));
 
         firebaseUser = FirebaseAuth.getInstance().getCurrentUser();
         String uid = firebaseUser.getUid();
@@ -112,6 +114,12 @@ public class ProfileActivity extends AppCompatActivity {
         progress = findViewById(R.id.profile_progress_bar);
         eventRecycler = findViewById(R.id.event_chip_rv);
 
+        qrcode = findViewById(R.id.qr_code_icon);
+        qrcode.setAnimation("qrcode.json");
+        qrcode.setScale(3);
+        qrcode.setRepeatCount(ValueAnimator.INFINITE);
+        qrcode.playAnimation();
+
         fetchDetails(uid);
         makeQRCode(uid);
 
@@ -129,9 +137,9 @@ public class ProfileActivity extends AppCompatActivity {
             }
         });
 
-        GridLayoutManager gridLayoutManager = new GridLayoutManager(this,3,GridLayoutManager.HORIZONTAL,false);
+        GridLayoutManager gridLayoutManager = new GridLayoutManager(this, 3, GridLayoutManager.HORIZONTAL, false);
         eventRecycler.setLayoutManager(gridLayoutManager);
-        EventChipAdapter adapter = new EventChipAdapter(ProfileActivity.this,list);
+        EventChipAdapter adapter = new EventChipAdapter(ProfileActivity.this, list);
         eventRecycler.setAdapter(adapter);
         adapter.notifyDataSetChanged();
         eventRecycler.hasFixedSize();
@@ -215,7 +223,7 @@ public class ProfileActivity extends AppCompatActivity {
                         });
             }
         });
-        builder.setNeutralButton("No",null);
+        builder.setNeutralButton("No", null);
         builder.show();
     }
 

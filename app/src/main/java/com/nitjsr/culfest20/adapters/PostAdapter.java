@@ -13,6 +13,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.airbnb.lottie.LottieAnimationView;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.FirebaseDatabase;
 import com.nitjsr.culfest20.R;
@@ -29,8 +30,8 @@ import androidx.recyclerview.widget.RecyclerView;
 
 public class PostAdapter extends RecyclerView.Adapter<PostAdapter.MyViewHolder> {
 
-    Context context;
-    ArrayList<Post> posts;
+    private Context context;
+    private ArrayList<Post> posts;
 
     public PostAdapter(Context context, ArrayList<Post> posts) {
         this.context = context;
@@ -50,26 +51,15 @@ public class PostAdapter extends RecyclerView.Adapter<PostAdapter.MyViewHolder> 
     public void onBindViewHolder(@NonNull final MyViewHolder holder, final int position) {
 
         holder.title.setText(posts.get(position).getTitle());
-        Picasso.get().load(posts.get(position).getImage()).placeholder(R.drawable.bg_culfest_post).networkPolicy(NetworkPolicy.OFFLINE).into(holder.image, new Callback() {
+        Picasso.get().load(posts.get(position).getImage()).networkPolicy(NetworkPolicy.OFFLINE).into(holder.image, new Callback() {
             @Override
             public void onSuccess() {
-
+                holder.loader.pauseAnimation();
+                holder.loader.setVisibility(View.GONE);
             }
-
             @Override
             public void onError(Exception e) {
-                Picasso.get().load(posts.get(position).getImage()).placeholder(R.drawable.bg_culfest_post).into(holder.image, new Callback() {
-                    @Override
-                    public void onSuccess() {
-
-                    }
-
-                    @Override
-                    public void onError(Exception e) {
-                        //Toast.makeText(context,"Unable to load Image",Toast.LENGTH_LONG).show();
-                    }
-                });
-
+                loadImage(holder, position);
             }
         });
         //lots of work to do......
@@ -105,11 +95,9 @@ public class PostAdapter extends RecyclerView.Adapter<PostAdapter.MyViewHolder> 
         holder.image.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if(holder.doubleClick)
-                {
+                if (holder.doubleClick) {
                     FirebaseDatabase.getInstance().getReference("posts").child(posts.get(position).getId()).child("likes").child(FirebaseAuth.getInstance().getUid()).setValue(1);
-                }
-                else {
+                } else {
                     holder.doubleClick = true;
                     new Handler().postDelayed(new Runnable() {
                         @Override
@@ -121,6 +109,21 @@ public class PostAdapter extends RecyclerView.Adapter<PostAdapter.MyViewHolder> 
             }
         });
 
+    }
+
+    private void loadImage(MyViewHolder holder, int position) {
+        Picasso.get().load(posts.get(position).getImage()).into(holder.image, new Callback() {
+            @Override
+            public void onSuccess() {
+                // holder.image.setVisibility(View.VISIBLE);
+                holder.loader.pauseAnimation();
+                holder.loader.setVisibility(View.GONE);
+            }
+            @Override
+            public void onError(Exception e) {
+                loadImage(holder, position);
+            }
+        });
     }
 
     private void downloadImage(String url, String timestamp) {
@@ -155,20 +158,21 @@ public class PostAdapter extends RecyclerView.Adapter<PostAdapter.MyViewHolder> 
         ImageView image, down;
         TextView title, nlikes, description, time;
         ImageView like;
-
+        LottieAnimationView loader;
         boolean doubleClick;
 
 
         public MyViewHolder(@NonNull View itemView) {
             super(itemView);
             description = itemView.findViewById(R.id.description);
+            loader = itemView.findViewById(R.id.loader);
             image = itemView.findViewById(R.id.image);
             title = itemView.findViewById(R.id.title);
             nlikes = itemView.findViewById(R.id.nlikes);
             down = itemView.findViewById(R.id.download);
             like = itemView.findViewById(R.id.like);
             time = itemView.findViewById(R.id.time_stamp);
-            doubleClick=false;
+            doubleClick = false;
         }
     }
 

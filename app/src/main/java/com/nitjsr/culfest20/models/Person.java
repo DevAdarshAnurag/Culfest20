@@ -6,17 +6,27 @@ public class Person {
     private String name;
     private String post;
     private String whatsappNumber;
+    private String facebook;
     private String instagram;
 
     public Person() {
     }
 
-    public Person(int thumbnail, String name, String post, String whatsappNumber, String instagram) {
+    public Person(int thumbnail, String name, String post, String whatsappNumber, String facebook, String instagram) {
         this.thumbnail = thumbnail;
         this.name = name;
         this.post = post;
         this.whatsappNumber = whatsappNumber;
+        this.facebook = facebook;
         this.instagram = instagram;
+    }
+
+    public String getFacebook() {
+        return facebook;
+    }
+
+    public void setFacebook(String facebook) {
+        this.facebook = facebook;
     }
 
     public int getThumbnail() {

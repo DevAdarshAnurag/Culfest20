@@ -9,7 +9,8 @@
     android:layout_marginEnd="16dp"
     android:layout_marginBottom="8dp"
     app:cardCornerRadius="4dp"
-    app:cardElevation="4dp">
+    app:cardElevation="4dp"
+    app:contentPadding="4dp">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -54,7 +55,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_below="@+id/person_post"
-                android:layout_margin="10dp"
+                android:layout_margin="8dp"
                 android:orientation="horizontal"
                 android:weightSum="3">
 
@@ -66,13 +67,12 @@
                     android:src="@drawable/ic_whatsapp" />
 
                 <ImageView
-                    android:visibility="invisible"
-                    android:id="@+id/linkedin"
+                    android:id="@+id/person_fb"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:src="@drawable/ic_phone"
-                    android:tint="@color/black" />
+                    android:src="@drawable/ic_facebook"
+                    android:tint="@color/fb" />
 
                 <ImageView
                     android:id="@+id/person_insta"

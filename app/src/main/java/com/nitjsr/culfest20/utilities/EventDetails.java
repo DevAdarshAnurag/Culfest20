@@ -1071,65 +1071,20 @@ public class EventDetails {
             },
             {
                     //Antaraksari
-                    "Harshit Saini(9471501123)\n" +
-                            "Shalini Sinha(7979924452)\n" +
-                            "Nikita Smriti Lugun(8797996758)\n" +
-                            "Shivani Nagaria(9617663129)\n"+
-                            "K. Akshay kumar(9676727067)\n"+
-                            "\n" +
-                            "For more details contact:\n" +
-                            "\n" +
-                            "Aditya(7654068108)\n" +
-                            "Satyam(6200118007)\n" +
-                            "Gunjan(9135559927)",
+                    "Harshit Saini(9471501123)\n"+
+                            "Amit Bahir(9702770402)\n",
                     //Paper Dance
-                    "Harshit Saini(9471501123)\n" +
-                            "Aditya Pratap(9123467073)\n" +
-                            "Shivani Nagaria(9617663129)\n"+
-                            "K. Akshay kumar(9676727067)\n"+
-                            "\n" +
-                            "\n" +
-                            "For more details contact:\n" +
-                            "\n" +
-                            "Arti(7260045695)\n" +
-                            "Shalini(6203952149)\n" +
-                            "Swapnil(8603264255)\n" +
-                            "Pushkar(8765466426)\n" +
-                            "Wasil(8409202135)",
+                    "Harshit Saini(9471501123)\n"+
+                            "Amit Bahir(9702770402)\n",
                     //Blind Date
-                    "Harshit Saini (9471501123)\n" +
-                            "Rishikesh (7295954464)" +
-                            "Shivani Nagaria(9617663129)\n"+
-                            "K. Akshay kumar(9676727067)\n"+
-                            "\n" +
-                            "\n" +
-                            "For more details contact:\n" +
-                            "\n" + "Vanshika(7389113467)\n" +
-                            "Harshleen(9669555520)\n" +
-                            "Vikrant(9279262392)\n" +
-                            "Anant(9525302498)",
+                    "Harshit Saini(9471501123)\n"+
+                            "Amit Bahir(9702770402)\n",
                     //PUBG
-                    "Harshit Saini(9471501123)\n" +
-                            "Amit Bahir(9702770402)\n" +
-                            "Shivani Nagaria(9617663129)\n"+
-                            "K. Akshay kumar(9676727067)\n"+
-                            "\n" +
-                            "For more details contact:\n" +
-                            "\n" +
-                            "Nikhil(7903767166)\n" +
-                            "Ashutosh(8210728770)\n" +
-                            "Ayush(8529470384)\n" +
-                            "Anshuman(7870967618)",
+                    "Harshit Saini(9471501123)\n"+
+                            "Amit Bahir(9702770402)\n",
                     //Pillow Fight
-                    "Harshit Saini(9471501123)\n \n"+
-                            "Shivani Nagaria(9617663129)\n"+
-                            "K. Akshay kumar(9676727067)\n"+
-                            "For more details contact:\n" +
-                            "Shivam(6204723672)\n" +
-                            "Shivansh(7564023748)\n" +
-                            "Vikrant(8340139745)\n" +
-                            "Mohit(9113541136)\n" +
-                            "Prashant(6387526520)"
+                    "Harshit Saini(9471501123)\n"+
+                            "Amit Bahir(9702770402)\n"
             }
     };
 }

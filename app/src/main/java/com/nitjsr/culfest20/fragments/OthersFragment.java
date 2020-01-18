@@ -60,10 +60,10 @@ public class OthersFragment extends Fragment {
         team.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-//                Intent intent = new Intent(getActivity(), TeamCulfestActivity.class);
-//                intent.setFlags(Intent.FLAG_ACTIVITY_SINGLE_TOP);
-//                launch(intent);
-                Toast.makeText(getContext(), "Coming Soon...", Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(getActivity(), TeamCulfestActivity.class);
+                intent.setFlags(Intent.FLAG_ACTIVITY_SINGLE_TOP);
+                launch(intent);
+                //Toast.makeText(getContext(), "Coming Soon...", Toast.LENGTH_SHORT).show();
             }
         });
 
