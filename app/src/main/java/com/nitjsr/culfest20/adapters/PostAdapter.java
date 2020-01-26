@@ -1,7 +1,11 @@
 package com.nitjsr.culfest20.adapters;
 
+import android.Manifest;
+import android.animation.Animator;
+import android.app.Activity;
 import android.app.DownloadManager;
 import android.content.Context;
+import android.content.pm.PackageManager;
 import android.net.Uri;
 import android.os.Environment;
 import android.os.Handler;
@@ -9,6 +13,7 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -17,6 +22,7 @@ import com.airbnb.lottie.LottieAnimationView;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.FirebaseDatabase;
 import com.nitjsr.culfest20.R;
+import com.nitjsr.culfest20.activities.MainActivity;
 import com.nitjsr.culfest20.models.Post;
 import com.squareup.picasso.Callback;
 import com.squareup.picasso.NetworkPolicy;
@@ -26,6 +32,7 @@ import java.io.File;
 import java.util.ArrayList;
 
 import androidx.annotation.NonNull;
+import androidx.core.app.ActivityCompat;
 import androidx.recyclerview.widget.RecyclerView;
 
 public class PostAdapter extends RecyclerView.Adapter<PostAdapter.MyViewHolder> {
@@ -49,7 +56,6 @@ public class PostAdapter extends RecyclerView.Adapter<PostAdapter.MyViewHolder> 
 
     @Override
     public void onBindViewHolder(@NonNull final MyViewHolder holder, final int position) {
-
         holder.title.setText(posts.get(position).getTitle());
         Picasso.get().load(posts.get(position).getImage()).networkPolicy(NetworkPolicy.OFFLINE).into(holder.image, new Callback() {
             @Override
@@ -57,11 +63,14 @@ public class PostAdapter extends RecyclerView.Adapter<PostAdapter.MyViewHolder> 
                 holder.loader.pauseAnimation();
                 holder.loader.setVisibility(View.GONE);
             }
+
             @Override
             public void onError(Exception e) {
                 loadImage(holder, position);
             }
         });
+
+
         //lots of work to do......
         holder.nlikes.setText((posts.get(position).getLikes().size() - 1) + "");
         holder.description.setText(posts.get(position).getDescription());
@@ -78,6 +87,7 @@ public class PostAdapter extends RecyclerView.Adapter<PostAdapter.MyViewHolder> 
                         FirebaseDatabase.getInstance().getReference("posts").child(posts.get(position).getId()).child("likes").child(FirebaseAuth.getInstance().getUid()).setValue(null);
                         holder.like.setImageResource(R.drawable.ic_hearts_red);
                     } else {
+                        popAnim(holder, position);
                         FirebaseDatabase.getInstance().getReference("posts").child(posts.get(position).getId()).child("likes").child(FirebaseAuth.getInstance().getUid()).setValue(1);
                         holder.like.setImageResource(R.drawable.ic_hearts_grey);
                     }
@@ -95,7 +105,8 @@ public class PostAdapter extends RecyclerView.Adapter<PostAdapter.MyViewHolder> 
         holder.image.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if (holder.doubleClick) {
+                if (holder.doubleClick && !posts.get(position).getLikes().containsKey(FirebaseAuth.getInstance().getUid())) {
+                    popAnim(holder, position);
                     FirebaseDatabase.getInstance().getReference("posts").child(posts.get(position).getId()).child("likes").child(FirebaseAuth.getInstance().getUid()).setValue(1);
                 } else {
                     holder.doubleClick = true;
@@ -111,6 +122,34 @@ public class PostAdapter extends RecyclerView.Adapter<PostAdapter.MyViewHolder> 
 
     }
 
+    private void popAnim(MyViewHolder holder, int position) {
+        Log.i("popAnim: ", "popped");
+        holder.likeanim.setVisibility(View.VISIBLE);
+        holder.heart.playAnimation();
+        holder.heart.setSpeed(2f);
+        holder.heart.addAnimatorListener(new Animator.AnimatorListener() {
+            @Override
+            public void onAnimationStart(Animator animator) {
+                Log.i("onAnimationStart: ", "1");
+            }
+
+            @Override
+            public void onAnimationEnd(Animator animator) {
+                Log.i("onAnimationEnd: ", "0");
+                holder.likeanim.setVisibility(View.GONE);
+            }
+
+            @Override
+            public void onAnimationCancel(Animator animator) {
+                holder.heart.pauseAnimation();
+            }
+
+            @Override
+            public void onAnimationRepeat(Animator animator) {
+            }
+        });
+    }
+
     private void loadImage(MyViewHolder holder, int position) {
         Picasso.get().load(posts.get(position).getImage()).into(holder.image, new Callback() {
             @Override
@@ -119,6 +158,7 @@ public class PostAdapter extends RecyclerView.Adapter<PostAdapter.MyViewHolder> 
                 holder.loader.pauseAnimation();
                 holder.loader.setVisibility(View.GONE);
             }
+
             @Override
             public void onError(Exception e) {
                 loadImage(holder, position);
@@ -127,25 +167,29 @@ public class PostAdapter extends RecyclerView.Adapter<PostAdapter.MyViewHolder> 
     }
 
     private void downloadImage(String url, String timestamp) {
-
-        String filename = "culfest20" + timestamp + ".jpg";
-
-        File direct = new File(Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DCIM).getAbsolutePath() + "/" + "Culfest20" + "/");
-        if (!direct.exists()) {
-            direct.mkdir();
-            Log.i("DIR", "directory created");
-        } else {
-            Log.i("DIR", "directory present");
+        if (ActivityCompat.checkSelfPermission(context, Manifest.permission.WRITE_EXTERNAL_STORAGE) != PackageManager.PERMISSION_GRANTED) {
+            ActivityCompat.requestPermissions((Activity) context, new String[]{Manifest.permission.WRITE_EXTERNAL_STORAGE}, 100);
         }
-        DownloadManager downloadManager = (DownloadManager) context.getSystemService(Context.DOWNLOAD_SERVICE);
-        DownloadManager.Request request = new DownloadManager.Request(Uri.parse(url));
-        request.setTitle("Culfest'20 Image");
-        request.setDescription("Downloading...");
-        request.setMimeType("image/jpeg");
-        request.setNotificationVisibility(DownloadManager.Request.VISIBILITY_VISIBLE_NOTIFY_COMPLETED);
-        request.setDestinationInExternalPublicDir(Environment.DIRECTORY_DCIM, File.separator + "Culfest20" + File.separator + filename);
-        downloadManager.enqueue(request);
-        Toast.makeText(context, "Downloading Image", Toast.LENGTH_LONG).show();
+        else {
+            String filename = "culfest20" + timestamp + ".jpg";
+
+            File direct = new File(Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DCIM).getAbsolutePath() + "/" + "Culfest20" + "/");
+            if (!direct.exists()) {
+                direct.mkdir();
+                Log.i("DIR", "directory created");
+            } else {
+                Log.i("DIR", "directory present");
+            }
+            DownloadManager downloadManager = (DownloadManager) context.getSystemService(Context.DOWNLOAD_SERVICE);
+            DownloadManager.Request request = new DownloadManager.Request(Uri.parse(url));
+            request.setTitle("Culfest'20 Image");
+            request.setDescription("Downloading...");
+            request.setMimeType("image/jpeg");
+            request.setNotificationVisibility(DownloadManager.Request.VISIBILITY_VISIBLE_NOTIFY_COMPLETED);
+            request.setDestinationInExternalPublicDir(Environment.DIRECTORY_DCIM, File.separator + "Culfest20" + File.separator + filename);
+            downloadManager.enqueue(request);
+            Toast.makeText(context, "Downloading Image", Toast.LENGTH_LONG).show();
+        }
     }
 
     @Override
@@ -158,12 +202,15 @@ public class PostAdapter extends RecyclerView.Adapter<PostAdapter.MyViewHolder> 
         ImageView image, down;
         TextView title, nlikes, description, time;
         ImageView like;
-        LottieAnimationView loader;
+        LottieAnimationView loader, heart;
+        FrameLayout likeanim;
         boolean doubleClick;
 
 
         public MyViewHolder(@NonNull View itemView) {
             super(itemView);
+            likeanim = itemView.findViewById(R.id.likeanim);
+            heart = itemView.findViewById(R.id.heart);
             description = itemView.findViewById(R.id.description);
             loader = itemView.findViewById(R.id.loader);
             image = itemView.findViewById(R.id.image);
@@ -173,6 +220,7 @@ public class PostAdapter extends RecyclerView.Adapter<PostAdapter.MyViewHolder> 
             like = itemView.findViewById(R.id.like);
             time = itemView.findViewById(R.id.time_stamp);
             doubleClick = false;
+
         }
     }
 

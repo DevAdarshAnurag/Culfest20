@@ -67,12 +67,13 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
         LatLng ah = new LatLng(22.778147, 86.145223);
         LatLng reception = new LatLng(22.777099, 86.144010);
         LatLng vsg = new LatLng(22.777064, 86.143242);
-        LatLng nitcanteen = new LatLng(22.7778724,86.1440892);
+        LatLng nitcanteen = new LatLng(22.778764, 86.143016);
         LatLng pronites = new LatLng(22.781193, 86.143350);
         LatLng newbuilding = new LatLng(22.776194, 86.146304);
         LatLng cc = new LatLng(22.777415, 86.145091);
         LatLng golchakkar = new LatLng(22.776918, 86.144640);
         LatLng athleticsGround = new LatLng(22.774932, 86.142546);
+        LatLng tsg = new LatLng(22.775061, 86.143779);
 
         int height = 64;
         int width = 56;
@@ -117,7 +118,9 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
         smallMarker = Bitmap.createScaledBitmap(b, width, height, false);
         BitmapDescriptor athlecticsIcon = BitmapDescriptorFactory.fromBitmap(smallMarker);
 
-
+        b = BitmapFactory.decodeResource(getResources(), R.drawable.mp_tsg);
+        smallMarker = Bitmap.createScaledBitmap(b, width, height, false);
+        BitmapDescriptor tsgIcon = BitmapDescriptorFactory.fromBitmap(smallMarker);
 
         mMap.addMarker(new MarkerOptions().position(hostelJ).title("Hostel J").icon(hostelIcon));
         mMap.addMarker(new MarkerOptions().position(hostelK).title("Hostel K").icon(hostelIcon));
@@ -131,7 +134,7 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
         mMap.addMarker(new MarkerOptions().position(cc).title("Computer Center").icon(academicIcon));
         mMap.addMarker(new MarkerOptions().position(golchakkar).title("NIT Golchakkar").icon(golChakkarIcon));
         mMap.addMarker(new MarkerOptions().position(athleticsGround).title("NIT Athletics Ground").icon(athlecticsIcon));
-
+        mMap.addMarker(new MarkerOptions().position(tsg).title("TSG").icon(tsgIcon));
     }
 
     @Override

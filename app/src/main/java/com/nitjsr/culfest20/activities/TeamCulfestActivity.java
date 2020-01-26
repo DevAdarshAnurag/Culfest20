@@ -35,8 +35,7 @@ public class TeamCulfestActivity extends AppCompatActivity {
         list.add("Hospitality");
         list.add("App Development");
         list.add("Web Development");
-        list.add("Decoration");
-        list.add("Creative");
+        list.add("Creative & Decoration");
         list.add("Public Relations");
         list.add("Logistics & Security");
 

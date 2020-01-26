@@ -70,7 +70,7 @@ public class EventDetails {
                             "\n\nPrize distribution:\n1st - \u20B9 7,000 \n 2nd - \u20B9 5,000 \n 3rd - \u20B9 3,000 \n",
                     //Battle of Bands
                     "“The true beauty of music is that it connects people. It carries a message, and we, the musicians, are the messengers.” - Ron Ayers  \n" +
-                            "If you have a message that can stir the mass into unison, wait no more because Culfest’19 brings you, just the dais you need. " +
+                            "If you have a message that can stir the mass into unison, wait no more because Culfest’20 brings you, just the dais you need. " +
                             "Battle of Band provides you with the opportunity of presenting your own idea of band music and, displaying your talent like never before. " +
                             "Let the audience have a taste of your creation and leave them craving for more. Practice like you have never won. Perform like you have never lost. " +
                             "Don’t keep calm, set the stage on fire and the crowd up roaring." +
@@ -247,7 +247,7 @@ public class EventDetails {
                             "\n\nPrize distribution:\n1st - \u20B9 4,000 \n 2nd - \u20B9 3,000 \n 3rd - \u20B9 2,000 \n",
                     //SSMQ
                     "“ Trust yourself, you know more than you think you do”.\n" +
-                            "Culfest’19 brings to you the mother of all quizzes-the SSMQ- with questions from every topic under the sun. Be sure to exercise your brain to its limit and surprise many, including yourself. This is where the best minds compete for glory. It’s not just about knowledge, but also about thinking differently, getting the timing right, and of course, having a little bit of luck on your side! \n" +
+                            "Culfest’20 brings to you the mother of all quizzes-the SSMQ- with questions from every topic under the sun. Be sure to exercise your brain to its limit and surprise many, including yourself. This is where the best minds compete for glory. It’s not just about knowledge, but also about thinking differently, getting the timing right, and of course, having a little bit of luck on your side! \n" +
                             "So if you think you’ve got what it takes to make a mark, then do come and be a part of this grand event."+
                             "\n\nPrize distribution:\n1st - \u20B9 4,000 \n 2nd - \u20B9 3,000 \n 3rd - \u20B9 2,000 \n",
                     //JAM
@@ -274,7 +274,7 @@ public class EventDetails {
                             "\n" +
                             "Bonjour Gamers!\n" +
                             "You think you are not getting rewarded for being amazing at PUBG.\n" +
-                            "Well, no more! Culfest'19 introduces you to the informal event of PUBG tournament.",
+                            "Well, no more! Culfest'20 introduces you to the informal event of PUBG tournament.",
                     //My way or highway
                     "The game has to be played in groups of two. Get hooked on to Pillow Fighting when you're told,   the winner has to choose a dare for the loser. If the loser completes the dare,  he advances to the next round or else the other team gets the advantage.\n" +
                             "\n" +
@@ -333,7 +333,7 @@ public class EventDetails {
                     //Halla Bol
                     "1) One member can participate as a member of maximum two team.  \n" +
                             "2) Each team can consist of minimum 12 to maximum of 22 members.  \n" +
-                            "3) Each participant should be registered in Culfest'19 failing which, the whole team would be disqualified.  \n" +
+                            "3) Each participant should be registered in Culfest'20 failing which, the whole team would be disqualified.  \n" +
                             "4) Time limit for each performance is minimum 10 mins and maximum 20 mins.  \n" +
                             "5) Teams are free to use simple props(Dupatta , Lathi, Gulaal, Paint etc) in their act of performance.  \n" +
                             "6) Organizing committee shall not provide any Costume/Props.  \n" +
@@ -653,7 +653,7 @@ public class EventDetails {
                             " \n" +
                             "2) Teams can pre-register online or by person.  \n" +
                             " \n" +
-                            "3) Each participant should be registered in Culfest'19 failing which, the whole team would be disqualified.  \n" +
+                            "3) Each participant should be registered in Culfest'20 failing which, the whole team would be disqualified.  \n" +
                             " \n" +
                             "4) There will be only one round for the competition. The maximum time allotted for the play is 25 minutes. This given time is from the empty stage to empty stage.  \n" +
                             " \n" +
@@ -679,7 +679,7 @@ public class EventDetails {
                     //Halla Bol
                     "1) One member can participate as a member of maximum two team.  \n" +
                             "2) Each team can consist of minimum 12 to maximum of 22 members.  \n" +
-                            "3) Each participant should be registered in Culfest'19 failing which, the whole team would be disqualified.  \n" +
+                            "3) Each participant should be registered in Culfest'20 failing which, the whole team would be disqualified.  \n" +
                             "4) Time limit for each performance is minimum 10 mins and maximum 20 mins.  \n" +
                             "5) Teams are free to use simple props(Dupatta , Lathi, Gulaal, Paint etc) in their act of performance.  \n" +
                             "6) Organizing committee shall not provide any Costume/Props.  \n" +
@@ -696,7 +696,7 @@ public class EventDetails {
                             " \n" +
                             "5) Teams must bring their own music and background tracks they wish to play.  \n" +
                             " \n" +
-                            "6) Each participant should be registered in Culfest'19 failing which, the whole team would be disqualified.  \n" +
+                            "6) Each participant should be registered in Culfest'20 failing which, the whole team would be disqualified.  \n" +
                             " \n" +
                             "7) Face paint is allowed.  \n" +
                             " \n" +
@@ -1043,7 +1043,7 @@ public class EventDetails {
                             "Kartik Bhargava(8318006807)",
                     //48 Hours or MIS-EN-SCENE
                     "Coordinator-\n" +
-                            "Saurabh Mishra(7360919595)\n"+
+                            "Saurabh Mishra(7360919595)\n\n"+
                             "Joint coordinator-\n" +
                             "Abhishek Kumar(9135799675)"
             },
