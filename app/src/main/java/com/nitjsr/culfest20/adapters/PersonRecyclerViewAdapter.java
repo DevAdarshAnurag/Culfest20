@@ -14,8 +14,16 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 import com.nitjsr.culfest20.R;
 import com.nitjsr.culfest20.models.Person;
+import com.squareup.picasso.Callback;
+import com.squareup.picasso.NetworkPolicy;
 import com.squareup.picasso.Picasso;
 
 import java.util.List;
@@ -55,7 +63,32 @@ public class PersonRecyclerViewAdapter extends RecyclerView.Adapter<PersonRecycl
         holder.name.setText(person.getName());
         holder.post.setText(person.getPost());
 
-        Picasso.get().load(person.getThumbnail()).placeholder(R.drawable.ic_launcher).into(holder.imageView);
+        DatabaseReference dbRef = FirebaseDatabase.getInstance().getReference("TeamCulfest").child(person.getImgLoc());
+        dbRef.addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                if(dataSnapshot.exists()) {
+                    String url = (String) dataSnapshot.getValue();
+                    Picasso.get().load(url).networkPolicy(NetworkPolicy.OFFLINE).into(holder.imageView, new Callback() {
+                        @Override
+                        public void onSuccess() {
+
+                        }
+
+                        @Override
+                        public void onError(Exception e) {
+                            loadImage(holder, url);
+                        }
+                    });
+                }
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError databaseError) {
+
+            }
+        });
+
         final String[] number = {person.getWhatsappNumber()};
 
         if(person.getWhatsappNumber().equals(""))
@@ -107,6 +140,20 @@ public class PersonRecyclerViewAdapter extends RecyclerView.Adapter<PersonRecycl
                 } catch (Exception e) {
                     //
                 }
+            }
+        });
+    }
+
+    private void loadImage(MyViewHolder holder, String url) {
+        Picasso.get().load(url).placeholder(R.drawable.ic_placeholder_man).into(holder.imageView, new Callback() {
+            @Override
+            public void onSuccess() {
+
+            }
+
+            @Override
+            public void onError(Exception e) {
+                loadImage(holder,url);
             }
         });
     }

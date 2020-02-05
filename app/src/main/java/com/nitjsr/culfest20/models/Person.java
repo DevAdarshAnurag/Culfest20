@@ -2,7 +2,7 @@ package com.nitjsr.culfest20.models;
 
 
 public class Person {
-    private int thumbnail;
+    private String imgLoc;
     private String name;
     private String post;
     private String whatsappNumber;
@@ -12,8 +12,8 @@ public class Person {
     public Person() {
     }
 
-    public Person(int thumbnail, String name, String post, String whatsappNumber, String facebook, String instagram) {
-        this.thumbnail = thumbnail;
+    public Person(String imgLoc, String name, String post, String whatsappNumber, String facebook, String instagram) {
+        this.imgLoc = imgLoc;
         this.name = name;
         this.post = post;
         this.whatsappNumber = whatsappNumber;
@@ -29,12 +29,12 @@ public class Person {
         this.facebook = facebook;
     }
 
-    public int getThumbnail() {
-        return thumbnail;
+    public String getImgLoc() {
+        return imgLoc;
     }
 
-    public void setThumbnail(int thumbnail) {
-        this.thumbnail = thumbnail;
+    public void setImgLoc(String imgLoc) {
+        this.imgLoc = imgLoc;
     }
 
     public String getName() {

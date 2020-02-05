@@ -15,7 +15,6 @@
         app:showAsAction="always"/>
     <item
         android:id="@+id/faq"
-        android:icon="@drawable/ic_faq"
         android:iconTint="@color/white"
         android:title="FAQs"
         app:showAsAction="never"/>

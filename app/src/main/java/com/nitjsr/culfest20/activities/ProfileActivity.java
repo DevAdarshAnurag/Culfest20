@@ -58,6 +58,7 @@ public class ProfileActivity extends AppCompatActivity {
     LottieAnimationView qrcode;
     RelativeLayout progress;
     RecyclerView eventRecycler;
+    ArrayList<Events> list;
 
     public static Rect locateView(View v) {
         int[] loc_int = new int[2];
@@ -85,7 +86,7 @@ public class ProfileActivity extends AppCompatActivity {
             getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         }
 
-        ArrayList<Events> list = new ArrayList<Events>();
+        list = new ArrayList<Events>();
         list.add(new Events(R.drawable.ic_mega_events, R.color.colorPrimaryDark, "Mega Events", "\u20B9 2,31,000"));
         list.add(new Events(R.drawable.ic_dance, R.color.fb, "Dance", "\u20B9 60,600"));
         list.add(new Events(R.drawable.ic_vocals, R.color.insta, "Vocals", "\u20B9 58,600"));
@@ -141,8 +142,20 @@ public class ProfileActivity extends AppCompatActivity {
         eventRecycler.setLayoutManager(gridLayoutManager);
         EventChipAdapter adapter = new EventChipAdapter(ProfileActivity.this, list);
         eventRecycler.setAdapter(adapter);
-        adapter.notifyDataSetChanged();
         eventRecycler.hasFixedSize();
+        new Thread(new Runnable() {
+            @Override
+            public void run() {
+                try {
+                    Thread.sleep(3000);
+                    adapter.notifyDataSetChanged();
+                }
+                catch (Exception e)
+                {
+                    //
+                }
+            }
+        }).start();
     }
 
     private void fetchDetails(String uid) {

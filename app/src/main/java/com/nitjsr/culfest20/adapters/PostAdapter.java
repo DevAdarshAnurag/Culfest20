@@ -94,6 +94,15 @@ public class PostAdapter extends RecyclerView.Adapter<PostAdapter.MyViewHolder> 
                 }
             });
         }
+        else
+        {
+            holder.like.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    Toast.makeText(context,"Login as a user to like.",Toast.LENGTH_SHORT).show();
+                }
+            });
+        }
 
         holder.down.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -102,23 +111,25 @@ public class PostAdapter extends RecyclerView.Adapter<PostAdapter.MyViewHolder> 
             }
         });
 
-        holder.image.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                if (holder.doubleClick && !posts.get(position).getLikes().containsKey(FirebaseAuth.getInstance().getUid())) {
-                    popAnim(holder, position);
-                    FirebaseDatabase.getInstance().getReference("posts").child(posts.get(position).getId()).child("likes").child(FirebaseAuth.getInstance().getUid()).setValue(1);
-                } else {
-                    holder.doubleClick = true;
-                    new Handler().postDelayed(new Runnable() {
-                        @Override
-                        public void run() {
-                            holder.doubleClick = false;
-                        }
-                    }, 500);
+        if(FirebaseAuth.getInstance().getCurrentUser()!=null) {
+            holder.image.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    if (holder.doubleClick && !posts.get(position).getLikes().containsKey(FirebaseAuth.getInstance().getUid())) {
+                        popAnim(holder, position);
+                        FirebaseDatabase.getInstance().getReference("posts").child(posts.get(position).getId()).child("likes").child(FirebaseAuth.getInstance().getUid()).setValue(1);
+                    } else {
+                        holder.doubleClick = true;
+                        new Handler().postDelayed(new Runnable() {
+                            @Override
+                            public void run() {
+                                holder.doubleClick = false;
+                            }
+                        }, 500);
+                    }
                 }
-            }
-        });
+            });
+        }
 
     }
 
