@@ -25,11 +25,11 @@ public class DeveloperActivity extends AppCompatActivity {
         }
 
         ArrayList<Developer> devList = new ArrayList<Developer>();
-        devList.add(new Developer("Adarsh 'nightmare' Anurag","8797834204", "https://www.linkedin.com/in/adarsh-anurag-b7a0ba128/","https://www.instagram.com/adarsh_nightmare_anurag", R.drawable.ic_placeholder_man));
-        devList.add(new Developer("Himesh 'ptaerodactyls' Patel","8619313065","https://www.linkedin.com/in/himeshpatel619","https://www.instagram.com/i_am_nucking_futzzzzz",R.drawable.ic_placeholder_man));
-        devList.add(new Developer("Abhinay Kumar", "8825326346",  "https://www.linkedin.com/in/abhinay-kumar-3b3345178","https://www.instagram.com/kumarabhinay599",R.drawable.ic_placeholder_man));
-        devList.add(new Developer("Nikhil Ranjan","8340665693","https://www.linkedin.com/in/nikhil-ranjan-17616b190","https://www.instagram.com/",R.drawable.ic_placeholder_man));
-        devList.add(new Developer("Kartik Bhargava","8318006807","https://www.linkedin.com/in/kartik-bhargava-39586611b","https://www.instagram.com/",R.drawable.ic_placeholder_man));
+        devList.add(new Developer("Adarsh 'nightmare' Anurag","8797834204", "https://www.linkedin.com/in/adarsh-anurag-b7a0ba128/","https://www.instagram.com/adarsh_nightmare_anurag", "adarsh"));
+        devList.add(new Developer("Himesh 'ptaerodactyls' Patel","8619313065","https://www.linkedin.com/in/himeshpatel619","https://www.instagram.com/i_am_nucking_futzzzzz","himesh"));
+        devList.add(new Developer("Abhinay Kumar", "8825326346",  "https://www.linkedin.com/in/abhinay-kumar-3b3345178","https://www.instagram.com/kumarabhinay599","abhinayK"));
+        devList.add(new Developer("Nikhil Ranjan","8340665693","https://www.linkedin.com/in/nikhil-ranjan-17616b190","https://www.instagram.com/","nikhilR"));
+        devList.add(new Developer("Kartik Bhargava","8318006807","https://www.linkedin.com/in/kartik-bhargava-39586611b","https://www.instagram.com/","kartikB"));
         RecyclerView recyclerView = findViewById(R.id.rv_developers);
         DeveloperAdapter developerAdapter = new DeveloperAdapter(devList,this);
         recyclerView.setLayoutManager(new LinearLayoutManager(DeveloperActivity.this));

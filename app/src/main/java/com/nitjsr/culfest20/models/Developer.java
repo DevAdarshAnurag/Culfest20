@@ -2,18 +2,17 @@ package com.nitjsr.culfest20.models;
 
 public class Developer {
 
-    public String name, phone, linkedIn, insta;
-    public int img;
+    public String name, phone, linkedIn, insta, imgLoc;
 
     public Developer() {
     }
 
-    public Developer(String name, String phone, String linkedIn, String insta, int img) {
+    public Developer(String name, String phone, String linkedIn, String insta, String imgLoc) {
         this.name = name;
         this.phone = phone;
         this.linkedIn = linkedIn;
         this.insta = insta;
-        this.img = img;
+        this.imgLoc = imgLoc;
     }
 
     public String getName() {
@@ -48,11 +47,12 @@ public class Developer {
         this.insta = insta;
     }
 
-    public int getImg() {
-        return img;
+
+    public String getImgLoc() {
+        return imgLoc;
     }
 
-    public void setImg(int img) {
-        this.img = img;
+    public void setImgLoc(String imgLoc) {
+        this.imgLoc = imgLoc;
     }
 }

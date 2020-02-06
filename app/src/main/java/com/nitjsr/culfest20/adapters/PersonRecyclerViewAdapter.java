@@ -69,7 +69,7 @@ public class PersonRecyclerViewAdapter extends RecyclerView.Adapter<PersonRecycl
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                 if(dataSnapshot.exists()) {
                     String url = (String) dataSnapshot.getValue();
-                    Picasso.get().load(url).networkPolicy(NetworkPolicy.OFFLINE).into(holder.imageView, new Callback() {
+                    Picasso.get().load(url).placeholder(R.drawable.ic_placeholder_man).networkPolicy(NetworkPolicy.OFFLINE).into(holder.imageView, new Callback() {
                         @Override
                         public void onSuccess() {
 

@@ -110,7 +110,7 @@ public class ProfileActivity extends AppCompatActivity {
         profileId = findViewById(R.id.profile_culfest_id);
         profileTShirt = findViewById(R.id.t_shirt_size);
         profileImage = findViewById(R.id.profile_image);
-        Picasso.get().load(firebaseUser.getPhotoUrl()).placeholder(R.drawable.ic_launcher).into(profileImage);
+        Picasso.get().load(firebaseUser.getPhotoUrl()).placeholder(R.drawable.ic_placeholder_man).into(profileImage);
         profilePayment = findViewById(R.id.profile_payment);
         progress = findViewById(R.id.profile_progress_bar);
         eventRecycler = findViewById(R.id.event_chip_rv);

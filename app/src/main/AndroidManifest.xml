@@ -18,7 +18,8 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".activities.ScheduleActivity"></activity>
+        <activity android:name=".activities.SponsorsActivity"></activity>
+        <activity android:name=".activities.ScheduleActivity" />
 
         <meta-data
             android:name="com.google.android.geo.API_KEY"

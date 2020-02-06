@@ -9,8 +9,16 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 import com.nitjsr.culfest20.R;
 import com.nitjsr.culfest20.models.Developer;
+import com.squareup.picasso.Callback;
+import com.squareup.picasso.NetworkPolicy;
+import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
 
@@ -38,7 +46,31 @@ public class DeveloperAdapter extends RecyclerView.Adapter<DeveloperAdapter.MyVi
     @Override
     public void onBindViewHolder(@NonNull MyViewHolder holder, int position) {
         holder.devname.setText(devs.get(position).getName());
-        holder.devimg.setImageResource(devs.get(position).getImg());
+        DatabaseReference dbRef = FirebaseDatabase.getInstance().getReference("Developers").child(devs.get(position).getImgLoc());
+        dbRef.addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                if (dataSnapshot.exists()) {
+                    String url = (String) dataSnapshot.getValue();
+                    Picasso.get().load(url).placeholder(R.drawable.ic_placeholder_man).networkPolicy(NetworkPolicy.OFFLINE).into(holder.devimg, new Callback() {
+                        @Override
+                        public void onSuccess() {
+
+                        }
+
+                        @Override
+                        public void onError(Exception e) {
+                            loadImage(holder, url);
+                        }
+                    });
+                }
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError databaseError) {
+
+            }
+        });
         holder.insta.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -67,6 +99,20 @@ public class DeveloperAdapter extends RecyclerView.Adapter<DeveloperAdapter.MyVi
             }
         });
 
+    }
+
+    private void loadImage(DeveloperAdapter.MyViewHolder holder, String url) {
+        Picasso.get().load(url).placeholder(R.drawable.ic_placeholder_man).into(holder.devimg, new Callback() {
+            @Override
+            public void onSuccess() {
+
+            }
+
+            @Override
+            public void onError(Exception e) {
+                loadImage(holder, url);
+            }
+        });
     }
 
     @Override

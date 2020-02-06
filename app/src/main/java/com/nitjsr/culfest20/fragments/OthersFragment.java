@@ -13,6 +13,7 @@ import android.widget.Toast;
 import com.nitjsr.culfest20.R;
 import com.nitjsr.culfest20.activities.DeveloperActivity;
 import com.nitjsr.culfest20.activities.MapsActivity;
+import com.nitjsr.culfest20.activities.SponsorsActivity;
 import com.nitjsr.culfest20.activities.TeamCulfestActivity;
 import com.nitjsr.culfest20.utilities.BounceView;
 import com.nitjsr.culfest20.whatsapp.EntryActivity;
@@ -53,7 +54,9 @@ public class OthersFragment extends Fragment {
         sponsors.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(getContext(), "Coming Soon...", Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(getActivity(), SponsorsActivity.class);
+                intent.setFlags(Intent.FLAG_ACTIVITY_SINGLE_TOP);
+                launch(intent);
             }
         });
 
@@ -63,14 +66,13 @@ public class OthersFragment extends Fragment {
                 Intent intent = new Intent(getActivity(), TeamCulfestActivity.class);
                 intent.setFlags(Intent.FLAG_ACTIVITY_SINGLE_TOP);
                 launch(intent);
-                //Toast.makeText(getContext(), "Coming Soon...", Toast.LENGTH_SHORT).show();
             }
         });
 
         stickers.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getActivity(),EntryActivity.class);
+                Intent intent = new Intent(getActivity(), EntryActivity.class);
                 intent.setFlags(Intent.FLAG_ACTIVITY_SINGLE_TOP);
                 launch(intent);
             }
@@ -113,8 +115,7 @@ public class OthersFragment extends Fragment {
         BounceView.addAnimTo(share);
     }
 
-    private void launch(Intent i)
-    {
+    private void launch(Intent i) {
         Handler mHandler = new Handler();
         mHandler.postDelayed(new Runnable() {
 
