@@ -142,6 +142,9 @@ public class RegisterActivity extends AppCompatActivity {
 
 
                 }
+                else{
+                    button.setVisibility(View.VISIBLE);
+                }
             }
         });
     }
@@ -151,19 +154,19 @@ public class RegisterActivity extends AppCompatActivity {
         boolean flag = true;
         if (name.equals("")) {
             flag = false;
-            tilName.setError("Mandatory Field");
+            tilName.setError("Please enter your name");
         }
         if (institute.equals("")) {
             flag = false;
-            tilInstitute.setError("Mandatory Field");
+            tilInstitute.setError("Please enter your institute/college/school");
         }
         if (instituteId.equals("")) {
             flag = false;
-            tilInstituteId.setError("Mandatory Field");
+            tilInstituteId.setError("Enter your unique institute/college/school id");
         }
         if (contact.equals("")) {
             flag = false;
-            tilContact.setError("Mandatory Field");
+            tilContact.setError("Please enter your contact number");
         }
         return flag;
     }
