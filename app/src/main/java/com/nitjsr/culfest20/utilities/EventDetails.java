@@ -371,20 +371,22 @@ public class EventDetails {
                     //Panche
                     "To avoid all conflicts, misunderstandings and to maintain the smooth operation of the event, all participating teams must undertake the following rules laid down by the Culfest’20 team for the fashion event PANACHE to be eligible for participation.\n" +
                             "\n" +
-                            "1.\tYou are free to choose any theme and will be marked accordingly, but 10 marks are there for your overall performance's relation to the theme of the fest. Any two teams with similar themes will be subjected to deduction in points irrespective of who copied whom or in the sequence they performed.\n" +
-                            "2.\t It is a team event. A team must consist of minimum 12 models and maximum up to 18 models.\n" +
-                            "3.\t Each team must provide a background video otherwise a default video will be played.\n" +
-                            "4.\t Performance time would be minimum 10 minutes and maximum of 12 minutes. Further 1.5 minutes are provided to set-up the stage prior to the performance (if required) also the teams need to mention it before- hand to the coordinators and 1 minutes to clear the stage after the performance. Points will be deducted for exceeding the time limit.\n" +
-                            "5.\t One person per team should be there to manage the soundtrack and for the lights. No supporting staff will be provided by us. The teams are responsible for their own music sequence.\n" +
-                            "6.\t If lighting facility is to be availed, one person of the group can supervise the lighting. Otherwise it will be up to the lights group.\n" +
-                            "7.\t Emphasis will be given to clothing, walking style, originality, attitude and representation of the theme.\n" +
-                            "8.\tTeams must bring their own costumes and props.\n" +
-                            "9.\tUse of materials like candles, matches, cigarettes, alcohol and any other hazardous material on stage is prohibited. Teams are required to contact coordinators/segment head before using materials like smoke or dry ice.\n" +
-                            "10.\t Two copies of soundtrack should be submitted in advance of standard audio format .wav or .mp3 of sound quality 192kbps or above to coordinators (in pendrives only).\n" +
-                            "11.\t Vulgarity of any kind would lead to disqualification of team from the event. Hence if the team feels that any stunt of costume design can be deemed as vulgar, it is strongly advised to consult the coordinators than performing it directly on stage otherwise the team may get disqualified. Organizers reserve the right to cancel any round and disqualify any team which do not adhere to the rules.\n" +
-                            "12.\tIt is imperative that all team members must possess a valid college id which must be presented at the time of registration. However, makeup artist could be a hired professional.\n" +
-                            "13.\t A green room would be provided to each team for changing purpose.\n" +
-                            "14.\tApart from the performance awards, a best designer award would be awarded to the team with an extraordinary collection and a Cosplay award for the best outfit.\n" +
+                            "1.\tCrossover teams can be formed with students of different colleges, all having valid college ID cards for the current year. (Not valid for teams from NIT Jamshedpur)\n" +
+                            "2.\tAll participating teams are required to send a confirmation email with the names and institute names and attach their respective institute ID cards to executive.cf@nitjsr.ac.in before 10am, 20th Feb, 2020.\n" +
+                            "3.\tYou are free to choose any theme and will be marked accordingly to the relevance of the outfits to the theme.\n" +
+                            "4.\t It is a team event. A team must consist of minimum 12 models and maximum up to 18 models. A team must have a minimum of 4 boys or 4 girls\n" +
+                            "5.\t Each team must provide a background video otherwise a default video will be played.\n" +
+                            "6.\t Performance time would be a maximum of 10 minutes. Further 1.5 minutes are provided to set-up the stage prior to the performance (if required) also the teams need to mention it before- hand to the coordinators and 1 minutes to clear the stage after the performance. Points will be deducted for exceeding the time limit.\n" +
+                            "7.\t One person per team should be there to manage the soundtrack and for the lights. No supporting staff will be provided by us. The teams are responsible for their own music sequence.\n" +
+                            "8.\t If lighting facility is to be availed, one person of the group can supervise the lighting.\n" +
+                            "9.\t Emphasis and the performance would be judged on the clothing, walking style, originality, attitude, representation of the theme and the music mix .\n" +
+                            "10.\tTeams must bring their own costumes and props.\n" +
+                            "11.\tUse of materials like candles, matches, cigarettes, alcohol and any other hazardous material on stage is prohibited. Teams are required to contact coordinators/segment head before using materials like smoke or dry ice.\n" +
+                            "12.\t Two copies of soundtrack should be submitted in advance of standard audio format .wav or .mp3 of sound quality 192kbps or above to coordinators (in pendrives only).\n" +
+                            "13.\t Vulgarity of any kind would lead to disqualification of team from the event. Hence if the team feels that any stunt of costume design can be deemed as vulgar, it is strongly advised to consult the coordinators than performing it directly on stage otherwise the team may get disqualified. Organizers reserve the right to cancel any round and disqualify any team which do not adhere to the rules.\n" +
+                            "14.\tIt is imperative that all team members must possess a valid college id which must be presented at the time of registration. However, makeup artist could be a hired professional.\n" +
+                            "15.\t A green room would be provided to each team for changing purpose.\n" +
+                            "16.\tApart from the performance awards, a best designer award would be awarded to the team with an extraordinary collection and a Cosplay award for the best outfit.\n" +
                             "\n" +
                             "ADDITIONAL RULES (APPLICABLE ONLY FOR TEAMS FROM NIT JAMSHEDPUR)\n" +
                             "\n" +
@@ -392,8 +394,10 @@ public class EventDetails {
                             "\n" +
                             "2.\tPractice slots for the main stage would be only available one day before the event and it would be decided by a draw system by the organizing team.\n" +
                             "\n" +
-                            "3.\tPlease refer to our website for any new updates.\n"+
-                            "\n\nNOTE: The decision of the judges and the organizing committee will be final and binding. All the teams are advised to take on the fest with professionalism and enthusiasm. The main objective must be to improve oneself and discover/enhance talents and focus on the growth of the Institution.",
+                            "3.\tPlease refer to our website for any new updates.\n" +
+                            "\n" +
+                            "\n" +
+                            "#NOTE: The decision of the judges and the organizing committee will be final and binding. All the teams are advised to take on the fest with professionalism and enthusiasm. The main objective must be to improve oneself and discover/enhance talents and focus on the growth of the Institution.\n",
                     //Poshak
                     "o There can be a maximum of 3 members and minimum 2 in each and every team. \n" +
                             "oParticipants are not allowed to use anything except materials provided by Cocoordinator.  \n" +
@@ -620,20 +624,22 @@ public class EventDetails {
                     //Panache
                     "To avoid all conflicts, misunderstandings and to maintain the smooth operation of the event, all participating teams must undertake the following rules laid down by the Culfest’20 team for the fashion event PANACHE to be eligible for participation.\n" +
                             "\n" +
-                            "1.\tYou are free to choose any theme and will be marked accordingly, but 10 marks are there for your overall performance's relation to the theme of the fest. Any two teams with similar themes will be subjected to deduction in points irrespective of who copied whom or in the sequence they performed.\n" +
-                            "2.\t It is a team event. A team must consist of minimum 12 models and maximum up to 18 models.\n" +
-                            "3.\t Each team must provide a background video otherwise a default video will be played.\n" +
-                            "4.\t Performance time would be minimum 10 minutes and maximum of 12 minutes. Further 1.5 minutes are provided to set-up the stage prior to the performance (if required) also the teams need to mention it before- hand to the coordinators and 1 minutes to clear the stage after the performance. Points will be deducted for exceeding the time limit.\n" +
-                            "5.\t One person per team should be there to manage the soundtrack and for the lights. No supporting staff will be provided by us. The teams are responsible for their own music sequence.\n" +
-                            "6.\t If lighting facility is to be availed, one person of the group can supervise the lighting. Otherwise it will be up to the lights group.\n" +
-                            "7.\t Emphasis will be given to clothing, walking style, originality, attitude and representation of the theme.\n" +
-                            "8.\tTeams must bring their own costumes and props.\n" +
-                            "9.\tUse of materials like candles, matches, cigarettes, alcohol and any other hazardous material on stage is prohibited. Teams are required to contact coordinators/segment head before using materials like smoke or dry ice.\n" +
-                            "10.\t Two copies of soundtrack should be submitted in advance of standard audio format .wav or .mp3 of sound quality 192kbps or above to coordinators (in pendrives only).\n" +
-                            "11.\t Vulgarity of any kind would lead to disqualification of team from the event. Hence if the team feels that any stunt of costume design can be deemed as vulgar, it is strongly advised to consult the coordinators than performing it directly on stage otherwise the team may get disqualified. Organizers reserve the right to cancel any round and disqualify any team which do not adhere to the rules.\n" +
-                            "12.\tIt is imperative that all team members must possess a valid college id which must be presented at the time of registration. However, makeup artist could be a hired professional.\n" +
-                            "13.\t A green room would be provided to each team for changing purpose.\n" +
-                            "14.\tApart from the performance awards, a best designer award would be awarded to the team with an extraordinary collection and a Cosplay award for the best outfit.\n" +
+                            "1.\tCrossover teams can be formed with students of different colleges, all having valid college ID cards for the current year. (Not valid for teams from NIT Jamshedpur)\n" +
+                            "2.\tAll participating teams are required to send a confirmation email with the names and institute names and attach their respective institute ID cards to executive.cf@nitjsr.ac.in before 10am, 20th Feb, 2020.\n" +
+                            "3.\tYou are free to choose any theme and will be marked accordingly to the relevance of the outfits to the theme.\n" +
+                            "4.\t It is a team event. A team must consist of minimum 12 models and maximum up to 18 models. A team must have a minimum of 4 boys or 4 girls\n" +
+                            "5.\t Each team must provide a background video otherwise a default video will be played.\n" +
+                            "6.\t Performance time would be a maximum of 10 minutes. Further 1.5 minutes are provided to set-up the stage prior to the performance (if required) also the teams need to mention it before- hand to the coordinators and 1 minutes to clear the stage after the performance. Points will be deducted for exceeding the time limit.\n" +
+                            "7.\t One person per team should be there to manage the soundtrack and for the lights. No supporting staff will be provided by us. The teams are responsible for their own music sequence.\n" +
+                            "8.\t If lighting facility is to be availed, one person of the group can supervise the lighting.\n" +
+                            "9.\t Emphasis and the performance would be judged on the clothing, walking style, originality, attitude, representation of the theme and the music mix .\n" +
+                            "10.\tTeams must bring their own costumes and props.\n" +
+                            "11.\tUse of materials like candles, matches, cigarettes, alcohol and any other hazardous material on stage is prohibited. Teams are required to contact coordinators/segment head before using materials like smoke or dry ice.\n" +
+                            "12.\t Two copies of soundtrack should be submitted in advance of standard audio format .wav or .mp3 of sound quality 192kbps or above to coordinators (in pendrives only).\n" +
+                            "13.\t Vulgarity of any kind would lead to disqualification of team from the event. Hence if the team feels that any stunt of costume design can be deemed as vulgar, it is strongly advised to consult the coordinators than performing it directly on stage otherwise the team may get disqualified. Organizers reserve the right to cancel any round and disqualify any team which do not adhere to the rules.\n" +
+                            "14.\tIt is imperative that all team members must possess a valid college id which must be presented at the time of registration. However, makeup artist could be a hired professional.\n" +
+                            "15.\t A green room would be provided to each team for changing purpose.\n" +
+                            "16.\tApart from the performance awards, a best designer award would be awarded to the team with an extraordinary collection and a Cosplay award for the best outfit.\n" +
                             "\n" +
                             "ADDITIONAL RULES (APPLICABLE ONLY FOR TEAMS FROM NIT JAMSHEDPUR)\n" +
                             "\n" +
@@ -641,8 +647,10 @@ public class EventDetails {
                             "\n" +
                             "2.\tPractice slots for the main stage would be only available one day before the event and it would be decided by a draw system by the organizing team.\n" +
                             "\n" +
-                            "3.\tPlease refer to our website for any new updates.\n"+
-                            "\n\nNOTE: The decision of the judges and the organizing committee will be final and binding. All the teams are advised to take on the fest with professionalism and enthusiasm. The main objective must be to improve oneself and discover/enhance talents and focus on the growth of the Institution.",
+                            "3.\tPlease refer to our website for any new updates.\n" +
+                            "\n" +
+                            "\n" +
+                            "NOTE: The decision of the judges and the organizing committee will be final and binding. All the teams are advised to take on the fest with professionalism and enthusiasm. The main objective must be to improve oneself and discover/enhance talents and focus on the growth of the Institution.\n",
                     //Best Designer
                     "For best designer, the judging criteria will be based on the following:\n" +
                             "1. Creativity\n 2. Perfection\n 3. Overall look" +
@@ -721,21 +729,14 @@ public class EventDetails {
                             "8. Submission Deadline : XX.XX.XXXX at time XXXXXXXXX\n" +
                             "9. The Results are most likely to be announced on  date: on the Culfest’s Facebook, and the app.\n",
                     //48 Hours or MISE-EN-SCENE
-                    "• This is an online event.\n" +
-                            "• You are not needed to be present in the campus for this event.\n" +
-                            "• There is no registration fee, if and only if you want to participate in only this event in CULFEST'20. In this case you need to contact the Coordinator of this event to get your \"Phocus registration Id\" which is free of cost. But if You have a Culfest Id.(Which is registered for all the events on-site), you can participate without the “Phocus Registration ID”.\n" +
-                            "• Registration form will be provided on the facebook page of “Phocus” by 31st January 2020. \n" +
-                            "• \"Phocus registration Id\" is only valid for this event and participants will not get any type of goodies, T-Shirts and accommodation from team CULFEST.\n" +
-                            "• You need to provide your bank details to coordinators at the time of registration.\n" +
-                            "• There is no preliminary round for entry into this contest.\n" +
-                            "• This is a team event. The team can have a maximum of 3 members and a minimum of 1 member..\n" +
-                            "• The themes will be posted on the Facebook Page/Website of Culfest as well as facebook page of Phocus at 10:00am on 7 February 2020.  \n" +
-                            "• The video must be submitted at/before 10:00 am on 14th Feb 2020.\n" +
-                            "• Use of DSLRs for recording the videos should be preferred, but a better quality smartphone camera is also recommended.\n" +
+                    "• There is no Prelims round for entry into this contest.\n" +
+                            "• This is a team event. The team can have a maximum representation of 3 members.\n" +
+                            "• The themes shall be posted on the Facebook Page/Website of Culfest at 10:00am on the first day of the fest.\n" +
+                            "• The video must be submitted at 10:00 am on the final day of fest.\n" +
+                            "• Use of DSLRs for recording the videos should be preferred, but a betterquality smartphone camera is also recommended.\n" +
                             "• Genre of the video shall be based on your own interpretations.\n" +
                             "• The video should include the Team Name and the Title as the opening credits.\n" +
-                            "• Video length limit is 5 minutes including credits.\n" +
-                            "• You need to upload your film on Google Drive or Youtube with at least 3 raw footages & share the link with Team Phocus.\n",
+                            "• Video length limit is 5 minutes including credits",
             },
             {//Potpourri
                     "• Number of Events ( 2): English Potpourri and Hindi Potpourri   \n" +
@@ -910,7 +911,7 @@ public class EventDetails {
             {
                     //Foot Loose
                     "Coordinator-\n"+
-                            "Raushan (7004635588)\n"+
+                            "Harsh Raj (9304360511)\n"+
                             "Joint coordinator-\n"+"\n"+
                             "Shashank (9490878262)\n"+
                             "Bidisha (8985080658)\n",
@@ -928,7 +929,7 @@ public class EventDetails {
                             "Vishaka (8328194533)\n",
                     //Choreonight
                     "Coordinator-\n"+
-                            "Goutmi (7059603339)\n"+"\n"+
+                            "Maitreyee Sinha (6360368018)\n"+"\n"+
                             "Joint coordinator-\n"+
                             "Himanshu (9610690992)\n"+
                             "Sumith (6205163165)\n",
@@ -983,7 +984,7 @@ public class EventDetails {
                     "Coordinator-\n"+
                     "Shresta(7974044565)\n"+"\n"+
                     "Joint Coordinator-\n"+
-                    "Ujala(8434102105)",
+                    "SaiCharitha Kistipati(9381155921)",
                     //Rangoli
                     "Coordinator-\n"+
                     "T. Durga Rajeshwari(8639702817)\n"+"\n"+
@@ -998,7 +999,7 @@ public class EventDetails {
                     "Coordinator-\n"+
                     "Abhishek(9314092297)\n"+"\n"+
                     "Joint Coordinator-\n"+
-                    "Shristi(6205658185)",
+                    "Hansha Kumari(7781803871)",
                     //Poshak
                     "Coordinator-\n"+
                     "Aatish(9304136867)\n"+"\n"+

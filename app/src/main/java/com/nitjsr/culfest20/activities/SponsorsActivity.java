@@ -1,13 +1,7 @@
 package com.nitjsr.culfest20.activities;
 
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.os.Bundle;
 import android.view.MenuItem;
-import android.view.View;
-import android.widget.ImageView;
-import android.widget.RelativeLayout;
 
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
@@ -15,64 +9,53 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 import com.nitjsr.culfest20.R;
-import com.squareup.picasso.Callback;
-import com.squareup.picasso.NetworkPolicy;
-import com.squareup.picasso.Picasso;
+import com.nitjsr.culfest20.adapters.SponsorAdapter;
+
+import java.util.ArrayList;
+
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 public class SponsorsActivity extends AppCompatActivity {
 
-    private ImageView imageView;
-    private String url;
-    private RelativeLayout relLoader;
+    RecyclerView sponsorRV;
+    ArrayList<String> url;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sponsors);
-
-        imageView = findViewById(R.id.sponsors_image);
-        relLoader = findViewById(R.id.loader_sponsor);
 
         if (getSupportActionBar() != null) {
             getSupportActionBar().setDisplayHomeAsUpEnabled(true);
             getSupportActionBar().setTitle("Sponsors");
         }
 
-        String path = "sponsorImage";
+        url = new ArrayList<>();
+
+        sponsorRV = findViewById(R.id.sponsor_recycler_view);
+        sponsorRV.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false));
+        SponsorAdapter adapter = new SponsorAdapter(url, this);
+        sponsorRV.setAdapter(adapter);
+
+        String path = "Sponsors";
         DatabaseReference ref = FirebaseDatabase.getInstance().getReference(path);
         ref.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-                url = (String) dataSnapshot.getValue();
-                Picasso.get().load(url).networkPolicy(NetworkPolicy.OFFLINE).into(imageView, new Callback() {
-                    @Override
-                    public void onSuccess() {
-                        relLoader.setVisibility(View.GONE);
-                    }
-
-                    @Override
-                    public void onError(Exception e) {
-                        loadImage(url);
-                    }
-                });
+                url.clear();
+                for (DataSnapshot ds : dataSnapshot.getChildren()) {
+                    String imageUrl = (String) ds.getValue();
+                    url.add(imageUrl);
+                }
+                adapter.notifyDataSetChanged();
             }
 
             @Override
             public void onCancelled(@NonNull DatabaseError databaseError) {
 
-            }
-        });
-    }
-
-    private void loadImage(String url) {
-        Picasso.get().load(url).into(imageView, new Callback() {
-            @Override
-            public void onSuccess() {
-                relLoader.setVisibility(View.GONE);
-            }
-
-            @Override
-            public void onError(Exception e) {
-                loadImage(url);
             }
         });
     }
