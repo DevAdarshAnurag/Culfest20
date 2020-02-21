@@ -39,9 +39,10 @@ public class NotificationAdapter extends RecyclerView.Adapter<NotificationAdapte
     @Override
     public void onBindViewHolder(@NonNull final MyViewHolder holder, int position) {
 
-        holder.title.setText((CharSequence) mList.get(position).getTitle());
+        holder.title.setText(mList.get(position).getTitle());
         holder.notiIcon.setImageResource(EventDetails.eventIcon[mList.get(position).getEvent()]);
-        holder.body.setText((CharSequence) mList.get(position).getBody());
+        holder.body.setText(mList.get(position).getBody() + "\n");
+        holder.time.setText(mList.get(position).getTime());
 
         holder.expand.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -84,7 +85,7 @@ public class NotificationAdapter extends RecyclerView.Adapter<NotificationAdapte
 
     public static class MyViewHolder extends RecyclerView.ViewHolder {
 
-        private TextView title, body;
+        private TextView title, body, time;
         private ImageView expand, contract, notiIcon;
 
         public MyViewHolder(@NonNull View itemView) {
@@ -93,6 +94,7 @@ public class NotificationAdapter extends RecyclerView.Adapter<NotificationAdapte
             contract = itemView.findViewById(R.id.contract_sign_up);
             title = itemView.findViewById(R.id.title);
             body = itemView.findViewById(R.id.noti_body);
+            time = itemView.findViewById(R.id.noti_time);
             notiIcon = itemView.findViewById(R.id.noti_icon);
         }
 

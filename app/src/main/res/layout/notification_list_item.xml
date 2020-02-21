@@ -16,13 +16,13 @@
         android:layout_height="wrap_content"
         android:background="@drawable/rectangular_border"
         android:orientation="horizontal"
-        android:padding="8dp">
+        android:padding="4dp">
 
         <ImageView
             android:id="@+id/noti_icon"
             android:layout_width="24dp"
             android:layout_height="24dp"
-            android:layout_marginStart="8dp"
+            android:layout_margin="8dp"
             android:contentDescription="@string/notification_icon"
             android:src="@drawable/ic_lightbulb_outline_black_24dp"
             android:tint="@color/black" />
@@ -31,7 +31,8 @@
             android:id="@+id/title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="8dp"
             android:layout_marginEnd="16dp"
             android:layout_toStartOf="@+id/expand_sign_down"
             android:layout_toEndOf="@+id/noti_icon"
@@ -40,12 +41,22 @@
             android:textColor="@color/primaryText"
             android:textSize="16sp" />
 
+        <TextView
+            android:id="@+id/noti_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="8dp"
+            android:hint="time"
+            android:textColor="@color/secondaryText"
+            android:textSize="12sp" />
+
         <ImageView
             android:id="@+id/expand_sign_down"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_below="@id/noti_time"
             android:layout_alignParentEnd="true"
-            android:layout_centerVertical="true"
             android:layout_marginEnd="8dp"
             android:clickable="true"
             android:focusable="true"
@@ -57,8 +68,8 @@
             android:id="@+id/contract_sign_up"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_below="@id/noti_time"
             android:layout_alignParentEnd="true"
-            android:layout_marginTop="4dp"
             android:layout_marginEnd="8dp"
             android:clickable="true"
             android:focusable="true"
@@ -73,6 +84,7 @@
             android:layout_below="@+id/title"
             android:layout_marginStart="64dp"
             android:layout_marginTop="2dp"
+            android:layout_marginEnd="16dp"
             android:autoLink="all"
             android:text="@string/description"
             android:textColor="@color/secondaryText"

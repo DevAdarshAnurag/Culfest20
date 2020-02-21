@@ -74,7 +74,7 @@ public class EventDetails {
                             "Battle of Band provides you with the opportunity of presenting your own idea of band music and, displaying your talent like never before. " +
                             "Let the audience have a taste of your creation and leave them craving for more. Practice like you have never won. Perform like you have never lost. " +
                             "Don’t keep calm, set the stage on fire and the crowd up roaring." +
-                            " Note: Register before 12th February for this event. A maximum of 10 teams are allowed."+
+                            " Note: Register before 12th February for this event."+
                     "\n\nPrize distribution:\n1st - \u20B9 15,000 \n 2nd - \u20B9 12,000 \n 3rd - \u20B9 9,000 \n",
                     //Panche
                     "When the lights, camera and heart-pounding music are on, the vision of models " +
@@ -139,7 +139,7 @@ public class EventDetails {
                             "wait no more because Culfest’20 brings you, just the dais you need." +
                             " Battle of Band provides you with the opportunity of presenting your own idea of band music and, displaying your talent like never before." +
                             " Let the audience have a taste of your creation and leave them craving for more. Practice like you have never won. Perform like you have never lost. " +
-                            "Don’t keep calm, set the stage on fire and the crowd up roaring. Note: Register before 12th February for this event. A maximum of 10 teams are allowed."+
+                            "Don’t keep calm, set the stage on fire and the crowd up roaring. Note: Register before 12th February for this event."+
                             "\n\nPrize distribution:\n1st - \u20B9 15,000 \n 2nd - \u20B9 12,000 \n 3rd - \u20B9 9,000 \n"
             },
 
@@ -314,12 +314,14 @@ public class EventDetails {
                             "•\tDimensions of the stage/performance arena will be uploaded on our website very soon.\n",
                     //Journalism
                     "There will be two rounds in Journalism: Prelims and Finals. A maximum of 8 teams will be shortlisted for the finals.   \n" +
-                            "Prelims –   \n" +
+                            "Prelims –  \n" +
                             "• A minimum of 2 and maximum of 3 members are allowed in the team.   \n" +
                             "• All the teams have to submit a write-up as their Prelims entry. Word limit is 250 words.   \n" +
-                            "• The abstract must be mailed to lds1968nitjsr@gmail.com by 13th February(12 noon).   \n" +
+                            "• The abstract must be mailed to gensec.lds@nitjsr.ac.in by 24th February(12 noon). The topics for prelims are below:\n" +
+                            "\t• For students who are present in and around campus, you need to send a report about the ongoing preparations of Culfest'20.\n" +
+                            "\t• For students outside campus, write an editorial-style article on the topic: Impact of Western TV shows on Indian youth.\n"+
                             "• The write up can be either in Hindi or English. You will have to stick to one language throughout the competition, i.e. if you get selected for the finals, the reporting has to be done in the language you chose in prelims.   \n" +
-                            "Finals –   \n" +
+                            "Finals –  \n" +
                             "• Any team member should not be replaced.   \n" +
                             "• The m ode of communication/reporting has to be the same as that chosen in Prelims.   \n" +
                             "• Every team will be allotted the equipment for 30 minutes each day.   \n" +
@@ -345,7 +347,7 @@ public class EventDetails {
                             "3. Written prelims followed by finals   \n" +
                             "4. Quizmaster's decision would be final at all circumstances . ",
                     //Battle of Bands
-                    "1) The time limit for the performance, including the time allotted for sound check is 25mins(stage in and stage out).\n" +
+                    "1) The time limit for the performance, including the time allotted for sound check is 20mins(stage in and stage out).\n" +
                             "\n" +
                             "2) Exceeding the time limit will result in negative marking.\n" +
                             "\n" +
@@ -359,10 +361,6 @@ public class EventDetails {
                             "any point in time, at least 3 members need to be on the stage.\n" +
                             "\n" +
                             "7) There is no restriction on the language of the songs.\n" +
-                            "\n" +
-                            "Note: \n" +
-                            "Drum sets will be provided on the stage and participants are not allowed to remove the drum set/parts from the podium.\n" +
-                            "The arrangement of all other instruments must be made by the participants themselves.\n" +
                             "\n" +
                             "\n" +
                             "Decision of the judges and the organizing team will be final and abiding.\n" +
@@ -503,17 +501,11 @@ public class EventDetails {
                             "4. The decision of the judges shall be final and binding",
 
                     //DUETS
-                    "Prelims - \n" +
-                            "• The participating teams will be judged on their co-ordination, presentation, distribution of lyrics and their ‘surtaal’  \n" +
-                            "• Two Participants (girl-girl/boy-boy/girl-boy) are required to give a performance together.  \n" +
-                            "• You should bring the karaoke tracks for your songs.(optional for prelims) Maximum time limit is 5 minutes per performance.  \n" +
-                            " \n" +
-                            "Finals - \n" +
-                            "• Selected participants will move on to the final round where they have to sing a different song of their choice.  \n" +
-                            "• Maximum time limit is 7 minutes per performance.  \n" +
-                            "• Karaoke tracks are compulsory.  \n" +
-                            "• Musical Instruments are NOT ALLOWED.  \n" +
-                            "• The decision of the judges will be final and binding. ",
+                    "▪ The participating teams will be judged based on their coordination, presentation, distribution of lyrics and their 'surtaal'.\n" +
+                            "▪ Two participants (girl-girl/boy-boy/girl-boy) are required to give a performance together.\n" +
+                            "▪ Maximum time limit is 4 mins per performance.\n" +
+                            "▪ Karaoke tracks are compulsory. Musical instruments are NOT ALLOWED.\n" +
+                            "▪ The decision of the judges will be final and binding.",
                     //Unpluged Euphony
                     "Participants can perform musical piece on an instrument.\n" +
                             "Maximum time limit: 7 minutes.\n" +
@@ -522,7 +514,7 @@ public class EventDetails {
                             "The judges will critique the contestant’s performance based on the presentation,and instrumentation skills.\n" +
                             "Performer needs to perform using a single instrument.",
                     //Battle of Bands
-                    "1) The time limit for the performance, including the time allotted for sound check is 25mins(stage in and stage out).\n" +
+                    "1) The time limit for the performance, including the time allotted for sound check is 20mins(stage in and stage out).\n" +
                             "\n" +
                             "2) Exceeding the time limit will result in negative marking.\n" +
                             "\n" +
@@ -536,10 +528,6 @@ public class EventDetails {
                             "any point in time, at least 3 members need to be on the stage.\n" +
                             "\n" +
                             "7) There is no restriction on the language of the songs.\n" +
-                            "\n" +
-                            "Note: \n" +
-                            "Drum sets will be provided on the stage and participants are not allowed to remove the drum set/parts from the podium.\n" +
-                            "The arrangement of all other instruments must be made by the participants themselves.\n" +
                             "\n" +
                             "\n" +
                             "Decision of the judges and the organizing team will be final and abiding.\n" +
@@ -748,13 +736,15 @@ public class EventDetails {
                             "Prelims –   \n" +
                             "• A minimum of 2 and maximum of 3 members are allowed in the team.   \n" +
                             "• All the teams have to submit a write-up as their Prelims entry. Word limit is 250 words.   \n" +
-                            "• The abstract must be mailed to lds1968nitjsr@gmail.com by 13th February(12 noon).   \n" +
+                            "• The abstract must be mailed to gensec.lds@nitjsr.ac.in by 24th February(12 noon). The topics for prelims are below:\n" +
+                            "\t• For students who are present in and around campus, you need to send a report about the ongoing preparations of Culfest'20.\n" +
+                            "\t• For students outside campus, write an editorial-style article on the topic: Impact of Western TV shows on Indian youth.\n"+
                             "• The write up can be either in Hindi or English. You will have to stick to one language throughout the competition, i.e. if you get selected for the finals, the reporting has to be done in the language you chose in prelims.   \n" +
                             "Finals –   \n" +
                             "• Any team member should not be replaced.   \n" +
-                            "• The mode of communication/reporting has to be the same as that chosen in Prelims.   \n" +
+                            "• The mode of communication/reporting has to be the same as that chosen in Prelims.\n" +
                             "• Every team will be allotted the equipment for 30 minutes each day.   \n" +
-                            "• The events to be covered shall be chosen by the team.   \n" +
+                            "• The events to be covered shall be chosen by the team.\n" +
                             "• The teams need to cover the festival in a way that they may find suitable. They may take interviews as well and/or report about the ongoing events.   \n" +
                             "• The reporting has to be done of the events taking place between 9am-5pm. Main-stage reporting is not allowed.   \n" +
                             "• All the video clippings, separated day wise must be submitted to the coordinator before 6 pm on …. Basic video editing is allowed.   \n" +
@@ -769,7 +759,10 @@ public class EventDetails {
                             "• An abstract must be submitted on the given topic for preliminary screening. The topic will be uploaded soon.   \n" +
                             "• The length of the abstract must not exceed 400 words.   \n" +
                             "• The contact details must be properly mentioned.   \n" +
-                            "• The abstract must be mailed to gensec.lds@nitjsr.ac.in by 12th February.   \n" +
+                            "• The abstract must be mailed to gensec.lds@nitjsr.ac.in by 23rd February(5:00 pm).   \n" +
+                            "• The topics for the preliminary round are :\n" +
+                            "\ta)Existence of death penalty serves as a deterrent against would-be criminals. Does it?!\n" +
+                            "\tb) Be it resolved that global warning is anthropogenic, not natural.\n\n"+
                             "Finals –   \n" +
                             "• In the finals, each team will be competing against one another for a total sum of 8 minutes. • Each pair of teams will be given a separate topic.   \n" +
                             "• The organizers will be deciding which team will be for or against the motion. The decision will be binding.   \n" +
@@ -929,7 +922,7 @@ public class EventDetails {
                             "Vishaka (8328194533)\n",
                     //Choreonight
                     "Coordinator-\n"+
-                            "Maitreyee Sinha (6360368018)\n"+"\n"+
+                            "Harsh Raj (9097111476)\n"+"\n"+
                             "Joint coordinator-\n"+
                             "Himanshu (9610690992)\n"+
                             "Sumith (6205163165)\n",

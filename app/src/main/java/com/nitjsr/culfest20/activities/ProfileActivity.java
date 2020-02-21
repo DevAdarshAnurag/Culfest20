@@ -148,6 +148,8 @@ public class ProfileActivity extends AppCompatActivity {
             public void run() {
                 try {
                     Thread.sleep(3000);
+                    EventChipAdapter adapter = new EventChipAdapter(ProfileActivity.this, list);
+                    eventRecycler.setAdapter(adapter);
                     adapter.notifyDataSetChanged();
                 }
                 catch (Exception e)
