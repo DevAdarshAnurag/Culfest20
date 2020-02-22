@@ -54,18 +54,29 @@ public class EventChipAdapter extends RecyclerView.Adapter<EventChipAdapter.myVi
                 context.startActivity(intent);
             }
         });
-        DatabaseReference ref = FirebaseDatabase.getInstance().getReference(event.getEventName()).child(FirebaseAuth.getInstance().getCurrentUser().getUid());
-        ref.addValueEventListener(new ValueEventListener() {
+        new Thread(new Runnable() {
             @Override
-            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-                if(dataSnapshot.exists())
-                    holder.chip.setChipBackgroundColorResource(event.getEventColor());
-            }
-            @Override
-            public void onCancelled(@NonNull DatabaseError databaseError) {
+            public void run() {
+                try {
+                    DatabaseReference ref = FirebaseDatabase.getInstance().getReference(event.getEventName()).child(FirebaseAuth.getInstance().getCurrentUser().getUid());
+                    ref.addValueEventListener(new ValueEventListener() {
+                        @Override
+                        public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                            if(dataSnapshot.exists())
+                                holder.chip.setChipBackgroundColorResource(event.getEventColor());
+                        }
+                        @Override
+                        public void onCancelled(@NonNull DatabaseError databaseError) {
 
+                        }
+                    });
+                }
+                catch (Exception e)
+                {
+                    //
+                }
             }
-        });
+        }).start();
     }
 
     @Override

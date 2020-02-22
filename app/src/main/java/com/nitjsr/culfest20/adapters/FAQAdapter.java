@@ -62,9 +62,16 @@ public class FAQAdapter extends RecyclerView.Adapter<FAQAdapter.MyViewHolder> {
 
     }
 
+//    @Override
+//    public void onViewDetachedFromWindow(@NonNull MyViewHolder holder) {
+//        super.onViewDetachedFromWindow(holder);
+//        holder.ivFaq.setImageResource(R.drawable.ic_faq_expand);
+//        holder.faqAnswer.setVisibility(View.GONE);
+//    }
+
     @Override
-    public void onViewDetachedFromWindow(@NonNull MyViewHolder holder) {
-        super.onViewDetachedFromWindow(holder);
+    public void onViewRecycled(@NonNull MyViewHolder holder) {
+        super.onViewRecycled(holder);
         holder.ivFaq.setImageResource(R.drawable.ic_faq_expand);
         holder.faqAnswer.setVisibility(View.GONE);
     }

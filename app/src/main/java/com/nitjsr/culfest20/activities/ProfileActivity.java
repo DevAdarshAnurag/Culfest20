@@ -115,14 +115,14 @@ public class ProfileActivity extends AppCompatActivity {
         progress = findViewById(R.id.profile_progress_bar);
         eventRecycler = findViewById(R.id.event_chip_rv);
 
+        fetchDetails(uid);
+        makeQRCode(uid);
+
         qrcode = findViewById(R.id.qr_code_icon);
         qrcode.setAnimation("qrcode.json");
         qrcode.setScale(3);
         qrcode.setRepeatCount(ValueAnimator.INFINITE);
         qrcode.playAnimation();
-
-        fetchDetails(uid);
-        makeQRCode(uid);
 
         findViewById(R.id.qr_code_icon).setOnClickListener(new View.OnClickListener() {
             @Override
@@ -142,22 +142,7 @@ public class ProfileActivity extends AppCompatActivity {
         eventRecycler.setLayoutManager(gridLayoutManager);
         EventChipAdapter adapter = new EventChipAdapter(ProfileActivity.this, list);
         eventRecycler.setAdapter(adapter);
-        eventRecycler.hasFixedSize();
-        new Thread(new Runnable() {
-            @Override
-            public void run() {
-                try {
-                    Thread.sleep(3000);
-                    EventChipAdapter adapter = new EventChipAdapter(ProfileActivity.this, list);
-                    eventRecycler.setAdapter(adapter);
-                    adapter.notifyDataSetChanged();
-                }
-                catch (Exception e)
-                {
-                    //
-                }
-            }
-        }).start();
+        eventRecycler.smoothScrollToPosition(1);
     }
 
     private void fetchDetails(String uid) {

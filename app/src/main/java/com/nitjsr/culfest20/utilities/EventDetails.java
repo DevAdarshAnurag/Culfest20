@@ -922,7 +922,7 @@ public class EventDetails {
                             "Vishaka (8328194533)\n",
                     //Choreonight
                     "Coordinator-\n"+
-                            "Harsh Raj (9097111476)\n"+"\n"+
+                            "Maitreyee Sinha (6360368018)\n"+"\n"+
                             "Joint coordinator-\n"+
                             "Himanshu (9610690992)\n"+
                             "Sumith (6205163165)\n",
@@ -977,7 +977,7 @@ public class EventDetails {
                     "Coordinator-\n"+
                     "Shresta(7974044565)\n"+"\n"+
                     "Joint Coordinator-\n"+
-                    "SaiCharitha Kistipati(9381155921)",
+                    "Sai Charitha Kistipati(9381155921)",
                     //Rangoli
                     "Coordinator-\n"+
                     "T. Durga Rajeshwari(8639702817)\n"+"\n"+

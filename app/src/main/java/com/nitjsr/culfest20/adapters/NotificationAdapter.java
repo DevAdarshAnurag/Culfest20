@@ -70,9 +70,18 @@ public class NotificationAdapter extends RecyclerView.Adapter<NotificationAdapte
         });
     }
 
+//    @Override
+//    public void onViewDetachedFromWindow(@NonNull MyViewHolder holder) {
+//        super.onViewDetachedFromWindow(holder);
+//        holder.contract.setVisibility(View.INVISIBLE);
+//        holder.body.setVisibility(View.GONE);
+//        holder.expand.setVisibility(View.VISIBLE);
+//    }
+
+
     @Override
-    public void onViewDetachedFromWindow(@NonNull MyViewHolder holder) {
-        super.onViewDetachedFromWindow(holder);
+    public void onViewRecycled(@NonNull MyViewHolder holder) {
+        super.onViewRecycled(holder);
         holder.contract.setVisibility(View.INVISIBLE);
         holder.body.setVisibility(View.GONE);
         holder.expand.setVisibility(View.VISIBLE);
