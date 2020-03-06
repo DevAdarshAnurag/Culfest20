@@ -133,6 +133,7 @@ public class PersonsListActivity extends AppCompatActivity {
             recyclerView.setLayoutManager(new LinearLayoutManager(this));
             recyclerView.setAdapter(recyclerViewAdapter);
         } else if (position == 11) {
+            Public_relation.add(new Person("sudhanshu","Sudhanshu Ranjan","Public Relation Head","+917808988875","https://www.facebook.com/sudhanshu.ranjan.756","https://www.instagram.com/sudhanshu_s_t_a_r_k/"));
             Public_relation.add(new Person("pragati", "Pragati Gupta", "Public Relation", "+9188235817548", "https://www.facebook.com/pragati.gupta.142240", "https://www.instagram.com/___p0g0___"));
             Public_relation.add(new Person("shailja", "Shailja", "Public Relation", "+919470287800", "https://www.facebook.com/shailja1310", "https://www.instagram.com/_shall_jaa_/"));
             Public_relation.add(new Person("deepak","Deepak Dhuwaria","Public Relation","+918375822565","https://m.facebook.com/deepak.dhuwaria/","https://www.instagram.com/deepakdhuwaria/"));
@@ -146,6 +147,7 @@ public class PersonsListActivity extends AppCompatActivity {
             Logistics.add(new Person("jitendra", "Jitendra Kumar", "Logistics & Security", "+917739748903", "https://m.facebook.com/profile.php?ref=bookmarks", "https://www.instagram.com/_jitendra_1546/"));
             Logistics.add(new Person("deva","Deva","Logistics & Security","+917360827110","https://m.facebook.com/","https://www.instagram.com/"));
             Logistics.add(new Person("shubhamraj", "Shubham Raj", "Logistics & Security", "+918409111475", "https://m.facebook.com/shubham.raj.121772/", "https://www.instagram.com/shubhamyenohraj/"));
+            Logistics.add(new Person("sourav","Sourav Pathak","Logistics & Security","+918434098458","https://www.facebook.com/souravpathak14/","https://www.instagram.com/srv_pthk/"));
             PersonRecyclerViewAdapter recyclerViewAdapter = new PersonRecyclerViewAdapter(this, Logistics);
             recyclerView.setLayoutManager(new LinearLayoutManager(this));
             recyclerView.setAdapter(recyclerViewAdapter);

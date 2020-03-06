@@ -36,7 +36,7 @@ public class FAQActivity extends AppCompatActivity {
 
         list.add(new FAQ("Question : " + "How do I register online for the  Culfest 20?", "Answer : " + "Just sign into Culfest'20 app, fill your details to register and then go to your Profile section in the app and get your Culfest ID(CFAXXXX). But offline registration needs to be done in order to participate in the events."));
 
-        list.add(new FAQ("Question : " + "What is the process of offline registration?", "Answer : " + "Registration process will start on 25th February from 7:00 AM onwards for students not from NIT Jamshedpur and will be open all the time during the fest except during the time of pronites. You need to show your Culfest ID and pay the required amount in order to confirm your registration. The registering participants also need to install the CureMantra App on their device."));
+        list.add(new FAQ("Question : " + "What is the process of offline registration?", "Answer : " + "Registration process will start on 10th February from 7:00 AM onwards for students not from NIT Jamshedpur and will be open all the time during the fest except during the time of pronites. You need to show your Culfest ID and pay the required amount in order to confirm your registration. The registering participants also need to install the CureMantra App on their device."));
 
         list.add(new FAQ("Question : " + "What is the registration fee for Culfest 20?", "Answer : " + "Registration fee for Culfest'20 is \u20B9600 for students not from NIT Jamshedpur."));
 
